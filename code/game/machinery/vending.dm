@@ -2255,7 +2255,7 @@
 
 /obj/machinery/vending/tool
 	name = "\improper YouTool"
-	desc = "Tools for tools."
+	desc = "Инструменты для инструментов."
 
 	icon_state = "tool_off"
 	panel_overlay = "tool_panel"
