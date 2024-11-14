@@ -1906,7 +1906,7 @@
 /obj/machinery/vending/hydroseeds
 	name = "\improper MegaSeed Servitor"
 	desc = "When you need seeds fast!"
-	slogan_list = list("THIS'S WHERE TH' SEEDS LIVE! GIT YOU SOME!","Hands down the best seed selection on the station!","Also certain mushroom varieties available, more for experts! Get certified today!")
+	slogan_list = list("ВОТ ГДЕ ЖИВУТ СЕМЕНА! ВОЗЬМИ СЕБЕ НЕМНОГО!","Без сомнения, лучший выбор семян на станции!","Кроме того, некоторые виды грибов доступны исключительно для экспертов! Получите сертификат уже сегодня!")
 	ads_list = list("Мы любим растения!","Вырасти урожай!","Расти, малыш, расти-и-и-и!","Ды-а, сына!")
 
 	icon_state = "seeds_off"
