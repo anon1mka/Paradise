@@ -9,15 +9,15 @@
 
 /mob/living/proc/be_suicidal(forced = FALSE)
 	if(stat == DEAD)
-		to_chat(src, "You're already dead!")
+		to_chat(src, "Ты уже мертв!")
 		return
 
 	if(!SSticker)
-		to_chat(src, "You can't commit suicide before the game starts!")
+		to_chat(src, "Ты не можешь покончить с собой до начала игры, чувак!")
 		return
 
 	if(suiciding)
-		to_chat(src, "You're already committing suicide! Be patient!")
+		to_chat(src, "Ты уже совершаешь самоубийство! Наберись терпения!")
 		return
 
 
@@ -26,18 +26,18 @@
 		if(ischangeling(src))
 			// the alternative is to allow clings to commit suicide, but then you'd probably have them
 			// killing themselves as soon as they're in cuffs
-			to_chat(src, span_warning("We refuse to take the coward's way out."))
+			to_chat(src, span_warning("Мы не пойдем по легкому пути."))
 			return
-		confirm = tgui_alert(src, "Are you sure you want to commit suicide?", "Confirm Suicide", list("Yes", "No"))
+		confirm = tgui_alert(src, "Ты уверен, что хочешь покончить с собой?", "Подтвердить самоубийство", list("Да", "Нет"))
 
 	if(stat == DEAD || suiciding) //We check again, because alerts sleep until a choice is made
-		to_chat(src, "You're already dead!")
+		to_chat(src, "Ты уже мертв!")
 		return
 
-	if(forced || (confirm == "Yes"))
+	if(forced || (confirm == "Да"))
 		if(!forced && isAntag(src))
-			confirm = tgui_alert(src, "Are you absolutely sure? If you do this after you got converted/joined as an antagonist, you could face a jobban!", "Confirm Suicide", list("Yes", "No"))
-			if(confirm == "Yes")
+			confirm = tgui_alert(src, "Ты абсолютно уверен в этом? Если ты сделаешь это после того, как стал антагонистом, есть вероятность, что тебя забанят!", "Подтвердить самоубийство", list("Да", "Нет"))
+			if(confirm == "Да")
 				suiciding = TRUE
 				do_suicide()
 				add_attack_logs(src, src, "Attempted suicide as special role")
@@ -58,7 +58,7 @@
 
 
 /mob/living/simple_animal/mouse/do_suicide()
-	visible_message(span_danger("[src] is playing dead permanently! It looks like [p_theyre()] trying to commit suicide."))
+	visible_message(span_danger("[src] бешено мечется! Уровень сыра упал до критической отметки, и мышь покинула наш мир."))
 	adjustOxyLoss(max(100 - getBruteLoss(100), 0))
 
 
@@ -73,7 +73,7 @@
 
 
 /mob/living/silicon/do_suicide()
-	to_chat(viewers(src), span_danger("[src] is powering down. It looks like [p_theyre()] trying to commit suicide."))
+	to_chat(viewers(src), span_danger("[src] отключает питание. Это похоже на попытку суицида."))
 	//put em at -175
 	adjustOxyLoss(max(maxHealth * 2 - getToxLoss() - getFireLoss() - getBruteLoss() - getOxyLoss(), 0))
 
@@ -99,14 +99,14 @@
 
 
 /mob/living/carbon/brain/do_suicide()
-	to_chat(viewers(loc), span_danger("[src]'s brain is growing dull and lifeless. It looks like it's lost the will to live."))
+	to_chat(viewers(loc), span_danger("Мозг [src] становится тусклым и безжизненным. Похоже, он потерял волю к жизни."))
 	spawn(5 SECONDS)
 		death(gibbed = FALSE)
 		suiciding = FALSE
 
 
 /mob/living/carbon/alien/humanoid/do_suicide()
-	to_chat(viewers(src), span_danger("[src] is thrashing wildly! It looks like [p_theyre()] trying to commit suicide."))
+	to_chat(viewers(src), span_danger("[src] бьется в конвульсиях! Это похоже на попытку суицида."))
 	//put em at -175
 	adjustOxyLoss(max(175 - getFireLoss() - getBruteLoss() - getOxyLoss(), 0))
 
@@ -139,7 +139,7 @@
 			human_suicide(damagetype, O)
 			return
 
-	to_chat(viewers(src), span_danger("[src] [replacetext(pick(dna.species.suicide_messages), "their", p_their())] It looks like [p_theyre()] trying to commit suicide."))
+	to_chat(viewers(src), span_danger("[src] [replacetext(pick(dna.species.suicide_messages), "their", p_their())] Это похоже на попытку суицида."))
 	human_suicide(0)
 
 
