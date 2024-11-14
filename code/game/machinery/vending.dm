@@ -1286,7 +1286,7 @@
 
 /obj/machinery/vending/boozeomat
 	name = "\improper Booze-O-Mat"
-	desc = "Чудо техники, предположительно способное приготовить идеальный напиток для вас в тот момент, когда вы об этом попросите."
+	desc = "Чудо техники, предположительно способное выдать идеальный напиток для Вас в тот момент, когда вы об этом попросите."
 
 	icon_state = "boozeomat_off"        //////////////18 drink entities below, plus the glasses, in case someone wants to edit the number of bottles
 	panel_overlay = "boozeomat_panel"
@@ -1340,7 +1340,7 @@
 
 /obj/machinery/vending/coffee
 	name = "\improper Solar's Best Hot Drinks"
-	desc = "Автомат для приготовления горячих напитков, ну, знаете, из тех, что выдают горячее."
+	desc = "Это машина, которая готовит горячие напитки. Ну, знаете, такие, которые кипятком заливают."
 	ads_list = list("Выпейте!","Выпьем!","На здоровье!","Не хотите горячего супчику?","Я бы убил за чашечку кофе!","Лучшие зёрна в галактике","Для Вас — только лучшие напитки","М-м-м-м… Ничто не сравнится с кофе","Я люблю кофе, а Вы?","Кофе помогает работать!","Возьмите немного чайку","Надеемся, Вы предпочитаете лучшее!","Отведайте наш новый шоколад!","Admin conspiracies")
 
 	icon_state = "coffee_off"
@@ -1462,7 +1462,7 @@
 
 /obj/machinery/vending/chinese
 	name = "\improper Mr. Chang"
-	desc = "Китайская машина самообслуживания, создана специально для удовлетворения потребностей в китайской кухне."
+	desc = "Китайская машина самообслуживания, создана специально для удовлетворения потребности в китайской кухне."
 	slogan_list = list("Попробуйте 5000 лет культуры!","Мистер Чанг, одобрен для безопасного потребления в более чем 10 секторах!","Китайская кухня отлично подходит для вечернего свидания или одинокого вечера!","Вы не ошибетесь, если попробуете настоящую китайскую кухню от мистера Чанга.!")
 
 	icon_state = "chang_off"
@@ -1574,7 +1574,7 @@
 
 /obj/machinery/vending/liberationstation
 	name = "\improper Liberation Station"
-	desc = "An overwhelming amount of <b>ancient patriotism</b> washes over you just by looking at the machine."
+	desc = "При одном взгляде на эту машину вас охватывает непреодолимое чувство <b>древнего патриотизма</b>."
 
 	icon_state = "liberationstation_off"
 	panel_overlay = "liberationstation_panel"
@@ -1599,7 +1599,7 @@
 
 /obj/machinery/vending/toyliberationstation
 	name = "\improper Syndicate Donksoft Toy Vendor"
-	desc = "An ages 8 and up approved vendor that dispenses toys. If you were to find the right wires, you can unlock the adult mode setting!"
+	desc = "Одобренный автомат игрушек для детей от 8 лет и старше. Если вы найдете нужные провода, вы сможете разблокировать <i>режим для взрослых!</i>"
 
 	icon_state = "syndi_off"
 	panel_overlay = "syndi_panel"
@@ -1772,7 +1772,7 @@
 
 /obj/machinery/vending/wallmed
 	name = "\improper NanoMed"
-	desc = "Настенный диспенсер медицинских изделий."
+	desc = "Настенный раздатчика медицинских изделий."
 	ads_list = list("Иди и спаси несколько жизней!","Лучшее снаряжение для вашего медотдела","Только лучшие инструменты","Натуральные химикаты!","Эта штука спасает жизни","Может сами примете?","Пинг!")
 
 	icon_state = "wallmed_off"
@@ -1793,7 +1793,7 @@
 
 /obj/machinery/vending/wallmed/syndicate
 	name = "\improper SyndiWallMed"
-	desc = "<b>EVIL</b> wall-mounted Medical Equipment dispenser."
+	desc = "<b>Злое</b> воплощение настенного раздатчика медицинских изделий."
 
 	icon_state = "wallmed_off"
 	panel_overlay = "wallmed_panel"
@@ -1812,7 +1812,7 @@
 
 /obj/machinery/vending/security
 	name = "\improper SecTech"
-	desc = "Дилер охранного снаряжения."
+	desc = "Дилер снаряжения службы безопасности."
 	ads_list = list("Круши черепа капиталистов!","Отбей несколько голов!","Не забывай, вредительство - полезно!","Твое оружие здесь.","Наручники!","Стоять, подонок!","Не бей меня, брат!","Убей их, брат.","Почему бы не съесть пончик?")
 
 	icon_state = "sec_off"
@@ -1834,7 +1834,7 @@
 
 /obj/machinery/vending/security/training
 	name = "\improper SecTech Training"
-	desc = "Дилер тренировочного охранного снаряжения."
+	desc = "Дилер тренировочного снаряжения службы безопасности."
 	ads_list = list("Соблюдай чистоту на стрельбище!","Даже я стреляю лучше тебя!","Почему так косо, бухой что ли?!","Техника безопасности нам не писана, да?","1 из 10 попаданий... А ты хорош!","Инструктор это твой папочка!","Эй, ты куда целишься?!")
 
 	icon_state = "sectraining_off"
@@ -2238,7 +2238,7 @@
 
 /obj/machinery/vending/sovietsoda
 	name = "\improper BODA"
-	desc = "Старый автомат по продаже сладкой воды."
+	desc = "Старый автомат по продаже сладкой газировки."
 
 	icon_state = "sovietsoda_off"
 	panel_overlay = "sovietsoda_panel"
@@ -2296,7 +2296,7 @@
 
 /obj/machinery/vending/engivend
 	name = "\improper Engi-Vend"
-	desc = "Продажа запасных инструментов. Что? Вы ожидали какого-нибудь остроумного описания?"
+	desc = "Автомат с запасными инструментами. Что? Вы ожидали какого-нибудь остроумного описания?"
 
 	icon_state = "engivend_off"
 	panel_overlay = "engivend_panel"
@@ -2396,7 +2396,7 @@
 	refill_canister = /obj/item/vending_refill/sustenance
 
 /obj/machinery/vending/sustenance/additional
-	desc = "Какого этот автомат тут оказался?!"
+	desc = "Какого чёрта этот автомат тут оказался?!"
 	products = list(/obj/item/reagent_containers/food/snacks/tofu = 12,
 					/obj/item/reagent_containers/food/drinks/ice = 6,
 					/obj/item/reagent_containers/food/snacks/candy/candy_corn = 6)
@@ -2482,7 +2482,7 @@
 
 /obj/machinery/vending/syndicigs
 	name = "\improper Suspicious Cigarette Machine"
-	desc = "Кури, если уж взял."
+	desc = "Кури, раза уж взял."
 	slogan_list = list("Космосигареты на вкус хороши, какими они и должны быть.","I'd rather toolbox than switch.","Затянитесь!","Не верьте исследованиям — курите сегодня!")
 	ads_list = list("Наверняка не очень-то и вредно для Вас!","Не верьте учёным!","На здоровье!","Не бросайте курить, купите ещё!","Затянитесь!","Никотиновый рай.","Лучшие сигареты с 2150 года.","Сигареты с множеством наград.")
 	vend_delay = 34
@@ -2499,9 +2499,9 @@
 
 /obj/machinery/vending/syndisnack
 	name = "\improper Getmore Chocolate Corp"
-	desc = "A modified snack machine courtesy of the Getmore Chocolate Corporation, based out of Mars"
-	slogan_list = list("Try our new nougat bar!","Twice the calories for half the price!")
-	ads_list = list("The healthiest!","Award-winning chocolate bars!","Mmm! So good!","Oh my god it's so juicy!","Have a snack.","Snacks are good for you!","Have some more Getmore!","Best quality snacks straight from mars.","We love chocolate!","Try our new jerky!")
+	desc = "Модифицированный автомат самообслуживания, любезно предоставленный шоколадной корпорацией Getmore, базирующейся на Марсе."
+	slogan_list = list("Попробуйте наш новый батончик с нугой!","Вдвое больше калорий за полцены!")
+	ads_list = list("Самый здоровый!","Отмеченные наградами шоколадные батончики!","Ммм! Так вкусно!","О боже, это так вкусно!","Перекусите.","Закуски - это здорово!","Возьми немного, и еще немного!","Закуски высшего качества прямо с Марса.","Мы любим шоколад!","Попробуйте наше новое вяленое мясо!")
 
 	icon_state = "snack_off"
 	panel_overlay = "snack_panel"
@@ -2545,7 +2545,7 @@
 //don't forget to change the refill size if you change the machine's contents!
 /obj/machinery/vending/clothing
 	name = "\improper ClothesMate" //renamed to make the slogan rhyme
-	desc = "Торговый автомат по продаже одежды."
+	desc = "Автомат с бесплатной одеждой."
 
 	icon_state = "clothes_off"
 	panel_overlay = "clothes_panel"
