@@ -1103,7 +1103,7 @@
 	if(HAS_TRAIT(target, TRAIT_FLATTENED))
 		return
 	if(!HAS_TRAIT(attacker, TRAIT_PACIFISM) || !GLOB.pacifism_after_gt)
-		add_attack_logs(attacker, target, "засунули в торговый автомат ([src])")
+		add_attack_logs(attacker, target, "толкнули в торговый автомат ([src])")
 		tilt(target, from_combat = TRUE)
 		target.visible_message(
 			span_danger("[attacker] толкает [target] в [src]!"),
