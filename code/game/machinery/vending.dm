@@ -1143,7 +1143,7 @@
 			return VENDOR_CRUSH_HANDLED
 
 		should_throw_at_target = critical_attack.fall_towards_mob
-		add_attack_logs(null, victim, "критически раздавленный [src] вызывающий [critical_attack]")
+		add_attack_logs(null, victim, "критически раздавлен [src] вызывающий [critical_attack]")
 
 	else
 		victim.visible_message(
