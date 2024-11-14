@@ -1096,7 +1096,7 @@
 	if(!throw_item)
 		return
 	throw_item.throw_at(target, 16, 3)
-	visible_message("<span class='danger'>[src] метает [throw_item.name] в [target.name]!</span>")
+	visible_message("<span class='danger'>[src] метнул [throw_item.name] в [target.name]!</span>")
 
 
 /obj/machinery/vending/shove_impact(mob/living/target, mob/living/attacker)
