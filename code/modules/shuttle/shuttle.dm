@@ -1000,7 +1000,7 @@
 
 /obj/machinery/computer/shuttle/golem_ship/recall
 	name = "golem ship recall terminal"
-	desc = "Используется для отвызова шаттла големов."
+	desc = "Используется для отзыва шаттла големов."
 	possible_destinations = "freegolem_lavaland"
 	resistance_flags = INDESTRUCTIBLE
 

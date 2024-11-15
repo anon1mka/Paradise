@@ -1,6 +1,6 @@
 /obj/machinery/computer/robotics
 	name = "robotics control console"
-	desc = "Используется для дистанционной блокировки или подрыва привязанных киборгов."
+	desc = "Используется для дистанционной блокировки или подрыва привязанных Киборгов."
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_keyboard = "tech_key"
 	icon_screen = "robot"

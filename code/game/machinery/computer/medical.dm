@@ -461,7 +461,7 @@
 
 /obj/machinery/computer/med_data/laptop
 	name = "medical laptop"
-	desc = "Дешевый ноутбук Nanotrasen Nanotrasen."
+	desc = "Дешевый ноутбук Nanotrasen."
 	icon_state = "laptop"
 	icon_keyboard = "laptop_key"
 	icon_screen = "medlaptop"

@@ -518,7 +518,7 @@
 
 /obj/machinery/computer/secure_data/laptop
 	name = "security laptop"
-	desc = "Защищенный ноутбук Nanotrasen. Привносим современные компактные компьютеры в наше столетие!"
+	desc = "Ноутбук службы безопасности Nanotrasen. Привносим современные компактные компьютеры в наше столетие!"
 	icon_state = "laptop"
 	icon_keyboard = "seclaptop_key"
 	icon_screen = "seclaptop"

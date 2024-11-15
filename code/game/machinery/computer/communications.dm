@@ -12,7 +12,7 @@
 // The communications computer
 /obj/machinery/computer/communications
 	name = "communications console"
-	desc = "Это позволяет капитану связаться с Центральным Командованием или изменить уровень тревоги. Это также позволяет командному составу вызвать аварийный шаттл."
+	desc = "Это позволяет капитану связаться с Центральным Командованием или изменить уровень угрозы. Это также позволяет командному составу вызвать эвакуационный шаттл."
 	icon_keyboard = "tech_key"
 	icon_screen = "comm"
 	req_access = list(ACCESS_HEADS)

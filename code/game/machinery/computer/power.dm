@@ -1,6 +1,6 @@
 /obj/machinery/computer/monitor
 	name = "power monitoring console"
-	desc = "Используется для мониторинга уровня питания на всей станции."
+	desc = "Используется для мониторинга уровня энергопотребления на всей станции."
 	icon_screen = "power"
 	icon_keyboard = "power_key"
 	use_power = ACTIVE_POWER_USE
