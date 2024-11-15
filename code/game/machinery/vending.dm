@@ -675,7 +675,7 @@
 	else
 		to_chat(user, display_parts(user))
 	if(moved)
-		to_chat(user, "Вы пополнили [moved] товар[declension_ru(num,"","а","ов")].")
+		to_chat(user, "Вы пополнили [moved] товар[declension_ru(moved,"","а","ов")].")
 		W.play_rped_sound()
 	return TRUE
 
