@@ -675,7 +675,7 @@
 	else
 		to_chat(user, display_parts(user))
 	if(moved)
-		to_chat(user, "Вы пополнили [moved] товаров.")
+		to_chat(user, "Вы пополнили [moved] товар[declension_ru(num,"","а","ов")].")
 		W.play_rped_sound()
 	return TRUE
 
@@ -1118,7 +1118,7 @@
 		target.visible_message(
 			span_danger("[attacker] толкает [target] в [declent_ru(ACCUSATIVE)]!"),
 			span_userdanger("[attacker] впечатывает вас в [declent_ru(GENITIVE)]!"),
-			span_danger(">Вы слышите громкий хруст.")
+			span_danger("Вы слышите громкий хруст.")
 		)
 	else
 		attacker.visible_message(
@@ -1297,12 +1297,12 @@
 /obj/machinery/vending/boozeomat
 	name = "\improper Booze-O-Mat"
 	ru_names = list(
-		NOMINATIVE = "Booze-O-Mat",
-		GENITIVE = "Booze-O-Mat",
-		DATIVE = "Booze-O-Mat",
-		ACCUSATIVE = "Booze-O-Mat",
-		INSTRUMENTAL = "Booze-O-Mat",
-		PREPOSITIONAL = "Booze-O-Mat"
+		NOMINATIVE = "торговый автомат Booze-O-Mat",
+		GENITIVE = "торгового автомата Booze-O-Mat",
+		DATIVE = "торговому автомату Booze-O-Mat",
+		ACCUSATIVE = "торговый автомат Booze-O-Mat",
+		INSTRUMENTAL = "торговым автоматом Booze-O-Mat",
+		PREPOSITIONAL = "торговом автомате Booze-O-Mat"
 	)
 	desc = "Чудо техники, предположительно способное выдать идеальный напиток для вас в тот момент, когда вы об этом попросите."
 
@@ -1359,12 +1359,12 @@
 /obj/machinery/vending/coffee
 	name = "\improper Solar's Best Hot Drinks"
 	ru_names = list(
-		NOMINATIVE = "Solar's Best Hot Drinks",
-		GENITIVE = "Solar's Best Hot Drinks",
-		DATIVE = "Solar's Best Hot Drinks",
-		ACCUSATIVE = "Solar's Best Hot Drinks",
-		INSTRUMENTAL = "Solar's Best Hot Drinks",
-		PREPOSITIONAL = "Solar's Best Hot Drinks"
+		NOMINATIVE = "торговый автомат Solar's Best Hot Drinks",
+		GENITIVE = "торгового автомата Solar's Best Hot Drinks",
+		DATIVE = "торговому автомату Solar's Best Hot Drinks",
+		ACCUSATIVE = "торговый автомат Solar's Best Hot Drinks",
+		INSTRUMENTAL = "торговым автоматом Solar's Best Hot Drinks",
+		PREPOSITIONAL = "торговом автомате Solar's Best Hot Drinks"
 	)
 	desc = "Это машина, которая готовит горячие напитки. Ну, знаете, такие, которые кипятком заливают."
 	ads_list = list("Выпейте!","Выпьем!","На здоровье!","Не хотите горячего супчику?","Я бы убил за чашечку кофе!","Лучшие зёрна в галактике","Для Вас — только лучшие напитки","М-м-м-м… Ничто не сравнится с кофе","Я люблю кофе, а Вы?","Кофе помогает работать!","Возьмите немного чайку","Надеемся, Вы предпочитаете лучшее!","Отведайте наш новый шоколад!","Admin conspiracies")
@@ -1446,12 +1446,12 @@
 /obj/machinery/vending/snack
 	name = "\improper Getmore Chocolate Corp"
 	ru_names = list(
-		NOMINATIVE = "Getmore Chocolate Corp",
-		GENITIVE = "Getmore Chocolate Corp",
-		DATIVE = "Getmore Chocolate Corp",
-		ACCUSATIVE = "Getmore Chocolate Corp",
-		INSTRUMENTAL = "Getmore Chocolate Corp",
-		PREPOSITIONAL = "Getmore Chocolate Corp"
+		NOMINATIVE = "торговый автомат Getmore Chocolate Corp",
+		GENITIVE = "торгового автомата Getmore Chocolate Corp",
+		DATIVE = "торговому автомату Getmore Chocolate Corp",
+		ACCUSATIVE = "торговый автомат Getmore Chocolate Corp",
+		INSTRUMENTAL = "торговым автоматом Getmore Chocolate Corp",
+		PREPOSITIONAL = "торговом автомате Getmore Chocolate Corp"
 	)
 	desc = "Автомат самообслуживания, любезно предоставленный шоколадной корпорацией Getmore, базирующейся на Марсе."
 	slogan_list = list("Попробуйте наш новый батончик с нугой!","Вдвое больше калорий за полцены!")
@@ -1497,12 +1497,12 @@
 /obj/machinery/vending/chinese
 	name = "\improper Mr. Chang"
 	ru_names = list(
-		NOMINATIVE = "Mr. Chang",
-		GENITIVE = "Mr. Chang",
-		DATIVE = "Mr. Chang",
-		ACCUSATIVE = "Mr. Chang",
-		INSTRUMENTAL = "Mr. Chang",
-		PREPOSITIONAL = "Mr. Chang"
+		NOMINATIVE = "торговый автомат Mr. Chang",
+		GENITIVE = "торгового автомата Mr. Chang",
+		DATIVE = "торговому автомату Mr. Chang",
+		ACCUSATIVE = "торговый автомат Mr. Chang",
+		INSTRUMENTAL = "торговым автоматом Mr. Chang",
+		PREPOSITIONAL = "торговом автомате Mr. Chang"
 	)
 	desc = "Китайская машина самообслуживания, создана специально для удовлетворения потребности в китайской кухне."
 	slogan_list = list("Попробуйте 5000 лет культуры!","Мистер Чанг, одобрен для безопасного потребления в более чем 10 секторах!","Китайская кухня отлично подходит для вечернего свидания или одинокого вечера!","Вы не ошибетесь, если попробуете настоящую китайскую кухню от мистера Чанга.!")
@@ -1549,12 +1549,12 @@
 /obj/machinery/vending/cola
 	name = "\improper Robust Softdrinks"
 	ru_names = list(
-		NOMINATIVE = "Robust Softdrinks",
-		GENITIVE = "Robust Softdrinks",
-		DATIVE = "Robust Softdrinks",
-		ACCUSATIVE = "Robust Softdrinks",
-		INSTRUMENTAL = "Robust Softdrinks",
-		PREPOSITIONAL = "Robust Softdrinks"
+		NOMINATIVE = "торговый автомат Robust Softdrinks",
+		GENITIVE = "торгового автомата Robust Softdrinks",
+		DATIVE = "торговому автомату Robust Softdrinks",
+		ACCUSATIVE = "торговый автомат Robust Softdrinks",
+		INSTRUMENTAL = "торговым автоматом Robust Softdrinks",
+		PREPOSITIONAL = "торговом автомате Robust Softdrinks"
 	)
 	desc = "Автомат с безалкогольными напитками, предоставляемый компанией Robust Industries, LLC."
 
@@ -1600,12 +1600,12 @@
 /obj/machinery/vending/cart
 	name = "\improper PTech"
 	ru_names = list(
-		NOMINATIVE = "PTech",
-		GENITIVE = "PTech",
-		DATIVE = "PTech",
-		ACCUSATIVE = "PTech",
-		INSTRUMENTAL = "PTech",
-		PREPOSITIONAL = "PTech"
+		NOMINATIVE = "торговый автомат PTech",
+		GENITIVE = "торгового автомата PTech",
+		DATIVE = "торговому автомату PTech",
+		ACCUSATIVE = "торговый автомат PTech",
+		INSTRUMENTAL = "торговым автоматом PTech",
+		PREPOSITIONAL = "торговом автомате PTech"
 	)
 	desc = "Картриджи для КПК."
 	slogan_list = list("Карточки в дорогу!")
@@ -1633,12 +1633,12 @@
 /obj/machinery/vending/liberationstation
 	name = "\improper Liberation Station"
 	ru_names = list(
-		NOMINATIVE = "Liberation Station",
-		GENITIVE = "Liberation Station",
-		DATIVE = "Liberation Station",
-		ACCUSATIVE = "Liberation Station",
-		INSTRUMENTAL = "Liberation Station",
-		PREPOSITIONAL = "Liberation Station"
+		NOMINATIVE = "торговый автомат Liberation Station",
+		GENITIVE = "торгового автомата Liberation Station",
+		DATIVE = "торговому автомату Liberation Station",
+		ACCUSATIVE = "торговый автомат Liberation Station",
+		INSTRUMENTAL = "торговым автоматом Liberation Station",
+		PREPOSITIONAL = "торговом автомате Liberation Station"
 	)
 	desc = "При одном взгляде на эту машину вас охватывает непреодолимое чувство <b>древнего патриотизма</b>."
 
@@ -1666,12 +1666,12 @@
 /obj/machinery/vending/toyliberationstation
 	name = "\improper Syndicate Donksoft Toy Vendor"
 	ru_names = list(
-		NOMINATIVE = "Syndicate Donksoft Toy Vendor",
-		GENITIVE = "Syndicate Donksoft Toy Vendor",
-		DATIVE = "Syndicate Donksoft Toy Vendor",
-		ACCUSATIVE = "Syndicate Donksoft Toy Vendor",
-		INSTRUMENTAL = "Syndicate Donksoft Toy Vendor",
-		PREPOSITIONAL = "Syndicate Donksoft Toy Vendor"
+		NOMINATIVE = "торговый автомат Syndicate Donksoft Toy Vendor",
+		GENITIVE = "торгового автомата Syndicate Donksoft Toy Vendor",
+		DATIVE = "торговому автомату Syndicate Donksoft Toy Vendor",
+		ACCUSATIVE = "торговый автомат Syndicate Donksoft Toy Vendor",
+		INSTRUMENTAL = "торговым автоматом Syndicate Donksoft Toy Vendor",
+		PREPOSITIONAL = "торговом автомате Syndicate Donksoft Toy Vendor"
 	)
 	desc = "Одобренный автомат игрушек для детей от 8 лет и старше. Если вы найдете нужные провода, вы сможете разблокировать <i>режим для взрослых!</i>"
 
@@ -1709,12 +1709,12 @@
 /obj/machinery/vending/cigarette
 	name = "ShadyCigs Deluxe"
 	ru_names = list(
-		NOMINATIVE = "ShadyCigs Deluxe",
-		GENITIVE = "ShadyCigs Deluxe",
-		DATIVE = "ShadyCigs Deluxe",
-		ACCUSATIVE = "ShadyCigs Deluxe",
-		INSTRUMENTAL = "ShadyCigs Deluxe",
-		PREPOSITIONAL = "ShadyCigs Deluxe"
+		NOMINATIVE = "торговый автомат ShadyCigs Deluxe",
+		GENITIVE = "торгового автомата ShadyCigs Deluxe",
+		DATIVE = "торговому автомату ShadyCigs Deluxe",
+		ACCUSATIVE = "торговый автомат ShadyCigs Deluxe",
+		INSTRUMENTAL = "торговым автоматом ShadyCigs Deluxe",
+		PREPOSITIONAL = "торговом автомате ShadyCigs Deluxe"
 	)
 	desc = "Если ты собираешься заболеть раком, по крайней мере, сделай это стильно!"
 	slogan_list = list("Космосигареты весьма хороши на вкус, какими они и должны быть","Затянитесь!","Не верьте исследованиям — курите!")
@@ -1777,12 +1777,12 @@
 /obj/machinery/vending/cigarette/beach //Used in the lavaland_biodome_beach.dmm ruin
 	name = "\improper ShadyCigs Ultra"
 	ru_names = list(
-		NOMINATIVE = "ShadyCigs Ultra",
-		GENITIVE = "ShadyCigs Ultra",
-		DATIVE = "ShadyCigs Ultra",
-		ACCUSATIVE = "ShadyCigs Ultra",
-		INSTRUMENTAL = "ShadyCigs Ultra",
-		PREPOSITIONAL = "ShadyCigs Ultra"
+		NOMINATIVE = "торговый автомат ShadyCigs Ultra",
+		GENITIVE = "торгового автомата ShadyCigs Ultra",
+		DATIVE = "торговому автомату ShadyCigs Ultra",
+		ACCUSATIVE = "торговый автомат ShadyCigs Ultra",
+		INSTRUMENTAL = "торговым автоматом ShadyCigs Ultra",
+		PREPOSITIONAL = "торговом автомате ShadyCigs Ultra"
 	)
 	desc = "Теперь с дополнительными продуктами премиум-класса!"
 	ads_list = list("Наверняка не очень-то и вредно для Вас!","Допинг проведёт через безденежье лучше, чем деньги через бездопингье!","На здоровье!")
@@ -1803,12 +1803,12 @@
 /obj/machinery/vending/medical
 	name = "\improper NanoMed Plus"
 	ru_names = list(
-		NOMINATIVE = "NanoMed Plus",
-		GENITIVE = "NanoMed Plus",
-		DATIVE = "NanoMed Plus",
-		ACCUSATIVE = "NanoMed Plus",
-		INSTRUMENTAL = "NanoMed Plus",
-		PREPOSITIONAL = "NanoMed Plus"
+		NOMINATIVE = "торговый автомат NanoMed Plus",
+		GENITIVE = "торгового автомата NanoMed Plus",
+		DATIVE = "торговому автомату NanoMed Plus",
+		ACCUSATIVE = "торговый автомат NanoMed Plus",
+		INSTRUMENTAL = "торговым автоматом NanoMed Plus",
+		PREPOSITIONAL = "торговом автомате NanoMed Plus"
 	)
 	desc = "Медицинский раздатчик веществ."
 
@@ -1839,12 +1839,12 @@
 /obj/machinery/vending/medical/syndicate_access
 	name = "\improper SyndiMed Plus"
 	ru_names = list(
-		NOMINATIVE = "SyndiMed Plus",
-		GENITIVE = "SyndiMed Plus",
-		DATIVE = "SyndiMed Plus",
-		ACCUSATIVE = "SyndiMed Plus",
-		INSTRUMENTAL = "SyndiMed Plus",
-		PREPOSITIONAL = "SyndiMed Plus"
+		NOMINATIVE = "торговый автомат SyndiMed Plus",
+		GENITIVE = "торгового автомата SyndiMed Plus",
+		DATIVE = "торговому автомату SyndiMed Plus",
+		ACCUSATIVE = "торговый автомат SyndiMed Plus",
+		INSTRUMENTAL = "торговым автоматом SyndiMed Plus",
+		PREPOSITIONAL = "торговом автомате SyndiMed Plus"
 	)
 	icon_state = "syndi-big-med_off"
 	panel_overlay = "syndi-big-med_panel"
@@ -1862,12 +1862,12 @@
 /obj/machinery/vending/plasmaresearch
 	name = "\improper Toximate 3000"
 	ru_names = list(
-		NOMINATIVE = "Toximate 3000",
-		GENITIVE = "Toximate 3000",
-		DATIVE = "Toximate 3000",
-		ACCUSATIVE = "Toximate 3000",
-		INSTRUMENTAL = "Toximate 3000",
-		PREPOSITIONAL = "Toximate 3000"
+		NOMINATIVE = "торговый автомат Toximate 3000",
+		GENITIVE = "торгового автомата Toximate 3000",
+		DATIVE = "торговому автомату Toximate 3000",
+		ACCUSATIVE = "торговый автомат Toximate 3000",
+		INSTRUMENTAL = "торговым автоматом Toximate 3000",
+		PREPOSITIONAL = "торговом автомате Toximate 3000"
 	)
 	desc = "Все, что вам нужно, в одном удобном месте!"
 
@@ -1886,12 +1886,12 @@
 /obj/machinery/vending/wallmed
 	name = "\improper NanoMed"
 	ru_names = list(
-		NOMINATIVE = "NanoMed",
-		GENITIVE = "NanoMed",
-		DATIVE = "NanoMed",
-		ACCUSATIVE = "NanoMed",
-		INSTRUMENTAL = "NanoMed",
-		PREPOSITIONAL = "NanoMed"
+		NOMINATIVE = "торговый автомат NanoMed",
+		GENITIVE = "торгового автомата NanoMed",
+		DATIVE = "торговому автомату NanoMed",
+		ACCUSATIVE = "торговый автомат NanoMed",
+		INSTRUMENTAL = "торговым автоматом NanoMed",
+		PREPOSITIONAL = "торговом автомате NanoMed"
 	)
 	desc = "Настенный раздатчик медицинских изделий."
 	ads_list = list("Иди и спаси несколько жизней!","Лучшее снаряжение для вашего медотдела","Только лучшие инструменты","Натуральные химикаты!","Эта штука спасает жизни","Может сами примете?","Пинг!")
@@ -1915,12 +1915,12 @@
 /obj/machinery/vending/wallmed/syndicate
 	name = "\improper SyndiWallMed"
 	ru_names = list(
-		NOMINATIVE = "SyndiWallMed",
-		GENITIVE = "SyndiWallMed",
-		DATIVE = "SyndiWallMed",
-		ACCUSATIVE = "SyndiWallMed",
-		INSTRUMENTAL = "SyndiWallMed",
-		PREPOSITIONAL = "SyndiWallMed"
+		NOMINATIVE = "торговый автомат SyndiWallMed",
+		GENITIVE = "торгового автомата SyndiWallMed",
+		DATIVE = "торговому автомату SyndiWallMed",
+		ACCUSATIVE = "торговый автомат SyndiWallMed",
+		INSTRUMENTAL = "торговым автоматом SyndiWallMed",
+		PREPOSITIONAL = "торговом автомате SyndiWallMed"
 	)
 	desc = "<b>Злое</b> воплощение настенного раздатчика медицинских изделий."
 
@@ -1942,12 +1942,12 @@
 /obj/machinery/vending/security
 	name = "\improper SecTech"
 	ru_names = list(
-		NOMINATIVE = "SecTech",
-		GENITIVE = "SecTech",
-		DATIVE = "SecTech",
-		ACCUSATIVE = "SecTech",
-		INSTRUMENTAL = "SecTech",
-		PREPOSITIONAL = "SecTech"
+		NOMINATIVE = "торговый автомат SecTech",
+		GENITIVE = "торгового автомата SecTech",
+		DATIVE = "торговому автомату SecTech",
+		ACCUSATIVE = "торговый автомат SecTech",
+		INSTRUMENTAL = "торговым автоматом SecTech",
+		PREPOSITIONAL = "торговом автомате SecTech"
 	)
 	desc = "Раздатчик снаряжения службы безопасности."
 	ads_list = list("Круши черепа капиталистов!","Отбей несколько голов!","Не забывай, вредительство - полезно!","Твое оружие здесь.","Наручники!","Стоять, подонок!","Не бей меня, брат!","Убей их, брат.","Почему бы не съесть пончик?")
@@ -1972,12 +1972,12 @@
 /obj/machinery/vending/security/training
 	name = "\improper SecTech Training"
 	ru_names = list(
-		NOMINATIVE = "SecTech Training",
-		GENITIVE = "SecTech Training",
-		DATIVE = "SecTech Training",
-		ACCUSATIVE = "SecTech Training",
-		INSTRUMENTAL = "SecTech Training",
-		PREPOSITIONAL = "SecTech Training"
+		NOMINATIVE = "торговый автомат SecTech Training",
+		GENITIVE = "торгового автомата SecTech Training",
+		DATIVE = "торговому автомату SecTech Training",
+		ACCUSATIVE = "торговый автомат SecTech Training",
+		INSTRUMENTAL = "торговым автоматом SecTech Training",
+		PREPOSITIONAL = "торговом автомате SecTech Training"
 	)
 	desc = "Раздатчик тренировочного снаряжения службы безопасности."
 	ads_list = list("Соблюдай чистоту на стрельбище!","Даже я стреляю лучше тебя!","Почему так косо, бухой что ли?!","Техника безопасности нам не писана, да?","1 из 10 попаданий... А ты хорош!","Инструктор это твой папочка!","Эй, ты куда целишься?!")
@@ -2033,12 +2033,12 @@
 /obj/machinery/vending/hydronutrients
 	name = "\improper NutriMax"
 	ru_names = list(
-		NOMINATIVE = "NutriMax",
-		GENITIVE = "NutriMax",
-		DATIVE = "NutriMax",
-		ACCUSATIVE = "NutriMax",
-		INSTRUMENTAL = "NutriMax",
-		PREPOSITIONAL = "NutriMax"
+		NOMINATIVE = "торговый автомат NutriMax",
+		GENITIVE = "торгового автомата NutriMax",
+		DATIVE = "торговому автомату NutriMax",
+		ACCUSATIVE = "торговый автомат NutriMax",
+		INSTRUMENTAL = "торговым автоматом NutriMax",
+		PREPOSITIONAL = "торговом автомате NutriMax"
 	)
 	desc = "Поставщик питательных веществ для растений."
 	slogan_list = list("Вам не надо удобрять почву естественным путём — разве это не чудесно?","Теперь на 50% меньше вони!","Растения тоже люди!")
@@ -2060,12 +2060,12 @@
 /obj/machinery/vending/hydroseeds
 	name = "\improper MegaSeed Servitor"
 	ru_names = list(
-		NOMINATIVE = "MegaSeed Servitor",
-		GENITIVE = "MegaSeed Servitor",
-		DATIVE = "MegaSeed Servitor",
-		ACCUSATIVE = "MegaSeed Servitor",
-		INSTRUMENTAL = "MegaSeed Servitor",
-		PREPOSITIONAL = "MegaSeed Servitor"
+		NOMINATIVE = "торговый автомат MegaSeed Servitor",
+		GENITIVE = "торгового автомата MegaSeed Servitor",
+		DATIVE = "торговому автомату MegaSeed Servitor",
+		ACCUSATIVE = "торговый автомат MegaSeed Servitor",
+		INSTRUMENTAL = "торговым автоматом MegaSeed Servitor",
+		PREPOSITIONAL = "торговом автомате MegaSeed Servitor"
 	)
 	desc = "Когда вам срочно нужны семена!"
 	slogan_list = list("ВОТ ГДЕ ЖИВУТ СЕМЕНА! ВОЗЬМИ СЕБЕ НЕМНОГО!","Без сомнений, лучший выбор семян на станции!","Кроме того, некоторые виды грибов доступны исключительно для экспертов! Получите сертификат уже сегодня!")
@@ -2150,12 +2150,12 @@
 /obj/machinery/vending/magivend
 	name = "\improper MagiVend"
 	ru_names = list(
-		NOMINATIVE = "MagiVend",
-		GENITIVE = "MagiVend",
-		DATIVE = "MagiVend",
-		ACCUSATIVE = "MagiVend",
-		INSTRUMENTAL = "MagiVend",
-		PREPOSITIONAL = "MagiVend"
+		NOMINATIVE = "торговый автомат MagiVend",
+		GENITIVE = "торгового автомата MagiVend",
+		DATIVE = "торговому автомату MagiVend",
+		ACCUSATIVE = "торговый автомат MagiVend",
+		INSTRUMENTAL = "торговым автоматом MagiVend",
+		PREPOSITIONAL = "торговом автомате MagiVend"
 	)
 	desc = "Волшебный торговый автомат."
 
@@ -2204,12 +2204,12 @@
 /obj/machinery/vending/autodrobe
 	name = "\improper AutoDrobe"
 	ru_names = list(
-		NOMINATIVE = "AutoDrobe",
-		GENITIVE = "AutoDrobe",
-		DATIVE = "AutoDrobe",
-		ACCUSATIVE = "AutoDrobe",
-		INSTRUMENTAL = "AutoDrobe",
-		PREPOSITIONAL = "AutoDrobe"
+		NOMINATIVE = "торговый автомат AutoDrobe",
+		GENITIVE = "торгового автомата AutoDrobe",
+		DATIVE = "торговому автомату AutoDrobe",
+		ACCUSATIVE = "торговый автомат AutoDrobe",
+		INSTRUMENTAL = "торговым автоматом AutoDrobe",
+		PREPOSITIONAL = "торговом автомате AutoDrobe"
 	)
 	desc = "Автомат с бесплатными костюмами!"
 
@@ -2371,12 +2371,12 @@
 /obj/machinery/vending/dinnerware
 	name = "\improper Plasteel Chef's Dinnerware Vendor"
 	ru_names = list(
-		NOMINATIVE = "Plasteel Chef's Dinnerware Vendor",
-		GENITIVE = "Plasteel Chef's Dinnerware Vendor",
-		DATIVE = "Plasteel Chef's Dinnerware Vendor",
-		ACCUSATIVE = "Plasteel Chef's Dinnerware Vendor",
-		INSTRUMENTAL = "Plasteel Chef's Dinnerware Vendor",
-		PREPOSITIONAL = "Plasteel Chef's Dinnerware Vendor"
+		NOMINATIVE = "торговый автомат Plasteel Chef's Dinnerware Vendor",
+		GENITIVE = "торгового автомата Plasteel Chef's Dinnerware Vendor",
+		DATIVE = "торговому автомату Plasteel Chef's Dinnerware Vendor",
+		ACCUSATIVE = "торговый автомат Plasteel Chef's Dinnerware Vendor",
+		INSTRUMENTAL = "торговым автоматом Plasteel Chef's Dinnerware Vendor",
+		PREPOSITIONAL = "торговом автомате Plasteel Chef's Dinnerware Vendor"
 	)
 	desc = "Поставщик кухонного и ресторанного оборудования."
 	ads_list = list("Мм, продукты питания!","Пища и пищевые принадлежности.","Принесите свои тарелки!","Тебе нравятся вилки?","Я люблю вилки.","Ух ты, посуда.","На самом деле они тебе не нужны...")
@@ -2424,12 +2424,12 @@
 /obj/machinery/vending/sovietsoda
 	name = "\improper BODA"
 	ru_names = list(
-		NOMINATIVE = "BODA",
-		GENITIVE = "BODA",
-		DATIVE = "BODA",
-		ACCUSATIVE = "BODA",
-		INSTRUMENTAL = "BODA",
-		PREPOSITIONAL = "BODA"
+		NOMINATIVE = "торговый автомат BODA",
+		GENITIVE = "торгового автомата BODA",
+		DATIVE = "торговому автомату BODA",
+		ACCUSATIVE = "торговый автомат BODA",
+		INSTRUMENTAL = "торговым автоматом BODA",
+		PREPOSITIONAL = "торговом автомате BODA"
 	)
 	desc = "Старый автомат по продаже сладкой газировки."
 
@@ -2449,12 +2449,12 @@
 /obj/machinery/vending/tool
 	name = "\improper YouTool"
 	ru_names = list(
-		NOMINATIVE = "YouTool",
-		GENITIVE = "YouTool",
-		DATIVE = "YouTool",
-		ACCUSATIVE = "YouTool",
-		INSTRUMENTAL = "YouTool",
-		PREPOSITIONAL = "YouTool"
+		NOMINATIVE = "торговый автомат YouTool",
+		GENITIVE = "торгового автомата YouTool",
+		DATIVE = "торговому автомату YouTool",
+		ACCUSATIVE = "торговый автомат YouTool",
+		INSTRUMENTAL = "торговым автоматом YouTool",
+		PREPOSITIONAL = "торговом автомате YouTool"
 	)
 	desc = "Инструменты для инструментов."
 
@@ -2498,12 +2498,12 @@
 /obj/machinery/vending/engivend
 	name = "\improper Engi-Vend"
 	ru_names = list(
-		NOMINATIVE = "Engi-Vend",
-		GENITIVE = "Engi-Vend",
-		DATIVE = "Engi-Vend",
-		ACCUSATIVE = "Engi-Vend",
-		INSTRUMENTAL = "Engi-Vend",
-		PREPOSITIONAL = "Engi-Vend"
+		NOMINATIVE = "торговый автомат Engi-Vend",
+		GENITIVE = "торгового автомата Engi-Vend",
+		DATIVE = "торговому автомату Engi-Vend",
+		ACCUSATIVE = "торговый автомат Engi-Vend",
+		INSTRUMENTAL = "торговым автоматом Engi-Vend",
+		PREPOSITIONAL = "торговом автомате Engi-Vend"
 	)
 	desc = "Автомат с запасными инструментами. Что? Вы ожидали какого-нибудь остроумного описания?"
 
@@ -2524,12 +2524,12 @@
 /obj/machinery/vending/engineering
 	name = "\improper Robco Tool Maker"
 	ru_names = list(
-		NOMINATIVE = "Robco Tool Maker",
-		GENITIVE = "Robco Tool Maker",
-		DATIVE = "Robco Tool Maker",
-		ACCUSATIVE = "Robco Tool Maker",
-		INSTRUMENTAL = "Robco Tool Maker",
-		PREPOSITIONAL = "Robco Tool Maker"
+		NOMINATIVE = "торговый автомат Robco Tool Maker",
+		GENITIVE = "торгового автомата Robco Tool Maker",
+		DATIVE = "торговому автомату Robco Tool Maker",
+		ACCUSATIVE = "торговый автомат Robco Tool Maker",
+		INSTRUMENTAL = "торговым автоматом Robco Tool Maker",
+		PREPOSITIONAL = "торговом автомате Robco Tool Maker"
 	)
 	desc = "Все, что вам требуется для самостоятельного обслуживания станции."
 
@@ -2554,12 +2554,12 @@
 /obj/machinery/vending/robotics
 	name = "\improper Robotech Deluxe"
 	ru_names = list(
-		NOMINATIVE = "Robotech Deluxe",
-		GENITIVE = "Robotech Deluxe",
-		DATIVE = "Robotech Deluxe",
-		ACCUSATIVE = "Robotech Deluxe",
-		INSTRUMENTAL = "Robotech Deluxe",
-		PREPOSITIONAL = "Robotech Deluxe"
+		NOMINATIVE = "торговый автомат Robotech Deluxe",
+		GENITIVE = "торгового автомата Robotech Deluxe",
+		DATIVE = "торговому автомату Robotech Deluxe",
+		ACCUSATIVE = "торговый автомат Robotech Deluxe",
+		INSTRUMENTAL = "торговым автоматом Robotech Deluxe",
+		PREPOSITIONAL = "торговом автомате Robotech Deluxe"
 	)
 	desc = "Все, что вам нужно для создания вашей собственной армии роботов."
 
@@ -2600,12 +2600,12 @@
 /obj/machinery/vending/sustenance
 	name = "\improper Sustenance Vendor"
 	ru_names = list(
-		NOMINATIVE = "Sustenance Vendor",
-		GENITIVE = "Sustenance Vendor",
-		DATIVE = "Sustenance Vendor",
-		ACCUSATIVE = "Sustenance Vendor",
-		INSTRUMENTAL = "Sustenance Vendor",
-		PREPOSITIONAL = "Sustenance Vendor"
+		NOMINATIVE = "торговый автомат Sustenance Vendor",
+		GENITIVE = "торгового автомата Sustenance Vendor",
+		DATIVE = "торговому автомату Sustenance Vendor",
+		ACCUSATIVE = "торговый автомат Sustenance Vendor",
+		INSTRUMENTAL = "торговым автоматом Sustenance Vendor",
+		PREPOSITIONAL = "торговом автомате Sustenance Vendor"
 	)
 	desc = "Торговый автомат, в котором продаются продукты питания, в соответствии с разделом 47-С Соглашения об этическом обращении с заключёнными в NT."
 	slogan_list = list("Приятного аппетита!","Достаточное количество калорий для интенсивной работы.")
@@ -2638,12 +2638,12 @@
 /obj/machinery/vending/hatdispenser
 	name = "\improper Hatlord 9000"
 	ru_names = list(
-		NOMINATIVE = "Hatlord 9000",
-		GENITIVE = "Hatlord 9000",
-		DATIVE = "Hatlord 9000",
-		ACCUSATIVE = "Hatlord 9000",
-		INSTRUMENTAL = "Hatlord 9000",
-		PREPOSITIONAL = "Hatlord 9000"
+		NOMINATIVE = "торговый автомат Hatlord 9000",
+		GENITIVE = "торгового автомата Hatlord 9000",
+		DATIVE = "торговому автомату Hatlord 9000",
+		ACCUSATIVE = "торговый автомат Hatlord 9000",
+		INSTRUMENTAL = "торговым автоматом Hatlord 9000",
+		PREPOSITIONAL = "торговом автомате Hatlord 9000"
 	)
 	desc = "В этом нет ничего необычного. Это вас очень расстраивает."
 
@@ -2668,12 +2668,12 @@
 /obj/machinery/vending/suitdispenser
 	name = "\improper Suitlord 9000"
 	ru_names = list(
-		NOMINATIVE = "Suitlord 9000",
-		GENITIVE = "Suitlord 9000",
-		DATIVE = "Suitlord 9000",
-		ACCUSATIVE = "Suitlord 9000",
-		INSTRUMENTAL = "Suitlord 9000",
-		PREPOSITIONAL = "Suitlord 9000"
+		NOMINATIVE = "торговый автомат Suitlord 9000",
+		GENITIVE = "торгового автомата Suitlord 9000",
+		DATIVE = "торговому автомату Suitlord 9000",
+		ACCUSATIVE = "торговый автомат Suitlord 9000",
+		INSTRUMENTAL = "торговым автоматом Suitlord 9000",
+		PREPOSITIONAL = "торговом автомате Suitlord 9000"
 	)
 	desc = "На мгновение ты задумываешься, почему все твои рубашки и брюки сшиты вместе. От этого у тебя начинает болеть голова, и ты перестаешь об этом думать."
 
@@ -2714,12 +2714,12 @@
 /obj/machinery/vending/shoedispenser
 	name = "\improper Shoelord 9000"
 	ru_names = list(
-		NOMINATIVE = "Shoelord 9000",
-		GENITIVE = "Shoelord 9000",
-		DATIVE = "Shoelord 9000",
-		ACCUSATIVE = "Shoelord 9000",
-		INSTRUMENTAL = "Shoelord 9000",
-		PREPOSITIONAL = "Shoelord 9000"
+		NOMINATIVE = "торговый автомат Shoelord 9000",
+		GENITIVE = "торгового автомата Shoelord 9000",
+		DATIVE = "торговому автомату Shoelord 9000",
+		ACCUSATIVE = "торговый автомат Shoelord 9000",
+		INSTRUMENTAL = "торговым автоматом Shoelord 9000",
+		PREPOSITIONAL = "торговом автомате Shoelord 9000"
 	)
 	desc = "Оу, шляпы у Hatlord такие классные, костюмы у Suitlord такие элегантные, а у этого всё такое обычное... Дизайнер, должно быть, идиот."
 
@@ -2740,12 +2740,12 @@
 /obj/machinery/vending/syndicigs
 	name = "\improper Suspicious Cigarette Machine"
 	ru_names = list(
-		NOMINATIVE = "Suspicious Cigarette Machine",
-		GENITIVE = "Suspicious Cigarette Machine",
-		DATIVE = "Suspicious Cigarette Machine",
-		ACCUSATIVE = "Suspicious Cigarette Machine",
-		INSTRUMENTAL = "Suspicious Cigarette Machine",
-		PREPOSITIONAL = "Suspicious Cigarette Machine"
+		NOMINATIVE = "торговый автомат Suspicious Cigarette Machine",
+		GENITIVE = "торгового автомата Suspicious Cigarette Machine",
+		DATIVE = "торговому автомату Suspicious Cigarette Machine",
+		ACCUSATIVE = "торговый автомат Suspicious Cigarette Machine",
+		INSTRUMENTAL = "торговым автоматом Suspicious Cigarette Machine",
+		PREPOSITIONAL = "торговом автомате Suspicious Cigarette Machine"
 	)
 	desc = "Кури, раз уж взял."
 	slogan_list = list("Космосигареты на вкус хороши, какими они и должны быть.","Затянитесь!","Не верьте исследованиям — курите сегодня!")
@@ -2765,12 +2765,12 @@
 /obj/machinery/vending/syndisnack
 	name = "\improper Getmore Chocolate Corp"
 	ru_names = list(
-		NOMINATIVE = "Getmore Chocolate Corp",
-		GENITIVE = "Getmore Chocolate Corp",
-		DATIVE = "Getmore Chocolate Corp",
-		ACCUSATIVE = "Getmore Chocolate Corp",
-		INSTRUMENTAL = "Getmore Chocolate Corp",
-		PREPOSITIONAL = "Getmore Chocolate Corp"
+		NOMINATIVE = "торговый автомат Getmore Chocolate Corp",
+		GENITIVE = "торгового автомата Getmore Chocolate Corp",
+		DATIVE = "торговому автомату Getmore Chocolate Corp",
+		ACCUSATIVE = "торговый автомат Getmore Chocolate Corp",
+		INSTRUMENTAL = "торговым автоматом Getmore Chocolate Corp",
+		PREPOSITIONAL = "торговом автомате Getmore Chocolate Corp"
 	)
 	desc = "Модифицированный автомат самообслуживания, любезно предоставленный шоколадной корпорацией Getmore, базирующейся на Марсе."
 	slogan_list = list("Попробуйте наш новый батончик с нугой!","Вдвое больше калорий за полцены!")
@@ -2789,12 +2789,12 @@
 /obj/machinery/vending/syndierobotics
 	name = "Синди Робо-ДеЛюкс!"
 	ru_names = list(
-		NOMINATIVE = "Синди Робо-ДеЛюкс",
-		GENITIVE = "Синди Робо-ДеЛюкс",
-		DATIVE = "Синди Робо-ДеЛюкс",
-		ACCUSATIVE = "Синди Робо-ДеЛюкс",
-		INSTRUMENTAL = "Синди Робо-ДеЛюкс",
-		PREPOSITIONAL = "Синди Робо-ДеЛюкс"
+		NOMINATIVE = "торговый автомат Синди Робо-ДеЛюкс",
+		GENITIVE = "торгового автомата Синди Робо-ДеЛюкс",
+		DATIVE = "торговому автомату Синди Робо-ДеЛюкс",
+		ACCUSATIVE = "торговый автомат Синди Робо-ДеЛюкс",
+		INSTRUMENTAL = "торговым автоматом Синди Робо-ДеЛюкс",
+		PREPOSITIONAL = "торговом автомате Синди Робо-ДеЛюкс"
 	)
 	desc = "Всё что нужно, чтобы сделать личного железного друга из ваших врагов!"
 	ads_list = list("Make them beep-boop like a robot should!","Robotisation is NOT a crime!","Nyoom!")
@@ -2827,12 +2827,12 @@
 /obj/machinery/vending/clothing
 	name = "\improper ClothesMate" //renamed to make the slogan rhyme
 	ru_names = list(
-		NOMINATIVE = "ClothesMate",
-		GENITIVE = "ClothesMate",
-		DATIVE = "ClothesMate",
-		ACCUSATIVE = "ClothesMate",
-		INSTRUMENTAL = "ClothesMate",
-		PREPOSITIONAL = "ClothesMate"
+		NOMINATIVE = "торговый автомат ClothesMate",
+		GENITIVE = "торгового автомата ClothesMate",
+		DATIVE = "торговому автомату ClothesMate",
+		ACCUSATIVE = "торговый автомат ClothesMate",
+		INSTRUMENTAL = "торговым автоматом ClothesMate",
+		PREPOSITIONAL = "торговом автомате ClothesMate"
 	)
 	desc = "Автомат с бесплатной одеждой."
 
@@ -2943,12 +2943,12 @@
 /obj/machinery/vending/artvend
 	name = "\improper ArtVend"
 	ru_names = list(
-		NOMINATIVE = "ArtVend",
-		GENITIVE = "ArtVend",
-		DATIVE = "ArtVend",
-		ACCUSATIVE = "ArtVend",
-		INSTRUMENTAL = "ArtVend",
-		PREPOSITIONAL = "ArtVend"
+		NOMINATIVE = "торговый автомат ArtVend",
+		GENITIVE = "торгового автомата ArtVend",
+		DATIVE = "торговому автомату ArtVend",
+		ACCUSATIVE = "торговый автомат ArtVend",
+		INSTRUMENTAL = "торговым автоматом ArtVend",
+		PREPOSITIONAL = "торговом автомате ArtVend"
 	)
 	desc = "Торговый автомат для всех ваших художественных нужд."
 	slogan_list = list("Забирайте свои прикольные вещички!","Раскрасьте пол цветными карандашами, а не кровью!","Не будь голодающим творцом, используй ArtVend.","Не сри, твори!")
@@ -3011,12 +3011,12 @@
 /obj/machinery/vending/crittercare
 	name = "\improper CritterCare"
 	ru_names = list(
-		NOMINATIVE = "CritterCare",
-		GENITIVE = "CritterCare",
-		DATIVE = "CritterCare",
-		ACCUSATIVE = "CritterCare",
-		INSTRUMENTAL = "CritterCare",
-		PREPOSITIONAL = "CritterCare"
+		NOMINATIVE = "торговый автомат CritterCare",
+		GENITIVE = "торгового автомата CritterCare",
+		DATIVE = "торговому автомату CritterCare",
+		ACCUSATIVE = "торговый автомат CritterCare",
+		INSTRUMENTAL = "торговым автоматом CritterCare",
+		PREPOSITIONAL = "торговом автомате CritterCare"
 	)
 	desc = "Торговый автомат по продаже зоотоваров."
 	slogan_list = list("Здесь всё, чтобы ваш питомец был всем доволен!","Крутые питомцы заслуживают крутой ошейник!","Домашние животные в космосе - что может быть очаровательнее?","Самая свежая икра в системе!","Камни - лучшие питомцы, купите себе их уже сегодня!")
@@ -3080,12 +3080,12 @@
 /obj/machinery/vending/clothing/departament
 	name = "\improper Broken Departament ClothesMate"
 	ru_names = list(
-		NOMINATIVE = "Broken Departament ClothesMate",
-		GENITIVE = "Broken Departament ClothesMate",
-		DATIVE = "Broken Departament ClothesMate",
-		ACCUSATIVE = "Broken Departament ClothesMate",
-		INSTRUMENTAL = "Broken Departament ClothesMate",
-		PREPOSITIONAL = "Broken Departament ClothesMate"
+		NOMINATIVE = "торговый автомат Broken Departament ClothesMate",
+		GENITIVE = "торгового автомата Broken Departament ClothesMate",
+		DATIVE = "торговому автомату Broken Departament ClothesMate",
+		ACCUSATIVE = "торговый автомат Broken Departament ClothesMate",
+		INSTRUMENTAL = "торговым автоматом Broken Departament ClothesMate",
+		PREPOSITIONAL = "торговом автомате Broken Departament ClothesMate"
 	)
 	desc = "Автомат-помощник по выдаче одежды отдела."
 	slogan_list = list(
@@ -3110,12 +3110,12 @@
 /obj/machinery/vending/clothing/departament/security
 	name = "\improper Departament Security ClothesMate"
 	ru_names = list(
-		NOMINATIVE = "Departament Security ClothesMate",
-		GENITIVE = "Departament Security ClothesMate",
-		DATIVE = "Departament Security ClothesMate",
-		ACCUSATIVE = "Departament Security ClothesMate",
-		INSTRUMENTAL = "Departament Security ClothesMate",
-		PREPOSITIONAL = "Departament Security ClothesMate"
+		NOMINATIVE = "торговый автомат Departament Security ClothesMate",
+		GENITIVE = "торгового автомата Departament Security ClothesMate",
+		DATIVE = "торговому автомату Departament Security ClothesMate",
+		ACCUSATIVE = "торговый автомат Departament Security ClothesMate",
+		INSTRUMENTAL = "торговым автоматом Departament Security ClothesMate",
+		PREPOSITIONAL = "торговом автомате Departament Security ClothesMate"
 	)
 	desc = "Автомат-помощник по выдаче одежды Отдела Службы Безопасности."
 
@@ -3197,12 +3197,12 @@
 /obj/machinery/vending/clothing/departament/medical
 	name = "\improper Departament Medical ClothesMate"
 	ru_names = list(
-		NOMINATIVE = "Departament Medical ClothesMate",
-		GENITIVE = "Departament Medical ClothesMate",
-		DATIVE = "Departament Medical ClothesMate",
-		ACCUSATIVE = "Departament Medical ClothesMate",
-		INSTRUMENTAL = "Departament Medical ClothesMate",
-		PREPOSITIONAL = "Departament Medical ClothesMate"
+		NOMINATIVE = "торговый автомат Departament Medical ClothesMate",
+		GENITIVE = "торгового автомата Departament Medical ClothesMate",
+		DATIVE = "торговому автомату Departament Medical ClothesMate",
+		ACCUSATIVE = "торговый автомат Departament Medical ClothesMate",
+		INSTRUMENTAL = "торговым автоматом Departament Medical ClothesMate",
+		PREPOSITIONAL = "торговом автомате Departament Medical ClothesMate"
 	)
 	desc = "Автомат-помощник по выдаче одежды Медицинского Отдела."
 
@@ -3305,12 +3305,12 @@
 /obj/machinery/vending/clothing/departament/engineering
 	name = "\improper Departament Engineering ClothesMate"
 	ru_names = list(
-		NOMINATIVE = "Departament Engineering ClothesMat",
-		GENITIVE = "Departament Engineering ClothesMat",
-		DATIVE = "Departament Engineering ClothesMat",
-		ACCUSATIVE = "Departament Engineering ClothesMat",
-		INSTRUMENTAL = "Departament Engineering ClothesMat",
-		PREPOSITIONAL = "Departament Engineering ClothesMat"
+		NOMINATIVE = "торговый автомат Departament Engineering ClothesMat",
+		GENITIVE = "торгового автомата Departament Engineering ClothesMat",
+		DATIVE = "торговому автомату Departament Engineering ClothesMat",
+		ACCUSATIVE = "торговый автомат Departament Engineering ClothesMat",
+		INSTRUMENTAL = "торговым автоматом Departament Engineering ClothesMat",
+		PREPOSITIONAL = "торговом автомате Departament Engineering ClothesMat"
 	)
 	desc = "Автомат-помощник по выдаче одежды Инженерного Отдела."
 
@@ -3372,12 +3372,12 @@
 /obj/machinery/vending/clothing/departament/science
 	name = "\improper Departament Science ClothesMate"
 	ru_names = list(
-		NOMINATIVE = "Departament Science ClothesMate",
-		GENITIVE = "Departament Science ClothesMate",
-		DATIVE = "Departament Science ClothesMate",
-		ACCUSATIVE = "Departament Science ClothesMate",
-		INSTRUMENTAL = "Departament Science ClothesMate",
-		PREPOSITIONAL = "Departament Science ClothesMate"
+		NOMINATIVE = "торговый автомат Departament Science ClothesMate",
+		GENITIVE = "торгового автомата Departament Science ClothesMate",
+		DATIVE = "торговому автомату Departament Science ClothesMate",
+		ACCUSATIVE = "торговый автомат Departament Science ClothesMate",
+		INSTRUMENTAL = "торговым автоматом Departament Science ClothesMate",
+		PREPOSITIONAL = "торговом автомате Departament Science ClothesMate"
 	)
 	desc = "Автомат-помощник по выдаче одежды Научного Отдела."
 
@@ -3435,12 +3435,12 @@
 /obj/machinery/vending/clothing/departament/cargo
 	name = "\improper Departament Cargo ClothesMate"
 	ru_names = list(
-		NOMINATIVE = "Departament Cargo ClothesMate",
-		GENITIVE = "Departament Cargo ClothesMate",
-		DATIVE = "Departament Cargo ClothesMate",
-		ACCUSATIVE = "Departament Cargo ClothesMate",
-		INSTRUMENTAL = "Departament Cargo ClothesMate",
-		PREPOSITIONAL = "Departament Cargo ClothesMate"
+		NOMINATIVE = "торговый автомат Departament Cargo ClothesMate",
+		GENITIVE = "торгового автомата Departament Cargo ClothesMate",
+		DATIVE = "торговому автомату Departament Cargo ClothesMate",
+		ACCUSATIVE = "торговый автомат Departament Cargo ClothesMate",
+		INSTRUMENTAL = "торговым автоматом Departament Cargo ClothesMate",
+		PREPOSITIONAL = "торговом автомате Departament Cargo ClothesMate"
 	)
 	desc = "Автомат-помощник по выдаче одежды Отдела Поставок."
 
@@ -3501,12 +3501,12 @@
 /obj/machinery/vending/clothing/departament/law
 	name = "\improper Departament Law ClothesMate"
 	ru_names = list(
-		NOMINATIVE = "Departament Law ClothesMate",
-		GENITIVE = "Departament Law ClothesMate",
-		DATIVE = "Departament Law ClothesMate",
-		ACCUSATIVE = "Departament Law ClothesMate",
-		INSTRUMENTAL = "Departament Law ClothesMate",
-		PREPOSITIONAL = "Departament Law ClothesMate"
+		NOMINATIVE = "торговый автомат Departament Law ClothesMate",
+		GENITIVE = "торгового автомата Departament Law ClothesMate",
+		DATIVE = "торговому автомату Departament Law ClothesMate",
+		ACCUSATIVE = "торговый автомат Departament Law ClothesMate",
+		INSTRUMENTAL = "торговым автоматом Departament Law ClothesMate",
+		PREPOSITIONAL = "торговом автомате Departament Law ClothesMate"
 	)
 	desc = "Автомат-помощник по выдаче одежды Юридического Отдела."
 
@@ -3568,12 +3568,12 @@
 /obj/machinery/vending/clothing/departament/service
 	name = "\improper Departament Service ClothesMate"
 	ru_names = list(
-		NOMINATIVE = "Departament Service ClothesMate",
-		GENITIVE = "Departament Service ClothesMate",
-		DATIVE = "Departament Service ClothesMate",
-		ACCUSATIVE = "Departament Service ClothesMate",
-		INSTRUMENTAL = "Departament Service ClothesMate",
-		PREPOSITIONAL = "Departament Service ClothesMate"
+		NOMINATIVE = "торговый автомат Departament Service ClothesMate",
+		GENITIVE = "торгового автомата Departament Service ClothesMate",
+		DATIVE = "торговому автомату Departament Service ClothesMate",
+		ACCUSATIVE = "торговый автомат Departament Service ClothesMate",
+		INSTRUMENTAL = "торговым автоматом Departament Service ClothesMate",
+		PREPOSITIONAL = "торговом автомате Departament Service ClothesMate"
 	)
 	desc = "Автомат-помощник по выдаче одежды Сервисного отдела."
 	req_access = list()
@@ -3583,12 +3583,12 @@
 /obj/machinery/vending/clothing/departament/service/chaplain
 	name = "\improper Departament Service ClothesMate Chaplain"
 	ru_names = list(
-		NOMINATIVE = "Departament Service ClothesMate Chaplain",
-		GENITIVE = "Departament Service ClothesMate Chaplain",
-		DATIVE = "Departament Service ClothesMate Chaplain",
-		ACCUSATIVE = "Departament Service ClothesMate Chaplain",
-		INSTRUMENTAL = "Departament Service ClothesMate Chaplain",
-		PREPOSITIONAL = "Departament Service ClothesMate Chaplain"
+		NOMINATIVE = "торговый автомат Departament Service ClothesMate Chaplain",
+		GENITIVE = "торгового автомата Departament Service ClothesMate Chaplain",
+		DATIVE = "торговому автомату Departament Service ClothesMate Chaplain",
+		ACCUSATIVE = "торговый автомат Departament Service ClothesMate Chaplain",
+		INSTRUMENTAL = "торговым автоматом Departament Service ClothesMate Chaplain",
+		PREPOSITIONAL = "торговом автомате Departament Service ClothesMate Chaplain"
 	)
 	desc = "Автомат-помощник по выдаче одежды Сервисного отдела церкви."
 
@@ -3628,12 +3628,12 @@
 /obj/machinery/vending/clothing/departament/service/botanical
 	name = "\improper Departament Service ClothesMate Botanical"
 	ru_names = list(
-		NOMINATIVE = "Departament Service ClothesMate Botanical",
-		GENITIVE = "Departament Service ClothesMate Botanical",
-		DATIVE = "Departament Service ClothesMate Botanical",
-		ACCUSATIVE = "Departament Service ClothesMate Botanical",
-		INSTRUMENTAL = "Departament Service ClothesMate Botanical",
-		PREPOSITIONAL = "Departament Service ClothesMate Botanical"
+		NOMINATIVE = "торговый автомат Departament Service ClothesMate Botanical",
+		GENITIVE = "торгового автомата Departament Service ClothesMate Botanical",
+		DATIVE = "торговому автомату Departament Service ClothesMate Botanical",
+		ACCUSATIVE = "торговый автомат Departament Service ClothesMate Botanical",
+		INSTRUMENTAL = "торговым автоматом Departament Service ClothesMate Botanical",
+		PREPOSITIONAL = "торговом автомате Departament Service ClothesMate Botanical"
 	)
 	desc = "Автомат-помощник по выдаче одежды Сервисного отдела ботаники."
 	req_access = list(ACCESS_HYDROPONICS)
@@ -3663,12 +3663,12 @@
 /obj/machinery/vending/nta
 	name = "NT Ammunition"
 	ru_names = list(
-		NOMINATIVE = "NT Ammunition",
-		GENITIVE = "NT Ammunition",
-		DATIVE = "NT Ammunition",
-		ACCUSATIVE = "NT Ammunition",
-		INSTRUMENTAL = "NT Ammunition",
-		PREPOSITIONAL = "NT Ammunition"
+		NOMINATIVE = "торговый автомат NT Ammunition",
+		GENITIVE = "торгового автомата NT Ammunition",
+		DATIVE = "торговому автомату NT Ammunition",
+		ACCUSATIVE = "торговый автомат NT Ammunition",
+		INSTRUMENTAL = "торговым автоматом NT Ammunition",
+		PREPOSITIONAL = "торговом автомате NT Ammunition"
 	)
 	desc = "Автомат-помощник по выдаче специального снаряжения."
 	ads_list = list("Возьми патрон!","Не забывай, снаряжаться - полезно!","Бжж-Бзз-з!.","Обезопасить, Удержать, Сохранить!","Стоять, снярядись на задание!")
@@ -3750,12 +3750,12 @@
 /obj/machinery/vending/nta/ertarmory/blue
 	name = "NT ERT Medium Gear & Ammunition"
 	ru_names = list(
-		NOMINATIVE = "NT ERT Medium Gear & Ammunition",
-		GENITIVE = "NT ERT Medium Gear & Ammunition",
-		DATIVE = "NT ERT Medium Gear & Ammunition",
-		ACCUSATIVE = "NT ERT Medium Gear & Ammunition",
-		INSTRUMENTAL = "NT ERT Medium Gear & Ammunition",
-		PREPOSITIONAL = "NT ERT Medium Gear & Ammunition"
+		NOMINATIVE = "торговый автомат NT ERT Medium Gear & Ammunition",
+		GENITIVE = "торгового автомата NT ERT Medium Gear & Ammunition",
+		DATIVE = "торговому автомату NT ERT Medium Gear & Ammunition",
+		ACCUSATIVE = "торговый автомат NT ERT Medium Gear & Ammunition",
+		INSTRUMENTAL = "торговым автоматом NT ERT Medium Gear & Ammunition",
+		PREPOSITIONAL = "торговом автомате NT ERT Medium Gear & Ammunition"
 	)
 	desc = "Автомат-помощник по выдаче снаряжения среднего класса."
 	ads_list = list("Круши черепа синдиката!","Не забывай, спасать - полезно!","Бжж-Бзз-з!.","Обезопасить, Удержать, Сохранить!","Стоять, снярядись на задание!")
@@ -3786,12 +3786,12 @@
 /obj/machinery/vending/nta/ertarmory/red
 	name = "NT ERT Heavy Gear & Ammunition"
 	ru_names = list(
-		NOMINATIVE = "NT ERT Heavy Gear & Ammunition",
-		GENITIVE = "NT ERT Heavy Gear & Ammunition",
-		DATIVE = "NT ERT Heavy Gear & Ammunition",
-		ACCUSATIVE = "NT ERT Heavy Gear & Ammunition",
-		INSTRUMENTAL = "NT ERT Heavy Gear & Ammunition",
-		PREPOSITIONAL = "NT ERT Heavy Gear & Ammunition"
+		NOMINATIVE = "торговый автомат NT ERT Heavy Gear & Ammunition",
+		GENITIVE = "торгового автомата NT ERT Heavy Gear & Ammunition",
+		DATIVE = "торговому автомату NT ERT Heavy Gear & Ammunition",
+		ACCUSATIVE = "торговый автомат NT ERT Heavy Gear & Ammunition",
+		INSTRUMENTAL = "торговым автоматом NT ERT Heavy Gear & Ammunition",
+		PREPOSITIONAL = "торговом автомате NT ERT Heavy Gear & Ammunition"
 	)
 	desc = "Автомат-помощник по выдаче снаряжения тяжелого класса."
 	ads_list = list("Круши черепа синдиката!","Не забывай, спасать - полезно!","Бжж-Бзз-з!.","Обезопасить, Удержать, Сохранить!","Стоять, снярядись на задание!")
@@ -3822,12 +3822,12 @@
 /obj/machinery/vending/nta/ertarmory/green
 	name = "NT ERT Light Gear & Ammunition"
 	ru_names = list(
-		NOMINATIVE = "NT ERT Light Gear & Ammunition",
-		GENITIVE = "NT ERT Light Gear & Ammunition",
-		DATIVE = "NT ERT Light Gear & Ammunition",
-		ACCUSATIVE = "NT ERT Light Gear & Ammunition",
-		INSTRUMENTAL = "NT ERT Light Gear & Ammunition",
-		PREPOSITIONAL = "NT ERT Light Gear & Ammunition"
+		NOMINATIVE = "торговый автомат NT ERT Light Gear & Ammunition",
+		GENITIVE = "торгового автомата NT ERT Light Gear & Ammunition",
+		DATIVE = "торговому автомату NT ERT Light Gear & Ammunition",
+		ACCUSATIVE = "торговый автомат NT ERT Light Gear & Ammunition",
+		INSTRUMENTAL = "торговым автоматом NT ERT Light Gear & Ammunition",
+		PREPOSITIONAL = "торговом автомате NT ERT Light Gear & Ammunition"
 	)
 	desc = "Автомат-помощник по выдаче снаряжения легкого класса"
 	ads_list = list("Круши черепа синдиката!","Не забывай, спасать - полезно!","Бжж-Бзз-з!.","Обезопасить, Удержать, Сохранить!","Стоять, снярядись на задание!")
@@ -3862,12 +3862,12 @@
 /obj/machinery/vending/nta/ertarmory/green/cc_jail
 	name = "NT CentComm prison guards' Gear & Ammunition"
 	ru_names = list(
-		NOMINATIVE = "NT CentComm prison guards' Gear & Ammunition",
-		GENITIVE = "NT CentComm prison guards' Gear & Ammunition",
-		DATIVE = "NT CentComm prison guards' Gear & Ammunition",
-		ACCUSATIVE = "NT CentComm prison guards' Gear & Ammunition",
-		INSTRUMENTAL = "NT CentComm prison guards' Gear & Ammunition",
-		PREPOSITIONAL = "NT CentComm prison guards' Gear & Ammunition"
+		NOMINATIVE = "торговый автомат NT CentComm prison guards' Gear & Ammunition",
+		GENITIVE = "торгового автомата NT CentComm prison guards' Gear & Ammunition",
+		DATIVE = "торговому автомату NT CentComm prison guards' Gear & Ammunition",
+		ACCUSATIVE = "торговый автомат NT CentComm prison guards' Gear & Ammunition",
+		INSTRUMENTAL = "торговым автоматом NT CentComm prison guards' Gear & Ammunition",
+		PREPOSITIONAL = "торговом автомате NT CentComm prison guards' Gear & Ammunition"
 	)
 	desc = "Автомат с оборудованием для сотрудников CentComm."
 	products = list(/obj/item/restraints/handcuffs=5,
@@ -3890,12 +3890,12 @@
 /obj/machinery/vending/nta/ertarmory/yellow
 	name = "NT ERT Death Wish Gear & Ammunition"
 	ru_names = list(
-		NOMINATIVE = "NT ERT Death Wish Gear & Ammunition",
-		GENITIVE = "NT ERT Death Wish Gear & Ammunition",
-		DATIVE = "NT ERT Death Wish Gear & Ammunition",
-		ACCUSATIVE = "NT ERT Death Wish Gear & Ammunition",
-		INSTRUMENTAL = "NT ERT Death Wish Gear & Ammunition",
-		PREPOSITIONAL = "NT ERT Death Wish Gear & Ammunition"
+		NOMINATIVE = "торговый автомат NT ERT Death Wish Gear & Ammunition",
+		GENITIVE = "торгового автомата NT ERT Death Wish Gear & Ammunition",
+		DATIVE = "торговому автомату NT ERT Death Wish Gear & Ammunition",
+		ACCUSATIVE = "торговый автомат NT ERT Death Wish Gear & Ammunition",
+		INSTRUMENTAL = "торговым автоматом NT ERT Death Wish Gear & Ammunition",
+		PREPOSITIONAL = "торговом автомате NT ERT Death Wish Gear & Ammunition"
 	)
 	desc = "Автомат с оборудованием для ОБР — помогает людям осуществить их желание умереть."
 	ads_list = list("Круши черепа ВСЕХ!","Не забывай, УБИВАТЬ - полезно!","УБИВАТЬ УБИВАТЬ УБИВАТЬ УБИВАТЬ!.","УБИВАТЬ, Удержать, УБИВАТЬ!","Стоять, снярядись на УБИВАТЬ!")
@@ -3925,12 +3925,12 @@
 /obj/machinery/vending/nta/ertarmory/medical
 	name = "NT ERT Medical Gear"
 	ru_names = list(
-		NOMINATIVE = "NT ERT Medical Gear",
-		GENITIVE = "NT ERT Medical Gear",
-		DATIVE = "NT ERT Medical Gear",
-		ACCUSATIVE = "NT ERT Medical Gear",
-		INSTRUMENTAL = "NT ERT Medical Gear",
-		PREPOSITIONAL = "NT ERT Medical Gear"
+		NOMINATIVE = "торговый автомат NT ERT Medical Gear",
+		GENITIVE = "торгового автомата NT ERT Medical Gear",
+		DATIVE = "торговому автомату NT ERT Medical Gear",
+		ACCUSATIVE = "торговый автомат NT ERT Medical Gear",
+		INSTRUMENTAL = "торговым автоматом NT ERT Medical Gear",
+		PREPOSITIONAL = "торговом автомате NT ERT Medical Gear"
 	)
 	desc = "Автомат с медицинским оборудованием ОБР."
 	ads_list = list("Лечи раненых от рук синдиката!","Не забывай, лечить - полезно!","Бжж-Бзз-з!.","Перевязать, Оперировать, Выписать!","Стоять, снярядись медикаментами на задание!")
@@ -3970,12 +3970,12 @@
 /obj/machinery/vending/nta/ertarmory/engineer
 	name = "NT ERT Engineer Gear"
 	ru_names = list(
-		NOMINATIVE = "NT ERT Engineer Gear",
-		GENITIVE = "NT ERT Engineer Gear",
-		DATIVE = "NT ERT Engineer Gear",
-		ACCUSATIVE = "NT ERT Engineer Gear",
-		INSTRUMENTAL = "NT ERT Engineer Gear",
-		PREPOSITIONAL = "NT ERT Engineer Gear"
+		NOMINATIVE = "торговый автомат NT ERT Engineer Gear",
+		GENITIVE = "торгового автомата NT ERT Engineer Gear",
+		DATIVE = "торговому автомату NT ERT Engineer Gear",
+		ACCUSATIVE = "торговый автомат NT ERT Engineer Gear",
+		INSTRUMENTAL = "торговым автоматом NT ERT Engineer Gear",
+		PREPOSITIONAL = "торговом автомате NT ERT Engineer Gear"
 	)
 	desc = "Автомат с инженерным оборудованием ОБР."
 	ads_list = list("Чини станцию от рук синдиката!","Не забывай, чинить - полезно!","Бжж-Бзз-з!.","Починить, Заварить, Трубить!","Стоять, снярядись на починку труб!")
@@ -4008,12 +4008,12 @@
 /obj/machinery/vending/nta/ertarmory/janitor
 	name = "NT ERT Janitor Gear"
 	ru_names = list(
-		NOMINATIVE = "NT ERT Janitor Gear",
-		GENITIVE = "NT ERT Janitor Gear",
-		DATIVE = "NT ERT Janitor Gear",
-		ACCUSATIVE = "NT ERT Janitor Gear",
-		INSTRUMENTAL = "NT ERT Janitor Gear",
-		PREPOSITIONAL = "NT ERT Janitor Gear"
+		NOMINATIVE = "торговый автомат NT ERT Janitor Gear",
+		GENITIVE = "торгового автомата NT ERT Janitor Gear",
+		DATIVE = "торговому автомату NT ERT Janitor Gear",
+		ACCUSATIVE = "торговый автомат NT ERT Janitor Gear",
+		INSTRUMENTAL = "торговым автоматом NT ERT Janitor Gear",
+		PREPOSITIONAL = "торговом автомате NT ERT Janitor Gear"
 	)
 	desc = "Автомат с уборочным оборудованием ОБР."
 	ads_list = list("Чисть станцию от рук синдиката!","Не забывай, чистить - полезно!","Вилкой чисти!.","Помыть, Постирать, Оттереть!","Стоять, снярядись клинерами!")
@@ -4044,12 +4044,12 @@
 /obj/machinery/vending/pai
 	name = "\improper RoboFriends"
 	ru_names = list(
-		NOMINATIVE = "RoboFriends",
-		GENITIVE = "RoboFriends",
-		DATIVE = "RoboFriends",
-		ACCUSATIVE = "RoboFriends",
-		INSTRUMENTAL = "RoboFriends",
-		PREPOSITIONAL = "RoboFriends"
+		NOMINATIVE = "торговый автомат RoboFriends",
+		GENITIVE = "торгового автомата RoboFriends",
+		DATIVE = "торговому автомату RoboFriends",
+		ACCUSATIVE = "торговый автомат RoboFriends",
+		INSTRUMENTAL = "торговым автоматом RoboFriends",
+		PREPOSITIONAL = "торговом автомате RoboFriends"
 	)
 	desc = "Потрясающий продавец ПИИ-друзей!"
 
@@ -4091,12 +4091,12 @@
 /obj/machinery/vending/security/ert
 	name = "NT ERT Consumables Gear"
 	ru_names = list(
-		NOMINATIVE = "NT ERT Consumables Gear",
-		GENITIVE = "NT ERT Consumables Gear",
-		DATIVE = "NT ERT Consumables Gear",
-		ACCUSATIVE = "NT ERT Consumables Gear",
-		INSTRUMENTAL = "NT ERT Consumables Gear",
-		PREPOSITIONAL = "NT ERT Consumables Gear"
+		NOMINATIVE = "торговый автомат NT ERT Consumables Gear",
+		GENITIVE = "торгового автомата NT ERT Consumables Gear",
+		DATIVE = "торговому автомату NT ERT Consumables Gear",
+		ACCUSATIVE = "торговый автомат NT ERT Consumables Gear",
+		INSTRUMENTAL = "торговым автоматом NT ERT Consumables Gear",
+		PREPOSITIONAL = "торговом автомате NT ERT Consumables Gear"
 	)
 	desc = "Расходное оборудование для различных ситуаций."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF | FREEZE_PROOF
@@ -4172,12 +4172,12 @@
 /obj/machinery/vending/ntc/medal
 	name = "NT Cargo Encouragement"
 	ru_names = list(
-		NOMINATIVE = "NT Cargo Encouragement",
-		GENITIVE = "NT Cargo Encouragement",
-		DATIVE = "NT Cargo Encouragement",
-		ACCUSATIVE = "NT Cargo Encouragement",
-		INSTRUMENTAL = "NT Cargo Encouragement",
-		PREPOSITIONAL = "NT Cargo Encouragement"
+		NOMINATIVE = "торговый автомат NT Cargo Encouragement",
+		GENITIVE = "торгового автомата NT Cargo Encouragement",
+		DATIVE = "торговому автомату NT Cargo Encouragement",
+		ACCUSATIVE = "торговый автомат NT Cargo Encouragement",
+		INSTRUMENTAL = "торговым автоматом NT Cargo Encouragement",
+		PREPOSITIONAL = "торговом автомате NT Cargo Encouragement"
 	)
 	desc = "Тяжелый кейс с медалями на любой вкус и цвет."
 	icon = 'icons/obj/storage.dmi'
@@ -4200,12 +4200,12 @@
 /obj/machinery/vending/ntc/medical
 	name = "NT Cargo Medical Gear"
 	ru_names = list(
-		NOMINATIVE = "NT Cargo Medical Gear",
-		GENITIVE = "NT Cargo Medical Gear",
-		DATIVE = "NT Cargo Medical Gear",
-		ACCUSATIVE = "NT Cargo Medical Gear",
-		INSTRUMENTAL = "NT Cargo Medical Gear",
-		PREPOSITIONAL = "NT Cargo Medical Gear"
+		NOMINATIVE = "торговый автомат NT Cargo Medical Gear",
+		GENITIVE = "торгового автомата NT Cargo Medical Gear",
+		DATIVE = "торговому автомату NT Cargo Medical Gear",
+		ACCUSATIVE = "торговый автомат NT Cargo Medical Gear",
+		INSTRUMENTAL = "торговым автоматом NT Cargo Medical Gear",
+		PREPOSITIONAL = "торговом автомате NT Cargo Medical Gear"
 	)
 	desc = "Различное медицинское оборудование для доставки."
 
@@ -4229,12 +4229,12 @@
 /obj/machinery/vending/ntc/engineering
 	name = "NT Cargo Engineering Gear"
 	ru_names = list(
-		NOMINATIVE = "NT Cargo Engineering Gear",
-		GENITIVE = "NT Cargo Engineering Gear",
-		DATIVE = "NT Cargo Engineering Gear",
-		ACCUSATIVE = "NT Cargo Engineering Gear",
-		INSTRUMENTAL = "NT Cargo Engineering Gear",
-		PREPOSITIONAL = "NT Cargo Engineering Gear"
+		NOMINATIVE = "торговый автомат NT Cargo Engineering Gear",
+		GENITIVE = "торгового автомата NT Cargo Engineering Gear",
+		DATIVE = "торговому автомату NT Cargo Engineering Gear",
+		ACCUSATIVE = "торговый автомат NT Cargo Engineering Gear",
+		INSTRUMENTAL = "торговым автоматом NT Cargo Engineering Gear",
+		PREPOSITIONAL = "торговом автомате NT Cargo Engineering Gear"
 	)
 	desc = "Различное инженерное оборудование для доставки."
 
@@ -4257,12 +4257,12 @@
 /obj/machinery/vending/ntc/janitor
 	name = "NT Cargo Janitor Gear"
 	ru_names = list(
-		NOMINATIVE = "NT Cargo Janitor Gear",
-		GENITIVE = "NT Cargo Janitor Gear",
-		DATIVE = "NT Cargo Janitor Gear",
-		ACCUSATIVE = "NT Cargo Janitor Gear",
-		INSTRUMENTAL = "NT Cargo Janitor Gear",
-		PREPOSITIONAL = "NT Cargo Janitor Gear"
+		NOMINATIVE = "торговый автомат NT Cargo Janitor Gear",
+		GENITIVE = "торгового автомата NT Cargo Janitor Gear",
+		DATIVE = "торговому автомату NT Cargo Janitor Gear",
+		ACCUSATIVE = "торговый автомат NT Cargo Janitor Gear",
+		INSTRUMENTAL = "торговым автоматом NT Cargo Janitor Gear",
+		PREPOSITIONAL = "торговом автомате NT Cargo Janitor Gear"
 	)
 	desc = "Различное уборочное оборудование для доставки."
 
@@ -4290,12 +4290,12 @@
 /obj/machinery/vending/ntcrates
 	name = "NT Cargo Preset Gear"
 	ru_names = list(
-		NOMINATIVE = "NT Cargo Preset Gear",
-		GENITIVE = "NT Cargo Preset Gear",
-		DATIVE = "NT Cargo Preset Gear",
-		ACCUSATIVE = "NT Cargo Preset Gear",
-		INSTRUMENTAL = "NT Cargo Preset Gear",
-		PREPOSITIONAL = "NT Cargo Preset Gear"
+		NOMINATIVE = "торговый автомат NT Cargo Preset Gear",
+		GENITIVE = "торгового автомата NT Cargo Preset Gear",
+		DATIVE = "торговому автомату NT Cargo Preset Gear",
+		ACCUSATIVE = "торговый автомат NT Cargo Preset Gear",
+		INSTRUMENTAL = "торговым автоматом NT Cargo Preset Gear",
+		PREPOSITIONAL = "торговом автомате NT Cargo Preset Gear"
 	)
 	desc = "Предварительный комплект оборудования для доставки, на все случаи жизни."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF | FREEZE_PROOF
@@ -4324,12 +4324,12 @@
 /obj/machinery/vending/ntc/ert
 	name = "NT Response Team Base Gear"
 	ru_names = list(
-		NOMINATIVE = "NT Response Team Base Gear",
-		GENITIVE = "NT Response Team Base Gear",
-		DATIVE = "NT Response Team Base Gear",
-		ACCUSATIVE = "NT Response Team Base Gear",
-		INSTRUMENTAL = "NT Response Team Base Gear",
-		PREPOSITIONAL = "NT Response Team Base Gear"
+		NOMINATIVE = "торговый автомат NT Response Team Base Gear",
+		GENITIVE = "торгового автомата NT Response Team Base Gear",
+		DATIVE = "торговому автомату NT Response Team Base Gear",
+		ACCUSATIVE = "торговый автомат NT Response Team Base Gear",
+		INSTRUMENTAL = "торговым автоматом NT Response Team Base Gear",
+		PREPOSITIONAL = "торговом автомате NT Response Team Base Gear"
 	)
 	desc = "Автомат с базовым оборудованием ОБР"
 
@@ -4353,12 +4353,12 @@
 /obj/machinery/vending/ntc_resources
 	name = "NT Matter Сompression Vendor"
 	ru_names = list(
-		NOMINATIVE = "NT Matter Сompression Vendor",
-		GENITIVE = "NT Matter Сompression Vendor",
-		DATIVE = "NT Matter Сompression Vendor",
-		ACCUSATIVE = "NT Matter Сompression Vendor",
-		INSTRUMENTAL = "NT Matter Сompression Vendor",
-		PREPOSITIONAL = "NT Matter Сompression Vendor"
+		NOMINATIVE = "торговый автомат NT Matter Сompression Vendor",
+		GENITIVE = "торгового автомата NT Matter Сompression Vendor",
+		DATIVE = "торговому автомату NT Matter Сompression Vendor",
+		ACCUSATIVE = "торговый автомат NT Matter Сompression Vendor",
+		INSTRUMENTAL = "торговым автоматом NT Matter Сompression Vendor",
+		PREPOSITIONAL = "торговом автомате NT Matter Сompression Vendor"
 	)
 	desc = "Этот автомат использует передовую технологию сжатия и может хранить в себе большой объем ресурсов."
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF | FREEZE_PROOF
@@ -4394,12 +4394,12 @@
 /obj/machinery/vending/mech/ntc/exousuit
 	name = "NT Exosuit Bluespace Transporter"
 	ru_names = list(
-		NOMINATIVE = "NT Exosuit Bluespace Transporter",
-		GENITIVE = "NT Exosuit Bluespace Transporter",
-		DATIVE = "NT Exosuit Bluespace Transporter",
-		ACCUSATIVE = "NT Exosuit Bluespace Transporter",
-		INSTRUMENTAL = "NT Exosuit Bluespace Transporter",
-		PREPOSITIONAL = "NT Exosuit Bluespace Transporter"
+		NOMINATIVE = "торговый автомат NT Exosuit Bluespace Transporter",
+		GENITIVE = "торгового автомата NT Exosuit Bluespace Transporter",
+		DATIVE = "торговому автомату NT Exosuit Bluespace Transporter",
+		ACCUSATIVE = "торговый автомат NT Exosuit Bluespace Transporter",
+		INSTRUMENTAL = "торговым автоматом NT Exosuit Bluespace Transporter",
+		PREPOSITIONAL = "торговом автомате NT Exosuit Bluespace Transporter"
 	)
 	desc = "Фабрикатор с передовой технологией BlueSpace-транспортировки ресурсов."
 	icon = 'icons/obj/machines/robotics.dmi'
@@ -4416,12 +4416,12 @@
 /obj/machinery/vending/mech/ntc/equipment
 	name = "NT Exosuit Bluespace Transporter"
 	ru_names = list(
-		NOMINATIVE = "NT Exosuit Bluespace Transporter",
-		GENITIVE = "NT Exosuit Bluespace Transporter",
-		DATIVE = "NT Exosuit Bluespace Transporter",
-		ACCUSATIVE = "NT Exosuit Bluespace Transporter",
-		INSTRUMENTAL = "NT Exosuit Bluespace Transporter",
-		PREPOSITIONAL = "NT Exosuit Bluespace Transporter"
+		NOMINATIVE = "торговый автомат NT Exosuit Bluespace Transporter",
+		GENITIVE = "торгового автомата NT Exosuit Bluespace Transporter",
+		DATIVE = "торговому автомату NT Exosuit Bluespace Transporter",
+		ACCUSATIVE = "торговый автомат NT Exosuit Bluespace Transporter",
+		INSTRUMENTAL = "торговым автоматом NT Exosuit Bluespace Transporter",
+		PREPOSITIONAL = "торговом автомате NT Exosuit Bluespace Transporter"
 	)
 	desc = "Фабрикатор с передовой технологией BlueSpace-транспортировки ресурсов."
 
@@ -4444,12 +4444,12 @@
 /obj/machinery/vending/mech/ntc/weapon
 	name = "NT Exosuit Bluespace Transporter"
 	ru_names = list(
-		NOMINATIVE = "NT Exosuit Bluespace Transporter",
-		GENITIVE = "NT Exosuit Bluespace Transporter",
-		DATIVE = "NT Exosuit Bluespace Transporter",
-		ACCUSATIVE = "NT Exosuit Bluespace Transporter",
-		INSTRUMENTAL = "NT Exosuit Bluespace Transporter",
-		PREPOSITIONAL = "NT Exosuit Bluespace Transporter"
+		NOMINATIVE = "торговый автомат NT Exosuit Bluespace Transporter",
+		GENITIVE = "торгового автомата NT Exosuit Bluespace Transporter",
+		DATIVE = "торговому автомату NT Exosuit Bluespace Transporter",
+		ACCUSATIVE = "торговый автомат NT Exosuit Bluespace Transporter",
+		INSTRUMENTAL = "торговым автоматом NT Exosuit Bluespace Transporter",
+		PREPOSITIONAL = "торговом автомате NT Exosuit Bluespace Transporter"
 	)
 	desc = "Фабрикатор с передовой технологией BlueSpace-транспортировки ресурсов."
 
@@ -4478,12 +4478,12 @@
 /obj/machinery/vending/mech/ntc/tools
 	name = "NT Exosuit Bluespace Transporter"
 	ru_names = list(
-		NOMINATIVE = "NT Exosuit Bluespace Transporter",
-		GENITIVE = "NT Exosuit Bluespace Transporter",
-		DATIVE = "NT Exosuit Bluespace Transporter",
-		ACCUSATIVE = "NT Exosuit Bluespace Transporter",
-		INSTRUMENTAL = "NT Exosuit Bluespace Transporter",
-		PREPOSITIONAL = "NT Exosuit Bluespace Transporter"
+		NOMINATIVE = "торговый автомат NT Exosuit Bluespace Transporter",
+		GENITIVE = "торгового автомата NT Exosuit Bluespace Transporter",
+		DATIVE = "торговому автомату NT Exosuit Bluespace Transporter",
+		ACCUSATIVE = "торговый автомат NT Exosuit Bluespace Transporter",
+		INSTRUMENTAL = "торговым автоматом NT Exosuit Bluespace Transporter",
+		PREPOSITIONAL = "торговом автомате NT Exosuit Bluespace Transporter"
 	)
 	desc = "Фабрикатор с передовой технологией BlueSpace-транспортировки ресурсов."
 
