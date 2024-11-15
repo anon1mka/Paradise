@@ -528,7 +528,7 @@
 			// no goodies, but also no tilts
 			return
 		if(COOLDOWN_FINISHED(src, last_hit_time))
-			visible_message(span_warning("[declent_ru(NOMINATIVE)] странно покачивается..."))
+			visible_message(span_warning("[capitalize(declent_ru(NOMINATIVE))] странно покачивается..."))
 			to_chat(user, span_userdanger("Кажется, что [declent_ru(NOMINATIVE)] так и норовит упасть!"))
 			COOLDOWN_START(src, last_hit_time, hit_warning_cooldown_length)
 			return
@@ -687,7 +687,7 @@
 	if(!item_slot || inserted_item)
 		return
 	if(!user.drop_transfer_item_to_loc(I, src))
-		to_chat(user, span_warning("[I] будто бы приклеен к твоей руке! Ты не можешь его скинуть!"))
+		to_chat(user, span_warning("[I] будто бы приклеен к твоей руке! Вы не можете его скинуть!"))
 		return
 	inserted_item = I
 	balloon_alert(user, "предмет вставлен")
@@ -842,7 +842,7 @@
 	if(.)
 		return
 	if(issilicon(usr) && !isrobot(usr))
-		to_chat(usr, span_warning("Торговый автомат отказывается взаимодействовать с вами, поскольку вы не входите в его целевую аудиторию!"))
+		to_chat(usr, span_warning("[capitalize(declent_ru(NOMINATIVE))] отказывается взаимодействовать с вами, поскольку вы не входите в его целевую аудиторию!"))
 		return
 	switch(action)
 		if("toggle_voice")
@@ -915,7 +915,7 @@
 
 			// --- THE REST OF THIS PROC IS JUST PAYMENT LOGIC ---
 			if(!GLOB.vendor_account || GLOB.vendor_account.suspended)
-				to_chat(usr, "Учётная запись торговых автоматов отключена. Не удается обработать операцию.")
+				to_chat(usr, "Удалённый сервер торговых автоматов отключён. Не удается обработать операцию.")
 				flick_vendor_overlay(FLICK_DENY)
 				vend_ready = TRUE
 				return
@@ -960,7 +960,7 @@
 		return
 
 	if(!R.amount)
-		to_chat(user, span_warning("В торговом автомате закончился этот товар."))
+		to_chat(user, span_warning("В [declent_ru(PREPOSITIONAL)] закончился этот товар."))
 		vend_ready = TRUE
 		return
 
@@ -1158,7 +1158,7 @@
 	else
 		victim.visible_message(
 			span_danger("[victim] раздавлен[genderize_ru(victim.gender, "", "а", "о", "ы")] [declent_ru(INSTRUMENTAL)]!"),
-			span_userdanger("[declent_ru(NOMINATIVE)] сокрушает тебя!"),
+			span_userdanger("[capitalize(declent_ru(NOMINATIVE))] сокрушает тебя!"),
 			span_warning("Вы слышите громкий хруст!")
 		)
 		add_attack_logs(null, victim, "crushed by [src]")
@@ -1258,14 +1258,14 @@
 
 	if(user)
 		user.visible_message(
-			"[user] начинает поднимать [declent_ru(NOMINATIVE)].",
-			"Вы начинаете поднимать [declent_ru(NOMINATIVE)]."
+			"[user] начинает поднимать [declent_ru(ACCUSATIVE)].",
+			"Вы начинаете поднимать [declent_ru(ACCUSATIVE)]."
 		)
 		if(!do_after(user, 7 SECONDS, src, max_interact_count = 1, cancel_on_max = TRUE))
 			return
 		user.visible_message(
-			span_notice("[user] поднял [declent_ru(NOMINATIVE)]."),
-			span_notice("Вы подняли [declent_ru(NOMINATIVE)]."),
+			span_notice("[user] поднял [declent_ru(ACCUSATIVE)]."),
+			span_notice("Вы подняли [declent_ru(ACCUSATIVE)]."),
 			span_notice("Вы слышите громкий лязг.")
 		)
 	if(!tilted) //Sanity check
