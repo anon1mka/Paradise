@@ -772,7 +772,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 /obj/machinery/computer/card/minor
 	name = "department management console"
 	target_dept = TARGET_DEPT_GENERIC
-	desc = "Вы можете использовать это, чтобы изменить ID-карту для определенного отделов."
+	desc = "Вы можете использовать это, чтобы изменить ID-карту для определенного отдела."
 	icon_screen = "idminor"
 	circuit = /obj/item/circuitboard/card/minor
 
