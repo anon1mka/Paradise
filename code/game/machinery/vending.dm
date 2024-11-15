@@ -975,7 +975,7 @@
 			if(prob(50))
 				to_chat(user, span_notice("Вы успешно вытаскиваете монету до того, как [declent_ru(NOMINATIVE)] успевает ее проглотить."))
 			else
-				to_chat(user, span_notice("Вы не смогли вытащить монету достаточно быстро, машина съела ее вместе с ниткой и всем остальным."))
+				to_chat(user, span_notice("Вы не смогли вытащить монету достаточно быстро, [declent_ru(NOMINATIVE)] съел ее вместе с ниткой и всем остальным."))
 				QDEL_NULL(coin)
 		else
 			QDEL_NULL(coin)
@@ -1116,14 +1116,14 @@
 		add_attack_logs(attacker, target, "shoved into a vending machine ([src])")
 		tilt(target, from_combat = TRUE)
 		target.visible_message(
-			span_danger("[attacker] толкает [target] в [declent_ru(NOMINATIVE)]!"),
+			span_danger("[attacker] толкает [target] в [declent_ru(ACCUSATIVE)]!"),
 			span_userdanger("[attacker] впечатывает вас в [declent_ru(GENITIVE)]!"),
 			span_danger(">Вы слышите громкий хруст.")
 		)
 	else
 		attacker.visible_message(
 			span_notice("[attacker] слегка прижимает [target] к [declent_ru(DATIVE)]."),
-			span_userdanger("Вы слегка прижимаете [target] к [declent_ru(GENITIVE)], вы же не хотите причинить [genderize_ru(target.gender, "ему", "ей", "ему", "им")] боль!")
+			span_userdanger("Вы слегка прижимаете [target] к [declent_ru(DATIVE)], вы же не хотите причинить [genderize_ru(target.gender, "ему", "ей", "ему", "им")] боль!")
 			)
 	return TRUE
 
