@@ -264,7 +264,7 @@
 
 //Orion Trail Events
 #define ORION_TRAIL_RAIDERS		"Рейдеры"
-#define ORION_TRAIL_FLUX		"Interstellar Flux"
+#define ORION_TRAIL_FLUX		"Межзвездный поток"
 #define ORION_TRAIL_ILLNESS		"Болезнь"
 #define ORION_TRAIL_BREAKDOWN	"Авария"
 #define ORION_TRAIL_LING		"Генокрады?"
