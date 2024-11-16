@@ -59,7 +59,7 @@
 // Why is this not a subtype
 /obj/machinery/computer/borgupload
 	name = "cyborg upload console"
-	desc = "Используется для манипуляций с законами Киборгов."
+	desc = "Используется для манипуляций с законами киборгов."
 	icon_screen = "command"
 	icon_keyboard = "med_key"
 	circuit = /obj/item/circuitboard/borgupload
