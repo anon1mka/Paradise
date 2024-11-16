@@ -1,6 +1,6 @@
 /obj/machinery/computer/arcade
 	name = "random arcade"
-	desc = "случайный аркадный автомат"
+	desc = "случайный аркадный автомат."
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "arcade"
 	icon_keyboard = null
@@ -700,7 +700,7 @@
 		if(ORION_TRAIL_FLUX)
 			eventdat += "Эта область пространства очень турбулентна. <br>Если мы будем двигаться медленно, то, возможно, избежим большего ущерба, но если мы сохраним скорость, то не потратим впустую припасы."
 			eventdat += "<br>Что ты будешь делать?"
-			eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];slow=1'>Замедлиться</a> <a href='byond://?src=[UID()];keepspeed=1'>Продолжить</a></P>"
+			eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];slow=1'>Замедлиться</a> <a href='byond://?src=[UID()];keepspeed=1'>Сохранить скорость</a></P>"
 			eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];close=1'>Закрыть</a></P>"
 
 		if(ORION_TRAIL_ILLNESS)
@@ -866,7 +866,7 @@
 				if(settlers.len > 1)
 					eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];sellcrew=1'>Продать члена экипажа за топливо и еду (+15FU,+15FO)</a></P>"
 				else
-					eventdat += "<P ALIGN=Right>Вы не можете позволить себе продать члена экипажа</P>"
+					eventdat += "<P ALIGN=Right>Вы не можете продать члена экипажа</P>"
 
 				//BUY/SELL STUFF
 				eventdat += "<P ALIGN=Right>Детали двигателя:</P>"
