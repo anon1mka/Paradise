@@ -1,6 +1,6 @@
 /obj/machinery/computer/camera_advanced/shuttle_docker
 	name = "navigation computer"
-	desc = "Используется, чтобы указать точное местоположение для отправки космического аппарата."
+	desc = "Используется, чтобы указать точное местоположение для отправки шаттла."
 	icon_screen = "navigation"
 	icon_keyboard = "med_key"
 	jump_action = null

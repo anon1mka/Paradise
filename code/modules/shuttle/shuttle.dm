@@ -987,7 +987,7 @@
 
 /obj/machinery/computer/shuttle/golem_ship
 	name = "Golem Ship Console"
-	desc = "Используется для управления шаттлом големом."
+	desc = "Используется для управления шаттлом големов."
 	circuit = /obj/item/circuitboard/shuttle/golem_ship
 	shuttleId = "freegolem"
 	possible_destinations = "freegolem_lavaland;freegolem_space;freegolem_ussp"

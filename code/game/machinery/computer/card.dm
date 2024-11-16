@@ -10,7 +10,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 
 /obj/machinery/computer/card
 	name = "identification computer"
-	desc = "Терминал для программирования ID-карт сотрудников Nanotrasen для доступа к частям станции."
+	desc = "Терминал, используемый для изменения уровня доступа ID-карт сотрудников Nanotrasen."
 	icon_keyboard = "id_key"
 	icon_screen = "id"
 	req_access = list(ACCESS_CHANGE_IDS)

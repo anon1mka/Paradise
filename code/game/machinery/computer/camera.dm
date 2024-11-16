@@ -297,7 +297,7 @@
 
 /obj/machinery/computer/security/telescreen/research
 	name = "Research Monitor"
-	desc = "Используется для наблюдения за головорезами из отдела исследований, находясь в безопасном месте."
+	desc = "С помощью этого монитора Директор Исследований может наблюдать за своими подхалимами из безопасного места."
 	network = list("Research","Research Outpost","RD")
 
 /obj/machinery/computer/security/telescreen/prison
@@ -327,7 +327,7 @@
 
 /obj/machinery/computer/security/engineering
 	name = "engineering camera monitor"
-	desc = "Используется для мониторинга пожаров и аварий."
+	desc = "Используется для отслеживания возникающих пожаров и аварий."
 	icon_keyboard = "power_key"
 	icon_screen = "engie_cams"
 	light_color = "#FAC54B"

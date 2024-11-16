@@ -1,6 +1,6 @@
 /obj/machinery/computer/pod
 	name = "mass drivers and pod doors control"
-	desc = "Элемент управления для запуска капсул. Некоторые предпочитают запускать Мехи."
+	desc = "Элемент управления для запуска капсул. Некоторые предпочитают взрывать мехи."
 	icon_screen = "mass_driver"
 	light_color = "#555555"
 	circuit = /obj/item/circuitboard/pod
@@ -294,7 +294,7 @@
 
 /obj/machinery/computer/pod/old/swf
 	name = "\improper Magix System IV"
-	desc = "Таинственный артефакт, содержащий много магии. Запускаем E-Knock 2.2: Sorceror's Edition!"
+	desc = "Таинственный артефакт, в котором сконцентрировано огромное количество магической энергии."
 	circuit = /obj/item/circuitboard/swfdoor
 
 

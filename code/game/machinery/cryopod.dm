@@ -15,7 +15,7 @@
 
 /obj/machinery/computer/cryopod
 	name = "cryogenic oversight console"
-	desc = "Интерфейс между экипажем и системами контроля за криогенными хранилищами."
+	desc = "Интерфейс управления системой контроля за криогенным хранилищам."
 	icon = 'icons/obj/machines/cryogenic2.dmi'
 	icon_state = "cellconsole"
 	circuit = /obj/item/circuitboard/cryopodcontrol
@@ -703,7 +703,7 @@
 
 /obj/machinery/computer/cryopod/robot
 	name = "robotic storage console"
-	desc = "Интерфейс между экипажем и роботизированными системами хранения."
+	desc = "Интерфейс управления системой контроля за робо-хранилищем."
 	icon = 'icons/obj/machines/robot_storage.dmi'
 	icon_state = "console"
 	circuit = /obj/item/circuitboard/robotstoragecontrol

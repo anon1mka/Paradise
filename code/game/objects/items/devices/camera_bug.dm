@@ -1,7 +1,7 @@
 // This item just has an integrated camera console, which the data is "proxied" to
 /obj/item/camera_bug
 	name = "camera bug"
-	desc = "Для незаконного слежение через сеть камер наблюдения."
+	desc = "Для незаконного слежения через сеть камер наблюдения."
 	icon = 'icons/obj/device.dmi'
 	icon_state	= "camera_bug"
 	w_class		= WEIGHT_CLASS_TINY
@@ -14,7 +14,7 @@
 
 /obj/machinery/computer/security/camera_bug
 	name = "invasive camera utility"
-	desc = "Как это сюда попало?! Пожалуйста, сообщите об этом как об ошибке на github"
+	desc = "Как это сюда попало?! Пожалуйста, сообщите об этом как об ошибке на github."
 	use_power = NO_POWER_USE
 
 /obj/item/camera_bug/Initialize(mapload)

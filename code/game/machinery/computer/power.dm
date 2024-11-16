@@ -23,7 +23,7 @@
 
 /obj/machinery/computer/monitor/secret //Hides the power monitor (such as ones on ruins & CentCom) from PDA's to prevent metagaming.
 	name = "outdated power monitoring console"
-	desc = "Оно отслеживает уровень энергопотребления в локальной сети."
+	desc = "Используется для отслеживания уровня энергопотребления в локальной сети."
 	circuit = /obj/item/circuitboard/powermonitor/secret
 	is_secret_monitor = TRUE
 
