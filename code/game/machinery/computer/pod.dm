@@ -1,6 +1,6 @@
 /obj/machinery/computer/pod
 	name = "mass drivers and pod doors control"
-	desc = "Элемент управления для запуска капсул. Некоторые предпочитают взрывать мехи."
+	desc = "Элемент управления для запуска капсул. Некоторые предпочитают запускать из них мехов."
 	icon_screen = "mass_driver"
 	light_color = "#555555"
 	circuit = /obj/item/circuitboard/pod

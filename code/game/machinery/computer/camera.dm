@@ -2,7 +2,7 @@
 
 /obj/machinery/computer/security
 	name = "security camera console"
-	desc = "Используется для доступа к различным сетям камер на станции."
+	desc = "Используется для доступа к сетям камер на станции."
 
 	icon_keyboard = "security_key"
 	icon_screen = "cameras"
@@ -228,7 +228,7 @@
 
 /obj/machinery/computer/security/telescreen/entertainment
 	name = "entertainment monitor"
-	desc = "Черт возьми, лучше бы они показывали Paradise TV."
+	desc = "Чёрт возьми, лучше бы они показывали Paradise TV."
 	icon_state = "entertainment_console"
 	icon_screen = "entertainment_off"
 	light_color = "#FFEEDB"

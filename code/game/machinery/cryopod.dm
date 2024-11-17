@@ -15,7 +15,7 @@
 
 /obj/machinery/computer/cryopod
 	name = "cryogenic oversight console"
-	desc = "Интерфейс управления системой контроля за криогенным хранилищам."
+	desc = "Интерфейс управления системой контроля за криогенным хранилищем."
 	icon = 'icons/obj/machines/cryogenic2.dmi'
 	icon_state = "cellconsole"
 	circuit = /obj/item/circuitboard/cryopodcontrol

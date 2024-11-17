@@ -934,7 +934,7 @@
 
 /obj/machinery/computer/shuttle/white_ship
 	name = "White Ship Console"
-	desc = "Используется для управления Белым кораблем."
+	desc = "Используется для управления Белым кораблём."
 	circuit = /obj/item/circuitboard/white_ship
 	shuttleId = "whiteship"
 	possible_destinations = null // Set at runtime
