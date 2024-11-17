@@ -704,7 +704,7 @@
 				var/sfuel = rand(1,10)
 				food -= sfood
 				fuel -= sfuel
-				eventdat += "<br>Они украли [sfood] [FO*-1] единиц[declension_ru(sfood, "у", "ы", "")] <b>пищи</b> и [sfuel] единиц[declension_ru(sfuel, "у", "ы", "")] <b>топлива</b>."
+				eventdat += "<br>Они украли [sfood] единиц[declension_ru(sfood, "у", "ы", "")] <b>пищи</b> и [sfuel] единиц[declension_ru(sfuel, "у", "ы", "")] <b>топлива</b>."
 			else if(prob(10))
 				var/deadname = remove_crewmember()
 				eventdat += "<br>[deadname] пытался сопротивляться, но был убит."
