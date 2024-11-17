@@ -1,6 +1,14 @@
 /obj/machinery/computer/arcade
 	name = "random arcade"
-	desc = "случайный аркадный автомат."
+	ru_names = list(
+		NOMINATIVE = "случайная аркада",
+		GENITIVE = "случайной аркады",
+		DATIVE = "случайной аркаде",
+		ACCUSATIVE = "случайную аркаду",
+		INSTRUMENTAL = "случайной аркадой",
+		PREPOSITIONAL = "случайной аркаде"
+	)
+	desc = "Случайный аркадный автомат."
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "arcade"
 	icon_keyboard = null
@@ -110,7 +118,7 @@
 		if(href_list["attack"])
 			blocked = 1
 			var/attackamt = rand(2,6)
-			temp = "Ваша атака нанесла [attackamt] урона!"
+			temp = "Ваша атака нанесла [attackamt] единиц[declension_ru(attackamt, "у", "ы", "")] урона!"
 			playsound(loc, 'sound/arcade/hit.ogg', 50, TRUE)
 			updateUsrDialog()
 			if(turtle > 0)
@@ -124,7 +132,7 @@
 			blocked = 1
 			var/pointamt = rand(1,3)
 			var/healamt = rand(6,8)
-			temp = "Вы использовали [pointamt] [declension_ru(pointamt, "ману", "маны", "маны")]<br> и восстановили [healamt] здоровь[declension_ru(healamt, "е", "я", "я")]!"
+			temp = "Вы использовали [pointamt] единиц[declension_ru(pointamt, "у", "ы", "")]  ману <br>и восстановили [healamt] единиц[declension_ru(healamt, "у", "ы", "")] здоровь[declension_ru(healamt, "е", "я", "я")]!"
 			playsound(loc, 'sound/arcade/heal.ogg', 50, TRUE)
 			updateUsrDialog()
 			turtle++
@@ -139,7 +147,7 @@
 		else if(href_list["charge"])
 			blocked = 1
 			var/chargeamt = rand(4,7)
-			temp = "Вы восстанавливаете [chargeamt] [declension_ru(chargeamt, "ману", "маны", "маны")]"
+			temp = "Вы восстанавливаете [chargeamt] единиц[declension_ru(chargeamt, "у", "ы", "")] [declension_ru(chargeamt, "ману", "маны", "маны")]"
 			playsound(loc, 'sound/arcade/mana.ogg', 50, TRUE)
 			player_mp += chargeamt
 			if(turtle > 0)
@@ -192,13 +200,13 @@
 
 	else if(emagged && (turtle >= 4))
 		var/boomamt = rand(5,10)
-		temp = "[enemy_name] бросает бомбу, <br>которая наносит вам [boomamt] урона взрывом!"
+		temp = "[enemy_name] бросает бомбу, <br>которая наносит вам [boomamt] единиц[declension_ru(boomamt, "у", "ы", "")] урона взрывом!"
 		playsound(loc, 'sound/arcade/boom.ogg', 50, TRUE)
 		player_hp -= boomamt
 
 	else if((enemy_mp <= 5) && (prob(70)))
 		var/stealamt = rand(2,3)
-		temp = "[enemy_name] крадет [stealamt] вашей маны!"
+		temp = "[enemy_name] крадет [stealamt] единиц[declension_ru(stealamt, "у", "ы", "")] вашей маны!"
 		playsound(loc, 'sound/arcade/steal.ogg', 50, TRUE)
 		player_mp -= stealamt
 		updateUsrDialog()
@@ -215,14 +223,14 @@
 				SSblackbox.record_feedback("tally", "arcade_status", 1, "loss_mana_normal")
 
 	else if((enemy_hp <= 10) && (enemy_mp > 4))
-		temp = "[enemy_name] восстанавливает 4 здоровья!"
+		temp = "[enemy_name] восстанавливает 4 единицы здоровья!"
 		playsound(loc, 'sound/arcade/heal.ogg', 50, TRUE)
 		enemy_hp += 4
 		enemy_mp -= 4
 
 	else
 		var/attackamt = rand(3,6)
-		temp = "[enemy_name] наносит [attackamt] урона!"
+		temp = "[enemy_name] наносит [attackamt] единиц[declension_ru(attackamt, "у", "ы", "")] урона!"
 		playsound(loc, 'sound/arcade/hit.ogg', 50, TRUE)
 		player_hp -= attackamt
 
@@ -243,7 +251,7 @@
 /obj/machinery/computer/arcade/battle/emag_act(mob/user)
 	if(!emagged)
 		add_attack_logs(user, src, "emagged")
-		temp = "Если вы умрете в игре, вы умрете по-настоящему!"
+		temp = "Если вы умрёте в игре, вы умрёте по-настоящему!"
 		player_hp = 30
 		player_mp = 10
 		enemy_hp = 45
@@ -277,6 +285,14 @@
 
 /obj/machinery/computer/arcade/orion_trail
 	name = "The Orion Trail"
+	ru_names = list(
+		NOMINATIVE = "игровой автомат The Orion Trail",
+		GENITIVE = "игрового автомата The Orion Trail",
+		DATIVE = "игровому автомату The Orion Trail",
+		ACCUSATIVE = "игровой автомат The Orion Trail",
+		INSTRUMENTAL = "игровым автоматом The Orion Trail",
+		PREPOSITIONAL = "игровом автомате The Orion Trail"
+	)
 	desc = "Узнайте, как наши предки добрались до Ориона, и повеселитесь в процессе!"
 	icon_state = "arcade"
 	circuit = /obj/item/circuitboard/arcade/orion_trail
@@ -311,9 +327,9 @@
 
 /obj/machinery/computer/arcade/orion_trail/Reset()
 	// Sets up the main trail
-	stops = list("Плуто","Пояс астероидов","Proxima Centauri","Dead Space","Ригель Прайм","Tau Ceti Beta","Чёрная Дыра","Space Outpost Beta-9","Orion Prime")
+	stops = list("Плутон","Пояс астероидов","Проксима Центавра","Мёртвый Космос","Ригель Прайм","Tau Ceti Beta","Чёрная Дыра","Космический аванпост Бета-9","Орион Прайм")
 	stopblurbs = list(
-		"Плуто, уже давно оснащенный датчиками и сканерами дальнего действия, готов и даже продолжает исследовать дальние уголки галактики.",
+		"Плутон, уже давно оснащенный датчиками и сканерами дальнего действия, готов и даже продолжает исследовать дальние уголки галактики.",
 		"На окраине Солнечной системы находится коварный пояс астероидов. Многие были раздавлены случайными астероидами и ошибочными суждениями.",
 		"Ближайшая к Солнцу звездная система, в прошлые века она служила напоминанием о границах досветовых путешествий, а теперь стала малонаселенным убежищем для искателей приключений и торговцев.",
 		"Эта область космоса особенно лишена материи. Известно, что такие области с низкой плотностью существуют, но их обширность поражает.",
@@ -382,7 +398,7 @@
 			emagged = 0 //removes the emagged status after you lose
 			playing = 0 //also a new game
 			name = "The Orion Trail"
-			desc = "Узнайте, как наши предки попали на Орион, и получайте удовольствие от процесса!"
+			desc = "Узнайте, как наши предки добрались до Ориона, и повеселитесь в процессе!"
 
 	else if(event)
 		dat = eventdat
@@ -403,7 +419,7 @@
 		dat += "<P ALIGN=Right><a href='byond://?src=[UID()];close=1'>Закрыть</a></P>"
 	else
 		dat = "<center><h2>The Orion Trail</h2></center>"
-		dat += "<br><center><h3>Испытайте путешествие своих предков!</h3></center><br><br>"
+		dat += "<br><center><h3>Испытайте себя в роли первопроходца!</h3></center><br><br>"
 		dat += "<center><b><a href='byond://?src=[UID()];newgame=1'>Новая Игра</a></b></center>"
 		dat += "<P ALIGN=Right><a href='byond://?src=[UID()];close=1'>Закрыть</a></P>"
 	var/datum/browser/popup = new(user, "arcade", "The Orion Trail", 420, 420, src)
@@ -482,20 +498,20 @@
 						var/turf/simulated/floor/F
 						for(F in orange(1, src))
 							F.ChangeTurf(F.baseturf)
-						atom_say("Что-то врезается в пол возле [src], оставляя его в космосе!")
+						atom_say("Что-то врезается в пол возле [declent_ru(GENITIVE)], оставляя дыру в обшивке!")
 						if(hull)
 							sleep(10)
-							atom_say("Возле [src] внезапно появляется новый этаж. Какого черта?")
+							atom_say("Возле [declent_ru(GENITIVE)] внезапно появляется новый этаж. Какого черта?")
 							playsound(loc, 'sound/weapons/genhit.ogg', 100, TRUE)
 							var/turf/space/T
 							for(T in orange(1, src))
 								T.ChangeTurf(/turf/simulated/floor/plating)
 					else
-						atom_say("Что-то врезается в пол рядом с [src] - к счастью, оно не пробило его насквозь!")
+						atom_say("Что-то врезается в пол рядом с [declent_ru(GENITIVE)] - к счастью, оно не пробило его насквозь!")
 						playsound(loc, 'sound/effects/bang.ogg', 20, TRUE)
 				if(ORION_TRAIL_MALFUNCTION)
 					playsound(loc, 'sound/effects/empulse.ogg', 20, TRUE)
-					visible_message(span_danger("[src] сбои в работе, рандомизация внутриигровой статистики!"))
+					visible_message(span_danger("[capitalize(declent_ru(NOMINATIVE))] сбоит, из-за чего внутриигровые показатели перемешиваются!"))
 					var/oldfood = food
 					var/oldfuel = fuel
 					food = rand(10,80) / rand(1,2)
@@ -503,9 +519,9 @@
 					if(electronics)
 						sleep(10)
 						if(oldfuel > fuel && oldfood > food)
-							audible_message(span_danger("[src] издает какой-то успокаивающий гул."))
+							audible_message(span_danger("[capitalize(declent_ru(NOMINATIVE))] издаёт какой-то успокаивающий гул."))
 						else if(oldfuel < fuel || oldfood < food)
-							audible_message(span_danger("[src]  издает какой-то зловещий гул."))
+							audible_message(span_danger("[capitalize(declent_ru(NOMINATIVE))] издаёт какой-то зловещий гул."))
 						food = oldfood
 						fuel = oldfuel
 						playsound(loc, 'sound/machines/chime.ogg', 20, TRUE)
@@ -552,7 +568,7 @@
 			event()
 			if(emagged) //has to be here because otherwise it doesn't work
 				playsound(loc, 'sound/effects/supermatter.ogg', 100, TRUE)
-				atom_say("Перед [src] внезапно появляется миниатюрная черная дыра, пожирающая [usr] заживо!")
+				atom_say("Перед [declent_ru(INSTRUMENTAL)] внезапно появляется миниатюрная черная дыра, пожирающая [usr] заживо!")
 				if(isliving(usr))
 					var/mob/living/L = usr
 					L.Stun(20 SECONDS) //you can't run :^)
@@ -623,17 +639,17 @@
 		if(prob(success))
 			FU = rand(5,15)
 			FO = rand(5,15)
-			last_spaceport_action = "Вы успешно совершили налет на космопорт! Вы получили [FU] топлива и [FO] пищи! (+[FU]FU,+[FO]FO)"
+			last_spaceport_action = "Вы успешно совершили налёт на космопорт! Вы получили [FU] единиц[declension_ru(FU, "у", "ы", "")] топлива и [FO] единиц[declension_ru(FO, "у", "ы", "")] пищи! (+[FU]FU,+[FO]FO)"
 		else
 			FU = rand(-5,-15)
 			FO = rand(-5,-15)
-			last_spaceport_action = "Вам не удалось совершить налет на космопорт! Вы потеряли [FU*-1] топлива и [FO*-1] пищи в твоем стремлении к спасению! ([FU]FU,[FO]FO)"
+			last_spaceport_action = "Вам не удалось совершить налёт на космопорт! Вы потеряли [FU*-1] единиц[declension_ru(FU*-1, "у", "ы", "")] топлива и [FO*-1] единиц[declension_ru(FO*-1, "у", "ы", "")] пищи, унося свои ноги оттуда! ([FU]FU,[FO]FO)"
 
 			//your chance of lose a crewmember is 1/2 your chance of success
 			//this makes higher % failures hurt more, don't get cocky space cowboy!
 			if(prob(success*5))
 				var/lost_crew = remove_crewmember()
-				last_spaceport_action = "Вам не удалось совершить налет на космопорт! Вы потеряли [FU*-1] топлива, [FO*-1] пищи, и [lost_crew] в твоем стремлении к спасению! ([FU]FI,[FO]FO,-Crew)"
+				last_spaceport_action = "Вам не удалось совершить налёт на космопорт! Вы потеряли [FU*-1] единиц[declension_ru(FU*-1, "у", "ы", "")] топлива, [FO*-1] единиц[declension_ru(FO*-1, "у", "ы", "")] пищи, и [lost_crew], унося свои ноги оттуда! ([FU]FI,[FO]FO,-Crew)"
 				if(emagged)
 					atom_say("ВИИИУ-ВИИИУ, служба безопасности космопорта в пути!")
 					for(var/i, i<=3, i++)
@@ -688,7 +704,7 @@
 				var/sfuel = rand(1,10)
 				food -= sfood
 				fuel -= sfuel
-				eventdat += "<br>Они украли [sfood] <b>пищи</b> и [sfuel] <b>топлива</b>."
+				eventdat += "<br>Они украли [sfood] [FO*-1] единиц[declension_ru(sfood, "у", "ы", "")] <b>пищи</b> и [sfuel] единиц[declension_ru(sfuel, "у", "ы", "")] <b>топлива</b>."
 			else if(prob(10))
 				var/deadname = remove_crewmember()
 				eventdat += "<br>[deadname] пытался сопротивляться, но был убит."
@@ -706,7 +722,7 @@
 		if(ORION_TRAIL_ILLNESS)
 			eventdat += "Кто-то подхватил смертельную болезнь!"
 			var/deadname = remove_crewmember()
-			eventdat += "<br>[deadname] был убит этой болезнью."
+			eventdat += "<br>[deadname] умер из-за болезни."
 			eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];eventclose=1'>Продолжить</a></P>"
 			eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];close=1'>Закрыть</a></P>"
 
@@ -714,7 +730,7 @@
 			eventdat += "О, нет! Двигатель сломался!"
 			eventdat += "<br>Вы можете починить его с помощью детали двигателя или произвести ремонт в течение 3 дней."
 			if(engine >= 1)
-				eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];useengine=1'>Использовать детали</a><a href='byond://?src=[UID()];wait=1'>Подолжать</a></P>"
+				eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];useengine=1'>Использовать детали</a><a href='byond://?src=[UID()];wait=1'>Подождать</a></P>"
 			else
 				eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];wait=1'>Подождать</a></P>"
 			eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];close=1'>Закрыть</a></P>"
@@ -723,7 +739,7 @@
 			eventdat += "Системы корабля неисправны!"
 			eventdat += "<br>Вы можете заменить вышедшую из строя электронику запасными частями или потратить 3 дня на устранение неполадок с ИИ."
 			if(electronics >= 1)
-				eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];useelec=1'>Использовать электронику</a><a href='byond://?src=[UID()];wait=1'>Подождать</a></P>"
+				eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];useelec=1'>Использовать запасные детали</a><a href='byond://?src=[UID()];wait=1'>Подождать</a></P>"
 			else
 				eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];wait=1'>Подождать</a></P>"
 			eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];close=1'>Закрыть</a></P>"
@@ -735,7 +751,7 @@
 				var/sfuel = rand(5,15)
 				food -= sfood
 				fuel -= sfuel
-				eventdat += "<br>[sfood] <b>пищи</b> и [sfuel] <b>топлива</b> выброшены в открытый космос.."
+				eventdat += "<br>[sfood] единиц[declension_ru(sfood, "у", "ы", "")] <b>пищи</b> и [sfuel] единиц[declension_ru(sfuel, "у", "ы", "")] <b>топлива</b> выброшены в открытый космос.."
 			if(prob(10))
 				var/deadname = remove_crewmember()
 				eventdat += "<br>[deadname] погиб в результате быстрой разгерметизации."
@@ -792,7 +808,7 @@
 					var/chancetokill = 30*lings_aboard-(5*alive) //eg: 30*2-(10) = 50%, 2 lings, 2 crew is 50% chance
 					if(prob(chancetokill))
 						var/deadguy = remove_crewmember()
-						eventdat += "<br>Генокрад[ling2 ? "ы":""] [ling2 ? "бегут":"бежит"] к [deadguy] и капитулируют!"
+						eventdat += "<br>Генокрад[ling2 ? "ы":""] [ling2 ? "подбегают":"подбегает"] к [deadguy] и [ling2 ? "рубят":"рубит"] его на части!"
 					else
 						eventdat += "<br>Вы доблестно сражаетесь с Генокрад[ling2 ? "ами":"ом"]!"
 						eventdat += "<br>Вы порезали Генокрад[ling2 ? "ов":"а"] в мясо... Фуу"
@@ -846,7 +862,7 @@
 						add_crewmember()
 						freecrew++
 
-					eventdat += "<br>Торговцы космопорта жалеют вас и дают немного еды и топлива (+[FU]FU,+[FO]FO)"
+					eventdat += "<br>Торговцы космопорта жалеют вас и дают немного Пищи и Топлива (+[FU]FU,+[FO]FO)"
 					if(freecrew)
 						eventdat += "<br>Вы также получаете нового члена экипажа!"
 
@@ -864,7 +880,7 @@
 
 				//Sell crew
 				if(settlers.len > 1)
-					eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];sellcrew=1'>Продать члена экипажа за топливо и еду (+15FU,+15FO)</a></P>"
+					eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];sellcrew=1'>Продать члена экипажа за Топливо и Пищу (+7FU,+7FO)</a></P>"
 				else
 					eventdat += "<P ALIGN=Right>Вы не можете продать члена экипажа</P>"
 
@@ -891,14 +907,14 @@
 
 				//Trade
 				if(fuel > 5)
-					eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];trade=1'>Обменять топливо на пищу (-5FU,+5FO)</a></P>"
+					eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];trade=1'>Обменять Топливо на Пищу (-5FU,+5FO)</a></P>"
 				else
-					eventdat += "<P ALIGN=Right>Вы не можете позволить себе обменять топливо на пищу</P"
+					eventdat += "<P ALIGN=Right>Вы не можете позволить себе обменять Топливо на Пищу</P>"
 
 				if(food > 5)
-					eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];trade=2'>Обменять топливо на пищу (+5FU,-5FO)</a></P>"
+					eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];trade=2'>Обменять Пищу на Топливо (+5FU,-5FO)</a></P>"
 				else
-					eventdat += "<P ALIGN=RightВы не можете позволить себе обменять пищу на топливо</P"
+					eventdat += "<P ALIGN=Right>Вы не можете позволить себе обменять Пищу на Топливо</P>"
 
 				//Raid the spaceport
 				eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];raid_spaceport=1'>!! Рейд Космопорта !!</a></P>"
@@ -955,6 +971,14 @@
 		prizevend(score)
 	emagged = 0
 	name = "The Orion Trail"
+	ru_names = list(
+		NOMINATIVE = "игровой автомат The Orion Trail",
+		GENITIVE = "игрового автомата The Orion Trail",
+		DATIVE = "игровому автомату The Orion Trail",
+		ACCUSATIVE = "игровой автомат The Orion Trail",
+		INSTRUMENTAL = "игровым автоматом The Orion Trail",
+		PREPOSITIONAL = "игровом автомате The Orion Trail"
+	)
 	desc = "Узнайте, как наши предки попали на Орион, и получайте удовольствие от процесса!"
 
 /obj/machinery/computer/arcade/orion_trail/emag_act(mob/user)
@@ -963,19 +987,43 @@
 		if(user)
 			to_chat(user, span_notice("Вы переопределяете меню чит-кода и переходите к разделу Чит-код #[rand(1, 50)]: Реализм Мод."))
 		name = "The Orion Trail: Realism Edition"
+		ru_names = list(
+			NOMINATIVE = "игровой автомат The Orion Trail: Realism Edition",
+			GENITIVE = "игрового автомата The Orion Trail: Realism Edition",
+			DATIVE = "игровому автомату The Orion Trail: Realism Edition",
+			ACCUSATIVE = "игровой автомат The Orion Trail: Realism Edition",
+			INSTRUMENTAL = "игровым автоматом The Orion Trail: Realism Edition",
+			PREPOSITIONAL = "игровом автомате The Orion Trail: Realism Edition"
+		)
 		desc = "Узнайте, как наши предки попали на Орион, и постарайтесь не сдохнуть в процессе!"
 		newgame()
 		emagged = 1
 
 /mob/living/simple_animal/hostile/syndicate/ranged/orion
 	name = "spaceport security"
-	desc = "Лучшие корпоративные силы службы безопасности для всех космопортов, расположенных вдоль трассы Ориона."
+	ru_names = list(
+		NOMINATIVE = "охрана космопорта",
+		GENITIVE = "охраны космопорта",
+		DATIVE = "охране космопорта",
+		ACCUSATIVE = "охрану космопорта",
+		INSTRUMENTAL = "охраной космопорта",
+		PREPOSITIONAL = "охране космопорта"
+	)
+	desc = "Лучшие корпоративные силы службы безопасности для всех космопортов, расположенных вдоль пути к Ориону."
 	faction = list("orion")
 	loot = list()
 	del_on_death = TRUE
 
 /obj/item/orion_ship
 	name = "model settler ship"
+	ru_names = list(
+		NOMINATIVE = "модель корабля колонистов",
+		GENITIVE = "модели корабля колонистов",
+		DATIVE = "модели корабля колонистов",
+		ACCUSATIVE = "модель корабля колонистов",
+		INSTRUMENTAL = "моделью корабля колонистов",
+		PREPOSITIONAL = "модели корабля колонистов"
+	)
 	desc = "Модель космического корабля, похожая на те, что использовались в прежние времена при полетах на Орион! В ней даже есть миниатюрный реактор FX-293, который славился своей нестабильностью и склонностью к взрывам..."
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "ship"
@@ -997,24 +1045,32 @@
 	message_admins("[key_name_admin(usr)] primed an explosive Orion ship for detonation.")
 	add_game_logs("primed an explosive Orion ship for detonation.", usr)
 
-	to_chat(user, span_warning("Вы щелкаете выключателем на нижней стороне [src]."))
+	to_chat(user, span_warning("Вы щелкаете выключателем на нижней стороне [declent_ru(GENITIVE)]."))
 	active = 1
-	visible_message(span_notice("[src] тихо пищит и жужжит, пробуждая к жизни!"))
+	visible_message(span_notice("[capitalize(declent_ru(GENITIVE))] тихо пищит и жужжит, пробуждаясь к жизни!"))
 	playsound(src.loc, 'sound/machines/defib_saftyon.ogg', 25, TRUE)
 	atom_say("Это корабль ID #[rand(1,1000)] руководству порта Орион. Мы заходим на посадку, приём.")
 	sleep(20)
-	visible_message(span_warning("[src] начинает вибрировать..."))
+	visible_message(span_warning("[capitalize(declent_ru(GENITIVE))] начинает вибрировать..."))
 	atom_say("Э-э, порт? Возникли некоторые проблемы с нашим реактором, не могли бы вы проверить его? Приём.")
 	sleep(30)
 	atom_say("О, Боже! Код восемь! КОД ВОСЕМЬ! ЭТО БУД-")
 	playsound(loc, 'sound/machines/buzz-sigh.ogg', 25, TRUE)
 	sleep(3.6)
-	visible_message(span_userdanger("[src] взрывается!"))
+	visible_message(span_userdanger("[capitalize(declent_ru(GENITIVE))] взрывается!"))
 	explosion(src.loc, 1,2,4, flame_range = 3, cause = user)
 	qdel(src)
 
 /obj/machinery/computer/arcade/orion_trail/pc_frame
 	name = "special purpose computer"
+	ru_names = list(
+		NOMINATIVE = "компьютер специального назначения",
+		GENITIVE = "компьютера специального назначения",
+		DATIVE = "компьютеру специального назначения",
+		ACCUSATIVE = "компьютер специального назначения",
+		INSTRUMENTAL = "компьютером специального назначения",
+		PREPOSITIONAL = "компьютере специального назначения"
+	)
 	desc = "Выполнять вычисления на этом компьютере будет сложно..."
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "aimainframe"
@@ -1026,6 +1082,14 @@
 
 /obj/machinery/computer/arcade/battle/pc_frame
 	name = "special purpose computer"
+	ru_names = list(
+		NOMINATIVE = "компьютер специального назначения",
+		GENITIVE = "компьютера специального назначения",
+		DATIVE = "компьютеру специального назначения",
+		ACCUSATIVE = "компьютер специального назначения",
+		INSTRUMENTAL = "компьютером специального назначения",
+		PREPOSITIONAL = "компьютере специального назначения"
+	)
 	desc = "Выполнять вычисления на этом компьютере будет сложно..."
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "aimainframe"
