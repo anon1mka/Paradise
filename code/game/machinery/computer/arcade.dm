@@ -57,6 +57,14 @@
 
 /obj/machinery/computer/arcade/battle
 	name = "arcade machine"
+	ru_names = list(
+		NOMINATIVE = "игровой автомат",
+		GENITIVE = "игрового автомата",
+		DATIVE = "игровому автомату",
+		ACCUSATIVE = "игровой автомат",
+		INSTRUMENTAL = "игровым автоматом",
+		PREPOSITIONAL = "игровом автомате"
+	)
 	desc = "Не поддерживает пинбол."
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "arcade"
@@ -83,6 +91,15 @@
 
 	enemy_name = replacetext((name_part1 + name_part2), "the ", "")
 	name = (name_action + name_part1 + name_part2)
+
+	ru_names = list(
+		NOMINATIVE = "игровой автомат [name]",
+		GENITIVE = "игрового автомата [name]",
+		DATIVE = "игровому автомату [name]",
+		ACCUSATIVE = "игровой автомат [name]",
+		INSTRUMENTAL = "игровым автоматом [name]",
+		PREPOSITIONAL = "игровом автомате [name]"
+	)
 
 /obj/machinery/computer/arcade/battle/attack_hand(mob/user as mob)
 	if(..())
