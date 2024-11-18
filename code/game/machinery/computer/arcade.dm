@@ -149,7 +149,7 @@
 			blocked = 1
 			var/pointamt = rand(1,3)
 			var/healamt = rand(6,8)
-			temp = "Вы использовали [pointamt] единиц[declension_ru(pointamt, "у", "ы", "")]  ману <br>и восстановили [healamt] единиц[declension_ru(healamt, "у", "ы", "")] здоровь[declension_ru(healamt, "е", "я", "я")]!"
+			temp = "Вы использовали [pointamt] единиц[declension_ru(pointamt, "у", "ы", "")] ману <br>и восстановили [healamt] единиц здоровья!"
 			playsound(loc, 'sound/arcade/heal.ogg', 50, TRUE)
 			updateUsrDialog()
 			turtle++
@@ -164,7 +164,7 @@
 		else if(href_list["charge"])
 			blocked = 1
 			var/chargeamt = rand(4,7)
-			temp = "Вы восстанавливаете [chargeamt] единиц[declension_ru(chargeamt, "у", "ы", "")] [declension_ru(chargeamt, "ману", "маны", "маны")]"
+			temp = "Вы восстанавливаете [chargeamt] единиц[declension_ru(chargeamt, "у", "ы", "")] маны"
 			playsound(loc, 'sound/arcade/mana.ogg', 50, TRUE)
 			player_mp += chargeamt
 			if(turtle > 0)
@@ -223,7 +223,7 @@
 
 	else if((enemy_mp <= 5) && (prob(70)))
 		var/stealamt = rand(2,3)
-		temp = "[enemy_name] крадет [stealamt] единиц[declension_ru(stealamt, "у", "ы", "")] вашей маны!"
+		temp = "[enemy_name] крадёт [stealamt] единиц[declension_ru(stealamt, "у", "ы", "")] вашей маны!"
 		playsound(loc, 'sound/arcade/steal.ogg', 50, TRUE)
 		player_mp -= stealamt
 		updateUsrDialog()
@@ -401,7 +401,7 @@
 					user.set_nutrition(0) //yeah you pretty hongry
 					to_chat(user, span_userdanger("<font size=3>Ваше тело мгновенно сжимается, как у человека, который не ел месяцами. Когда вы падаете на пол, вас охватывают мучительные судороги."))
 			if(fuel <= 0)
-				dat += "<br>У вас закончилось топливо, и вы медленно приближаетесь к звезде."
+				dat += "<br>У вас закончилось Топливо, и вы медленно приближаетесь к звезде."
 				if(emagged)
 					var/mob/living/M = user
 					M.adjust_fire_stacks(5)
@@ -518,13 +518,13 @@
 						atom_say("Что-то врезается в пол возле [declent_ru(GENITIVE)], оставляя дыру в обшивке!")
 						if(hull)
 							sleep(10)
-							atom_say("Возле [declent_ru(GENITIVE)] внезапно появляется новый этаж. Какого черта?")
+							atom_say("Возле [declent_ru(GENITIVE)] внезапно появляется новый этаж. Какого чёрта?")
 							playsound(loc, 'sound/weapons/genhit.ogg', 100, TRUE)
 							var/turf/space/T
 							for(T in orange(1, src))
 								T.ChangeTurf(/turf/simulated/floor/plating)
 					else
-						atom_say("Что-то врезается в пол рядом с [declent_ru(GENITIVE)] - к счастью, оно не пробило его насквозь!")
+						atom_say("Что-то врезается в пол рядом с [declent_ru(INSTRUMENTAL)] - к счастью, оно не пробило его насквозь!")
 						playsound(loc, 'sound/effects/bang.ogg', 20, TRUE)
 				if(ORION_TRAIL_MALFUNCTION)
 					playsound(loc, 'sound/effects/empulse.ogg', 20, TRUE)
@@ -656,17 +656,17 @@
 		if(prob(success))
 			FU = rand(5,15)
 			FO = rand(5,15)
-			last_spaceport_action = "Вы успешно совершили налёт на космопорт! Вы получили [FU] единиц[declension_ru(FU, "у", "ы", "")] топлива и [FO] единиц[declension_ru(FO, "у", "ы", "")] пищи! (+[FU]FU,+[FO]FO)"
+			last_spaceport_action = "Вы успешно совершили налёт на космопорт! Вы получили [FU] единиц[declension_ru(FU, "у", "ы", "")] Топлива и [FO] единиц[declension_ru(FO, "у", "ы", "")] Пищи! (+[FU]FU,+[FO]FO)"
 		else
 			FU = rand(-5,-15)
 			FO = rand(-5,-15)
-			last_spaceport_action = "Вам не удалось совершить налёт на космопорт! Вы потеряли [FU*-1] единиц[declension_ru(FU*-1, "у", "ы", "")] топлива и [FO*-1] единиц[declension_ru(FO*-1, "у", "ы", "")] пищи, унося свои ноги оттуда! ([FU]FU,[FO]FO)"
+			last_spaceport_action = "Вам не удалось совершить налёт на космопорт! Вы потеряли [FU*-1] единиц[declension_ru(FU*-1, "у", "ы", "")] Топлива и [FO*-1] единиц[declension_ru(FO*-1, "у", "ы", "")] Пищи, унося свои ноги оттуда! ([FU]FU,[FO]FO)"
 
 			//your chance of lose a crewmember is 1/2 your chance of success
 			//this makes higher % failures hurt more, don't get cocky space cowboy!
 			if(prob(success*5))
 				var/lost_crew = remove_crewmember()
-				last_spaceport_action = "Вам не удалось совершить налёт на космопорт! Вы потеряли [FU*-1] единиц[declension_ru(FU*-1, "у", "ы", "")] топлива, [FO*-1] единиц[declension_ru(FO*-1, "у", "ы", "")] пищи, и [lost_crew], унося свои ноги оттуда! ([FU]FI,[FO]FO,-Crew)"
+				last_spaceport_action = "Вам не удалось совершить налёт на космопорт! Вы потеряли [FU*-1] единиц[declension_ru(FU*-1, "у", "ы", "")] Топлива, [FO*-1] единиц[declension_ru(FO*-1, "у", "ы", "")] Пищи, и [lost_crew], унося свои ноги оттуда! ([FU]FI,[FO]FO,-Crew)"
 				if(emagged)
 					atom_say("ВИИИУ-ВИИИУ, служба безопасности космопорта в пути!")
 					for(var/i, i<=3, i++)
@@ -697,11 +697,11 @@
 			if(1) //Fuel
 				fuel -= 5
 				food += 5
-				last_spaceport_action = "Обменять топливо на пищу"
+				last_spaceport_action = "Обменять Топливо на Пищу"
 			if(2) //Food
 				fuel += 5
 				food -= 5
-				last_spaceport_action = "Обменять пищу на топливо"
+				last_spaceport_action = "Обменять Пищу на Топливо"
 		event()
 
 	add_fingerprint(usr)
@@ -721,7 +721,7 @@
 				var/sfuel = rand(1,10)
 				food -= sfood
 				fuel -= sfuel
-				eventdat += "<br>Они украли [sfood] единиц[declension_ru(sfood, "у", "ы", "")] <b>пищи</b> и [sfuel] единиц[declension_ru(sfuel, "у", "ы", "")] <b>топлива</b>."
+				eventdat += "<br>Они украли [sfood] единиц[declension_ru(sfood, "у", "ы", "")] <b>Пищи</b> и [sfuel] единиц[declension_ru(sfuel, "у", "ы", "")] <b>Топлива</b>."
 			else if(prob(10))
 				var/deadname = remove_crewmember()
 				eventdat += "<br>[deadname] пытался сопротивляться, но был убит."
@@ -756,7 +756,7 @@
 			eventdat += "Системы корабля неисправны!"
 			eventdat += "<br>Вы можете заменить вышедшую из строя электронику запасными частями или потратить 3 дня на устранение неполадок с ИИ."
 			if(electronics >= 1)
-				eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];useelec=1'>Использовать запасные детали</a><a href='byond://?src=[UID()];wait=1'>Подождать</a></P>"
+				eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];useelec=1'>Использовать электронику</a><a href='byond://?src=[UID()];wait=1'>Подождать</a></P>"
 			else
 				eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];wait=1'>Подождать</a></P>"
 			eventdat += "<P ALIGN=Right><a href='byond://?src=[UID()];close=1'>Закрыть</a></P>"
@@ -768,7 +768,7 @@
 				var/sfuel = rand(5,15)
 				food -= sfood
 				fuel -= sfuel
-				eventdat += "<br>[sfood] единиц[declension_ru(sfood, "у", "ы", "")] <b>пищи</b> и [sfuel] единиц[declension_ru(sfuel, "у", "ы", "")] <b>топлива</b> выброшены в открытый космос.."
+				eventdat += "<br>[sfood] единиц[declension_ru(sfood, "у", "ы", "")] <b>Пищи</b> и [sfuel] единиц[declension_ru(sfuel, "у", "ы", "")] <b>Топлива</b> выброшены в открытый космос.."
 			if(prob(10))
 				var/deadname = remove_crewmember()
 				eventdat += "<br>[deadname] погиб в результате быстрой разгерметизации."
@@ -996,7 +996,7 @@
 		INSTRUMENTAL = "игровым автоматом The Orion Trail",
 		PREPOSITIONAL = "игровом автомате The Orion Trail"
 	)
-	desc = "Узнайте, как наши предки попали на Орион, и получайте удовольствие от процесса!"
+	desc = "Узнайте, как наши предки добрались до Ориона, и повеселитесь в процессе!"
 
 /obj/machinery/computer/arcade/orion_trail/emag_act(mob/user)
 	if(!emagged)
@@ -1064,17 +1064,17 @@
 
 	to_chat(user, span_warning("Вы щелкаете выключателем на нижней стороне [declent_ru(GENITIVE)]."))
 	active = 1
-	visible_message(span_notice("[capitalize(declent_ru(GENITIVE))] тихо пищит и жужжит, пробуждаясь к жизни!"))
+	visible_message(span_notice("[capitalize(declent_ru(NOMINATIVE))] тихо пищит и жужжит, пробуждаясь к жизни!"))
 	playsound(src.loc, 'sound/machines/defib_saftyon.ogg', 25, TRUE)
 	atom_say("Это корабль ID #[rand(1,1000)] руководству порта Орион. Мы заходим на посадку, приём.")
 	sleep(20)
-	visible_message(span_warning("[capitalize(declent_ru(GENITIVE))] начинает вибрировать..."))
+	visible_message(span_warning("[capitalize(declent_ru(NOMINATIVE))] начинает вибрировать..."))
 	atom_say("Э-э, порт? Возникли некоторые проблемы с нашим реактором, не могли бы вы проверить его? Приём.")
 	sleep(30)
 	atom_say("О, Боже! Код восемь! КОД ВОСЕМЬ! ЭТО БУД-")
 	playsound(loc, 'sound/machines/buzz-sigh.ogg', 25, TRUE)
 	sleep(3.6)
-	visible_message(span_userdanger("[capitalize(declent_ru(GENITIVE))] взрывается!"))
+	visible_message(span_userdanger("[capitalize(declent_ru(NOMINATIVE))] взрывается!"))
 	explosion(src.loc, 1,2,4, flame_range = 3, cause = user)
 	qdel(src)
 
