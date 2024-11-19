@@ -107,39 +107,39 @@ GLOBAL_VAR_INIT(sc_safecode5, "[rand(0,9)]")
 
 /obj/item/paper/sc_safehint_paper_prison/New()
 	..()
-	info = "<i>The ink is smudged, you can only make out a couple numbers:</i> '[GLOB.sc_safecode1]**[GLOB.sc_safecode4]*'"
+	info = "<i>Чернила размазались, можно разобрать только пару цифр:</i> '[GLOB.sc_safecode1]**[GLOB.sc_safecode4]*'"
 
 /obj/item/paper/sc_safehint_paper_hydro
 	name = "shredded paper"
 /obj/item/paper/sc_safehint_paper_hydro/New()
 	..()
-	info = "<i>Although the paper is shredded, you can clearly see the number:</i> '[GLOB.sc_safecode2]'"
+	info = "<i>Несмотря на то, что бумага порвана, вы можете отчетливо видеть номер:</i> '[GLOB.sc_safecode2]'"
 
 /obj/item/paper/sc_safehint_paper_caf
 	name = "blood-soaked paper"
 	//This does not have to be in New() because it is a constant. There are no variables in it i.e. [sc_safcode]
-	info = "<font color=red><i>This paper is soaked in blood, it is impossible to read any text.</i></font>"
+	info = "<font color=red><i>Эта бумага пропитана кровью, прочитать какой-либо текст невозможно.</i></font>"
 
 /obj/item/paper/sc_safehint_paper_bible
 	name = "hidden paper"
 /obj/item/paper/sc_safehint_paper_bible/New()
 	..()
-	info = {"<i>It would appear that the pen hidden with the paper had leaked ink over the paper.
-			However you can make out the last three digits:</i>'[GLOB.sc_safecode3][GLOB.sc_safecode4][GLOB.sc_safecode5]'
+	info = {"<i>Похоже, что чернила попали на бумагу из-за ручки, спрятанной под бумагой.
+				Однако вы можете разобрать последние три цифры:</i>'[GLOB.sc_safecode3][GLOB.sc_safecode4][GLOB.sc_safecode5]'
 			"}
 
 /obj/item/paper/sc_safehint_paper_shuttle
-	info = {"<b>Target:</b> Research-station Epsilon<br>
-			<b>Objective:</b> Prototype weaponry. The captain likely keeps them locked in her safe.<br>
+	info = {"<b>Цель:</b> Исследовательская станция "Эпсилон"<br>
+			<b>Задачи:</b> Прототип оружия. Капитан, вероятно, хранит его запертым в своем сейфе.<br>
 			<br>
-			Our on-board spy has learned the code and has hidden away a few copies of the code around the station. Unfortunatly he has been captured by security
-			Your objective is to split up, locate any of the papers containing the captain's safe code, open the safe and
-			secure anything found inside. If possible, recover the imprisioned syndicate operative and recieve the code from him.<br>
+			Наш бортовой шпион узнал код и спрятал несколько копий кода по всей станции. К сожалению, он был схвачен службой безопасности.
+			Ваша задача - разделиться, найти все бумаги, содержащие код сейфа капитана, открыть сейф и обезопасить все, что находится внутри.
+			Если возможно, найдите арестованного агента синдиката и получите от него код.<br>
 			<br>
-			<u>As always, eliminate anyone who gets in the way.</u><br>
+			<u>Как всегда, устраните всех, кто встанет у вас на пути.</u><br>
 			<br>
-			Your assigned ship is designed specifically for penetrating the hull of another station or ship with minimal damage to operatives.
-			It is completely fly-by-wire meaning you have just have to enjoy the ride and when the red light comes on... find something to hold onto!
+			Назначенный вам корабль спроектирован специально для проникновения в корпус другой станции или корабля с минимальным ущербом для оперативников.
+			Это полностью автономная система, а значит, вам нужно просто наслаждаться поездкой, а когда загорится красный свет... найдите, за что ухватиться!
 			"}
 /*
  * Captain's safe

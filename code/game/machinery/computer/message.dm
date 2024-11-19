@@ -90,16 +90,16 @@
 	//If the computer is being hacked or is emagged, display the reboot message.
 	if(hacking || emag)
 		message = rebootmsg
-	var/dat = {"<meta charset="UTF-8"><head><title>Message Monitor Console</title></head><body>"}
-	dat += "<center><h2>Message Monitor Console</h2></center><hr>"
+	var/dat = {"<meta charset="UTF-8"><head><title>Консоль мониторинга сообщений</title></head><body>"}
+	dat += "<center><h2>Консоль мониторинга сообщений</h2></center><hr>"
 	dat += "<center><h4><font color='blue'[message]</h5></center>"
 
 	if(auth)
-		dat += "<h4><dd><a href='byond://?src=[UID()];auth=1'>&#09;<font color='green'>\[Authenticated\]</font></a>&#09;/"
-		dat += " Server Power: <a href='byond://?src=[UID()];active=1'>[src.linkedServer && src.linkedServer.active ? "<font color='green'>\[On\]</font>":"<font color='red'>\[Off\]</font>"]</a></h4>"
+		dat += "<h4><dd><a href='byond://?src=[UID()];auth=1'>&#09;<font color='green'>\[Авторизован\]</font></a>&#09;/"
+		dat += " Питание Сервера: <a href='byond://?src=[UID()];active=1'>[src.linkedServer && src.linkedServer.active ? "<font color='green'>\[Вкл\]</font>":"<font color='red'>\[Выкл\]</font>"]</a></h4>"
 	else
-		dat += "<h4><dd><a href='byond://?src=[UID()];auth=1'>&#09;<font color='red'>\[Unauthenticated\]</font></a>&#09;/"
-		dat += " Server Power: <u>[src.linkedServer && src.linkedServer.active ? "<font color='green'>\[On\]</font>":"<font color='red'>\[Off\]</font>"]</u></h4>"
+		dat += "<h4><dd><a href='byond://?src=[UID()];auth=1'>&#09;<font color='red'>\[Не авторизован\]</font></a>&#09;/"
+		dat += " Питание Сервера: <u>[src.linkedServer && src.linkedServer.active ? "<font color='green'>\[Вкл\]</font>":"<font color='red'>\[Выкл\]</font>"]</u></h4>"
 
 	if(hacking || emag)
 		screen = 2
@@ -112,31 +112,31 @@
 		if(0)
 			//&#09; = TAB
 			var/i = 0
-			dat += "<dd><a href='byond://?src=[UID()];find=1'>&#09;[++i]. Link To A Server</a></dd>"
+			dat += "<dd><a href='byond://?src=[UID()];find=1'>&#09;[++i]. Подключить к серверу</a></dd>"
 			if(auth)
 				if(!linkedServer || (linkedServer.stat & (NOPOWER|BROKEN)))
 					dat += "<dd><A>&#09;ERROR: Server not found!</A><br></dd>"
 				else
-					dat += "<dd><a href='byond://?src=[UID()];view=1'>&#09;[++i]. View Message Logs </a><br></dd>"
-					dat += "<dd><a href='byond://?src=[UID()];viewr=1'>&#09;[++i]. View Request Console Logs </a></br></dd>"
-					dat += "<dd><a href='byond://?src=[UID()];clear=1'>&#09;[++i]. Clear Message Logs</a><br></dd>"
-					dat += "<dd><a href='byond://?src=[UID()];clearr=1'>&#09;[++i]. Clear Request Console Logs</a><br></dd>"
-					dat += "<dd><a href='byond://?src=[UID()];pass=1'>&#09;[++i]. Set Custom Key</a><br></dd>"
-					dat += "<dd><a href='byond://?src=[UID()];msg=1'>&#09;[++i]. Send Admin Message</a><br></dd>"
+					dat += "<dd><a href='byond://?src=[UID()];view=1'>&#09;[++i]. Просмотр журнала сообщений</a><br></dd>"
+					dat += "<dd><a href='byond://?src=[UID()];viewr=1'>&#09;[++i]. Просмотр журнала Консоли Запросов</a></br></dd>"
+					dat += "<dd><a href='byond://?src=[UID()];clear=1'>&#09;[++i]. Очистить журнал сообщений</a><br></dd>"
+					dat += "<dd><a href='byond://?src=[UID()];clearr=1'>&#09;[++i]. Очистить журнал Консоли Запросов</a><br></dd>"
+					dat += "<dd><a href='byond://?src=[UID()];pass=1'>&#09;[++i]. Изменить ключ шифрования</a><br></dd>"
+					dat += "<dd><a href='byond://?src=[UID()];msg=1'>&#09;[++i]. Отправить сообщение</a><br></dd>"
 			else
 				for(var/n = ++i; n <= optioncount; n++)
 					dat += "<dd><font color='blue'>&#09;[n]. ---------------</font><br></dd>"
 			if((isAI(user) || isrobot(user)) && (user.mind.special_role && user.mind.is_original_mob(user)))
 				//Malf/Traitor AIs can bruteforce into the system to gain the Key.
-				dat += "<dd><a href='byond://?src=[UID()];hack=1'><i><font color='Red'>*&@#. Bruteforce Key</font></i></font></a><br></dd>"
+				dat += "<dd><a href='byond://?src=[UID()];hack=1'><i><font color='Red'>*&@#. Подбор ключа шифрования</font></i></font></a><br></dd>"
 			else
 				dat += "<br>"
 
 			//Bottom message
 			if(!auth)
-				dat += "<br><hr><dd>[span_notice("Please authenticate with the server in order to show additional options.")]"
+				dat += "<br><hr><dd>[span_notice("Для доступа к дополнительным функциям необходимо пройти процедуру аутентификации на сервере.")]"
 			else
-				dat += "<br><hr><dd>[span_warning("Reg, #514 forbids sending messages containing Erotic Rendering Properties.")]"
+				dat += "<br><hr><dd>[span_warning("Правило #514 запрещает отправку сообщений, содержащих Элементы Рендера Порнографии.")]"
 
 		//Message Logs
 		if(1)
@@ -144,8 +144,8 @@
 			//var/recipient = "Unspecified" //name of the person
 			//var/sender = "Unspecified" //name of the sender
 			//var/message = "Blank" //transferred message
-			dat += "<center><a href='byond://?src=[UID()];back=1'>Back</a> - <a href='byond://?src=[UID()];refresh=1'>Refresh</center><hr>"
-			dat += "<table border='1' width='100%'><tr><th width = '5%'>X</th><th width='15%'>Sender</th><th width='15%'>Recipient</th><th width='300px' word-wrap: break-word>Message</th></tr>"
+			dat += "<center><a href='byond://?src=[UID()];back=1'>Назад</a> - <a href='byond://?src=[UID()];refresh=1'>Обновить</center><hr>"
+			dat += "<table border='1' width='100%'><tr><th width = '5%'>X</th><th width='15%'>Отправитель</th><th width='15%'>Получатель</th><th width='300px' word-wrap: break-word>Сообщение</th></tr>"
 			for(var/datum/data_pda_msg/pda in src.linkedServer.pda_msgs)
 				index++
 				if(index > 3000)
@@ -157,8 +157,8 @@
 		//Hacking screen.
 		if(2)
 			if(istype(user, /mob/living/silicon/ai) || istype(user, /mob/living/silicon/robot))
-				dat += "Brute-forcing for server key.<br> It will take 20 seconds for every character that the password has."
-				dat += "In the meantime, this console can reveal your true intentions if you let someone access it. Make sure no humans enter the room during that time."
+				dat += "Подбор ключа шифрования.<br> Это займет 20 секунд для каждого символа, содержащегося в пароле."
+				dat += "В это же время, эта консоль может раскрыть ваши истинные намерения, если вы позволите кому-либо получить к ней доступ. Убедитесь, что в это время в комнату никто не вошёл."
 			else
 				//It's the same message as the one above but in binary. Because robots understand binary and humans don't... well I thought it was clever.
 				dat += {"01000010011100100111010101110100011001010010110<br>
@@ -199,13 +199,13 @@
 
 		//Fake messages
 		if(3)
-			dat += "<center><a href='byond://?src=[UID()];back=1'>Back</a> - <a href='byond://?src=[UID()];Reset=1'>Reset</a></center><hr>"
+			dat += "<center><a href='byond://?src=[UID()];back=1'>Назад</a> - <a href='byond://?src=[UID()];Reset=1'>Сброс</a></center><hr>"
 
 			dat += {"<table border='1' width='100%'>
-					<tr><td width='20%'><a href='byond://?src=[UID()];select=Sender'>Sender</a></td>
-					<td width='20%'><a href='byond://?src=[UID()];select=RecJob'>Sender's Job</a></td>
-					<td width='20%'><a href='byond://?src=[UID()];select=Recepient'>Recipient</a></td>
-					<td width='300px' word-wrap: break-word><a href='byond://?src=[UID()];select=Message'>Message</a></td></tr>"}
+					<tr><td width='20%'><a href='byond://?src=[UID()];select=Sender'>Имя отправителя</a></td>
+					<td width='20%'><a href='byond://?src=[UID()];select=RecJob'>Должность отправителя</a></td>
+					<td width='20%'><a href='byond://?src=[UID()];select=Recepient'>Получатель</a></td>
+					<td width='300px' word-wrap: break-word><a href='byond://?src=[UID()];select=Message'>Сообщение</a></td></tr>"}
 				//Sender  - Sender's Job  - Recepient - Message
 				//Al Green- Your Dad	  - Your Mom  - WHAT UP!?
 
@@ -213,7 +213,7 @@
 			<td width='20%'>[customjob]</td>
 			<td width='20%'>[customrecepient ? customrecepient.owner : "NONE"]</td>
 			<td width='300px'>[custommessage]</td></tr>"}
-			dat += "</table><br><center><a href='byond://?src=[UID()];select=Send'>Send</a>"
+			dat += "</table><br><center><a href='byond://?src=[UID()];select=Send'>Отправить</a>"
 
 		//Request Console Logs
 		if(4)
@@ -228,9 +228,9 @@
 				var/id_auth = "Unauthenticated"					 - 15%
 				var/priority = "Normal"							 - 10%
 			*/
-			dat += "<center><a href='byond://?src=[UID()];back=1'>Back</a> - <a href='byond://?src=[UID()];refresh=1'>Refresh</center><hr>"
-			dat += {"<table border='1' width='100%'><tr><th width = '5%'>X</th><th width='15%'>Sending Dep.</th><th width='15%'>Receiving Dep.</th>
-			<th width='300px' word-wrap: break-word>Message</th><th width='15%'>Stamp</th><th width='15%'>ID Auth.</th><th width='15%'>Priority.</th></tr>"}
+			dat += "<center><a href='byond://?src=[UID()];back=1'>Назад</a> - <a href='byond://?src=[UID()];refresh=1'>Обновить</center><hr>"
+			dat += {"<table border='1' width='100%'><tr><th width = '5%'>X</th><th width='15%'>Отдел запроса</th><th width='15%'>Отдел приёма</th>
+			<th width='300px' word-wrap: break-word>Сообщение</th><th width='15%'>Печать</th><th width='15%'>ID-карта</th><th width='15%'>Приоритет</th></tr>"}
 			for(var/datum/data_rc_msg/rc in src.linkedServer.rc_msgs)
 				index++
 				if(index > 3000)
@@ -251,10 +251,10 @@
 
 /obj/machinery/computer/message_monitor/proc/BruteForce(mob/user as mob)
 	if(isnull(linkedServer))
-		to_chat(user, span_warning("Could not complete brute-force: Linked Server Disconnected!"))
+		to_chat(user, span_warning("Не удалось выполнить подбор ключа шифрования: Сервер был отключен!"))
 	else
 		var/currentKey = src.linkedServer.decryptkey
-		to_chat(user, span_warning("Brute-force completed! The key is '[currentKey]'."))
+		to_chat(user, span_warning("Подбор ключа шифрования завершен! Ключ шифрования: '[currentKey]'."))
 	src.hacking = 0
 	src.icon_screen = normal_icon
 	src.screen = 0 // Return the screen back to normal
@@ -264,9 +264,9 @@
 	src.emag = 0
 
 /obj/machinery/computer/message_monitor/proc/ResetMessage()
-	customsender 	= "System Administrator"
+	customsender 	= "Системный администратор"
 	customrecepient = null
-	custommessage 	= "This is a test, please ignore."
+	custommessage 	= "Это тест, пожалуйста, не обращайте внимания."
 	customjob 		= "Admin"
 
 /obj/machinery/computer/message_monitor/Topic(href, href_list)
@@ -279,7 +279,7 @@
 				auth = 0
 				screen = 0
 			else
-				var/dkey = trim(clean_input("Please enter the decryption key."))
+				var/dkey = trim(clean_input("Пожалуйста, введите ключ шифрования."))
 				if(dkey && dkey != "")
 					if(src.linkedServer.decryptkey == dkey)
 						auth = 1
@@ -292,11 +292,11 @@
 		//Find a server
 		if(href_list["find"])
 			if(GLOB.message_servers && GLOB.message_servers.len > 1)
-				src.linkedServer = input(usr,"Please select a server.", "Select a server.", null) as null|anything in GLOB.message_servers
-				message = span_alert("NOTICE: Server selected.")
+				src.linkedServer = input(usr,"Пожалуйста, выберите сервер.", "Пожалуйста, выберите сервер.", null) as null|anything in GLOB.message_servers
+				message = span_alert("УВЕДОМЛЕНИЕ: Сервер выбран.")
 			else if(GLOB.message_servers && GLOB.message_servers.len > 0)
 				linkedServer = GLOB.message_servers[1]
-				message = span_notice("NOTICE: Only Single Server Detected - Server selected.")
+				message = span_notice("УВЕДОМЛЕНИЕ: Обнаружен только один сервер - сервер выбран.")
 			else
 				message = noserver
 
@@ -315,7 +315,7 @@
 			else
 				if(auth)
 					src.linkedServer.pda_msgs = list()
-					message = span_notice("NOTICE: Logs cleared.")
+					message = span_notice("УВЕДОМЛЕНИЕ: Журнал очищен.")
 		//Clears the request console logs - KEY REQUIRED
 		if(href_list["clearr"])
 			if(!linkedServer || (src.linkedServer.stat & (NOPOWER|BROKEN)))
@@ -323,24 +323,24 @@
 			else
 				if(auth)
 					src.linkedServer.rc_msgs = list()
-					message = span_notice("NOTICE: Logs cleared.")
+					message = span_notice("УВЕДОМЛЕНИЕ: Журнал очищен.")
 		//Change the password - KEY REQUIRED
 		if(href_list["pass"])
 			if(!linkedServer || (src.linkedServer.stat & (NOPOWER|BROKEN)))
 				message = noserver
 			else
 				if(auth)
-					var/dkey = trim(clean_input("Please enter the decryption key."))
+					var/dkey = trim(clean_input("Пожалуйста, введите ключ шифрования.."))
 					if(dkey && dkey != "")
 						if(src.linkedServer.decryptkey == dkey)
-							var/newkey = trim(input(usr,"Please enter the new key (3 - 16 characters max):"))
+							var/newkey = trim(input(usr,"Пожалуйста, введите новый ключ шифрования. (3 - 16 символов):"))
 							if(length(newkey) <= 3)
-								message = span_notice("NOTICE: Decryption key too short!")
+								message = span_notice("УВЕДОМЛЕНИЕ: Ключ шифрования слишком короткий!")
 							else if(length(newkey) > 16)
-								message = span_notice("NOTICE: Decryption key too long!")
+								message = span_notice("УВЕДОМЛЕНИЕ: Ключ шифрования слишком длинный!")
 							else if(newkey && newkey != "")
 								src.linkedServer.decryptkey = newkey
-							message = span_notice("NOTICE: Decryption key set.")
+							message = span_notice("УВЕДОМЛЕНИЕ: Ключ шифрования установлен.")
 						else
 							message = incorrectkey
 
@@ -362,7 +362,7 @@
 					message = noserver
 				else //if(istype(href_list["delete"], /datum/data_pda_msg))
 					src.linkedServer.pda_msgs -= locate(href_list["delete"])
-					message = span_notice("NOTICE: Log Deleted!")
+					message = span_notice("УВЕДОМЛЕНИЕ: Журнал удалён!")
 		//Delete the request console log.
 		if(href_list["deleter"])
 			//Are they on the view logs screen?
@@ -371,7 +371,7 @@
 					message = noserver
 				else //if(istype(href_list["delete"], /datum/data_pda_msg))
 					src.linkedServer.rc_msgs -= locate(href_list["deleter"])
-					message = span_notice("NOTICE: Log Deleted!")
+					message = span_notice("УВЕДОМЛЕНИЕ: Журнал удален!")
 		//Create a custom message
 		if(href_list["msg"])
 			if(src.linkedServer == null || (src.linkedServer.stat & (NOPOWER|BROKEN)))
@@ -393,7 +393,7 @@
 
 					//Select Your Name
 					if("Sender")
-						customsender 	= clean_input("Please enter the sender's name.")
+						customsender 	= clean_input("Пожалуйста, введите имя отправителя.")
 
 					//Select Receiver
 					if("Recepient")
@@ -406,17 +406,17 @@
 								continue
 							sendPDAs += P
 						if(GLOB.PDAs && GLOB.PDAs.len > 0)
-							customrecepient = tgui_input_list(usr, "Select a PDA from the list.", items = sortAtom(sendPDAs))
+							customrecepient = tgui_input_list(usr, "Выберите КПК из списка.", items = sortAtom(sendPDAs))
 						else
 							customrecepient = null
 
 					//Enter custom job
 					if("RecJob")
-						customjob	 	= clean_input("Please enter the sender's job.")
+						customjob	 	= clean_input("Пожалуйста, укажите должность отправителя.")
 
 					//Enter message
 					if("Message")
-						custommessage	= clean_input("Please enter your message.")
+						custommessage	= clean_input("Пожалуйста, введите свое сообщение.")
 						custommessage	= sanitize(copytext_char(custommessage, 1, MAX_MESSAGE_LEN))
 
 					//Send message
@@ -425,17 +425,17 @@
 							customsender = "UNKNOWN"
 
 						if(isnull(customrecepient))
-							message = span_notice("NOTICE: No recepient selected!")
+							message = span_notice("УВЕДОМЛЕНИЕ: Получатель не выбран!")
 							return src.attack_hand(usr)
 
 						if(isnull(custommessage) || custommessage == "")
-							message = span_notice("NOTICE: No message entered!")
+							message = span_notice("УВЕДОМЛЕНИЕ: Сообщение не поступило!")
 							return src.attack_hand(usr)
 
 						var/datum/data/pda/app/messenger/recipient_messenger = customrecepient.find_program(/datum/data/pda/app/messenger)
 
 						if(!recipient_messenger)
-							message = span_warning("ERROR: Message could not be transmitted!")
+							message = span_warning("ОШИБКА: Сообщение не может быть передано!")
 							return src.attack_hand(usr)
 
 						var/obj/item/pda/PDARec = null
@@ -450,7 +450,7 @@
 						//Sender isn't faking as someone who exists
 						if(isnull(PDARec))
 							src.linkedServer.send_pda_message("[customrecepient.owner]", "[customsender]","[custommessage]")
-							recipient_messenger.notify("<b>Message from [customsender] ([customjob]), </b>\"[custommessage]\" (<a href='byond://?src=[UID()];choice=Message;target=\ref[src]'>Reply</a>)")
+							recipient_messenger.notify("<b>Сообщение от [customsender] ([customjob]), </b>\"[custommessage]\" (<a href='byond://?src=[UID()];choice=Message;target=\ref[src]'>Ответить</a>)")
 							log_pda("(PDA: [customsender]) sent \"[custommessage]\" to [customrecepient.owner]", usr)
 						//Sender is faking as someone who exists
 						else
@@ -460,7 +460,7 @@
 							if(!recipient_messenger.conversations.Find("\ref[PDARec]"))
 								recipient_messenger.conversations.Add("\ref[PDARec]")
 
-							recipient_messenger.notify("<b>Message from [PDARec.owner] ([customjob]), </b>\"[custommessage]\" (<a href='byond://?src=[recipient_messenger.UID()];choice=Message;target=\ref[PDARec]'>Reply</a>)")
+							recipient_messenger.notify("<b>Сообщение от [PDARec.owner] ([customjob]), </b>\"[custommessage]\" (<a href='byond://?src=[recipient_messenger.UID()];choice=Message;target=\ref[PDARec]'>Ответить</a>)")
 							log_pda("(PDA: [PDARec.owner]) sent \"[custommessage]\" to [customrecepient.owner]", usr)
 						var/log_message = "sent PDA message \"[custommessage]\" using [src] as [customsender] ([customjob])"
 						var/receiver
@@ -491,7 +491,7 @@
 
 
 /obj/item/paper/monitorkey
-	name = "Monitor Decryption Key"
+	name = "Ключи Шифрования"
 
 
 /obj/item/paper/monitorkey/Initialize(mapload)
@@ -502,13 +502,13 @@
 /obj/item/paper/monitorkey/LateInitialize()
 	for(var/obj/machinery/message_server/server as anything in GLOB.message_servers)
 		if(!isnull(server.decryptkey))
-			info = "<center><h2>Daily Key Reset</h2></center>\n\t<br>The new message monitor key is '[server.decryptkey]'.<br>Please keep this a secret and away from the clown.<br>If necessary, change the password to a more secure one."
+			info = "<center><h2>Ежедневный Сброс Настроек</h2></center>\n\t<br>Новый ключ шифрования от Консоли мониторинга сообщений: '[server.decryptkey]'.<br>Пожалуйста, держите это в секрете и подальше от клоуна.<br>При необходимости измените ключ шифрования на более безопасный."
 			info_links = info
 			update_icon()
 			break
 
 /obj/item/paper/rnd_logs_key
-	name = "RnD logs Decryption Key"
+	name = "Ключ расшифровки журналов НИО"
 
 /obj/item/paper/rnd_logs_key/Initialize(mapload)
 	. = ..()
@@ -519,7 +519,7 @@
 	if(!located_server)
 		return
 	var/decryption_key = located_server.logs_decryption_key
-	info = "<center><h2>RnD logs Access key</h2></center>\n\t<br>The new RnD logs access key is \"[decryption_key]\"."
+	info = "<center><h2>Ключ расшифровки журналов НИО</h2></center>\n\t<br>Новый ключ расшифровки журналов НИО: \"[decryption_key]\"."
 	info_links = info
 	update_icon()
 

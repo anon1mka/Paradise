@@ -32,27 +32,27 @@
 
 /obj/item/paper/crumpled/hotel_scrap_1
 	name = "paper scrap"
-	info = "I can't believe this shitty hotel assigned me a purple-themed room. <i>Why does the shower dump grape drink everywhere??</i>"
+	info = "Я не могу поверить, что этот дерьмовый отель выделил мне фиолетовой фиолетовый. <i>Почему в душе повсюду разливается виноградный напиток??</i>"
 
 /obj/item/paper/hotel_scrap_2
 	name = "Journal Entry #2"
-	info = "<h3>Day 7:</h3>Today, I stepped into my bathroom, only to discover that it had become a mountainside wilderness. I tried to wash my hands with snow, but it didn't particularly pan out.<br>I contacting the front desk regarding the issue, but the receptionist just stared at me with dead eyes and spouted unrepeatable curses at me. However, I convinced them to reassign me to an upgraded suite."
+	info = "<h3>День 7:</h3>Сегодня я зашла в свою ванную и обнаружила, что она превратилась в дикую местность, на склоне горы. Я попыталась вымыть руки снегом, но из этого ничего не вышло. Я обратилась на ресепшн по этому поводу, но администратор просто уставилась на меня мертвыми глазами и изрыгала в мой адрес неповторимые проклятия. Тем не менее, я убедила их перевести меня в номер повышенной комфортности."
 
 /obj/item/paper/hotel_scrap_3
 	name = "Journal Entry #3"
-	info = "<h3>Day 26:</h3>Well, that sucked royally. The queen-sized bed was nice, but the hottub in my room was, well, my wife described it as \"a portal to hell\". I don't know, I guess the lava and weird blood gave it that impression, but it was pretty nicely warm.<br>However, <i>\"we\"</i> decided to get assigned to a new room. Whatever."
+	info = "<h3>День 26:</h3>Что ж, это был настоящий отстой. Двуспальная кровать была хороша, но джакузи в комнате было, по словам моей жены, \"порталом в ад\". Не знаю, наверное, такое впечатление создавали лава и странная кровь, но там было довольно тепло. Тем не менее, <i>\"мы\"</i> решили переехать в другую комнату. Что угодно."
 
 /obj/item/paper/hotel_scrap_4
 	name = "Diary Page"
-	info = "<b>Day 7 of Bad Vacation</b><br>Thanks Qzxor this shit vacation is ending today. The novelty of the trashy pool wore off 2 days in and I'm not allowed in the bar. The tiny box they called a room that, we had to cram into, just had a poster and a couple of beds. Only one bedsheet to spare. Shower had brown water and sink just dumped its water back out the ceiling, somehow.<br><br>PS: The receptionist isn't paying attention to us when we try to check out. Apparently, we're staying another day."
+	info = "<b>7-й день неудачных каникул</b><br>Хвала Qzx, потому что этот дерьмовый отпуск заканчивается сегодня. Новизна дрянного бассейна закончилась через 2 дня, и меня не пускают в бар. Крошечной коробкой они называли комнату, в которую нам пришлось втиснуться, там были только плакат и пара кроватей. У нас была только одна лишняя простыня. В душе была коричневая вода, а раковина каким-то образом просто сливала воду обратно с потолка.<br><br>PS: Администратор не обращает на нас внимания, когда мы пытаемся выписаться. По-видимому, мы остаемся еще на день."
 
 /obj/item/paper/hotel_scrap_5
 	name = "Journal Entry #5"
-	info = "<h3>Day 185:</h3>I feel like the restaurant's chef is just making random dishes to mess with me. I request something from the menu, and he throws out something nobody asked for on the counter. The bartender isn't much better. At least both of them can make some nice food and drinks. I would complain to the management... but they never seem to care."
+	info = "<h3>День 185:</h3>У меня такое чувство, что шеф-повар ресторана готовит блюда наугад, чтобы подразнить меня. Я заказываю что-то из меню, а он выбрасывает на прилавок то, чего никто не просил. Бармен ненамного лучше. По крайней мере, они оба умеют готовить вкусную еду и напитки. Я бы пожаловался руководству... но им, похоже, все равно."
 
 /obj/item/paper/crumpled/hotel_scrap_6
 	name = "Journal Entry #6"
-	info = "<h3>Day 386:</h3><span style='font-family: wingdings; color: red'>AMBGAT MEZLBNU</span>. Something wrong. Can't stop hugging plushies."
+	info = "<h3>День 386:</h3><span style='font-family: wingdings; color: red'>AMBGAT MEZLBNU</span>. Что-то не так. Не могу перестать обнимать плюшевые игрушки."
 
 /obj/item/paper/crumpled/hotel_scrap_7
 	name = "Journal Entry #8"
@@ -61,11 +61,11 @@
 /obj/item/paper/hotel_scrap_8
 	name = "Mysterious Note"
 	icon_state = "paper_talisman"
-	info = "<div style='text-align: center; color: red; font: 24pt comic sans ms'>There is only one way to leave.</div>"
+	info = "<div style='text-align: center; color: red; font: 24pt comic sans ms'>Есть только один способ уйти.</div>"
 
 /obj/item/paper/pamphlet/hotel
 	name = "space hotel pamphlet"
-	info = "<h3>Welcome to Deep Space Hotel 419!</h3>Thank you for choosing our hotel. Simply hand your credit or debit card to the concierge and get your room key! To check out, hand your credit card back.<small><h4>Conditions:</h4><ul><li>The hotel is not responsible for any losses due to time or space anomalies.<li>The hotel is not responsible for events that occur outside of the hotel station, including, but not limited to, events that occur inside of dimensional pockets.<li>The hotel is not responsible for overcharging your account.<li>The hotel is not responsible for missing persons.<li>The hotel is not responsible for mind-altering effects due to drugs, magic, demons, or space worms.</ul></small>"
+	info = "<h3>Добро пожаловать в Deep Space Hotel 419!</h3>Благодарим вас за выбор нашего отеля. Просто предъявите свою кредитную или дебетовую карту консьержу и получите ключ от номера! Чтобы выписаться, просто предъявите свою кредитную карту.<small><h4>Условия:</h4><ul><li>Отель не несет ответственности за любые убытки, вызванные временными или пространственными аномалиями.<li>Отель не несет ответственности за события, которые происходят за пределами гостиничной станции, включая, но не ограничиваясь, события, которые происходят внутри пространственных карманов.<li>Отель не несет ответственности за переплату средств с вашего счета.<li>Отель не несет ответственности за пропавших без вести лиц.<li>Отель не несет ответственности за психические изменения, вызванные наркотиками, магией, демонами или космическими червями.</ul></small>"
 
 /obj/effect/landmark/map_loader/hotel_room/Initialize()
 	. = ..()

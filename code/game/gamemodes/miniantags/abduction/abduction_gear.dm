@@ -397,28 +397,28 @@
 /obj/item/paper/abductor
 	name = "Dissection Guide"
 	icon_state = "alienpaper_words"
-	info = {"<b>Dissection for Dummies</b><br>
+	info = {"<b>Анатомия для чайников</b><br>
 <br>
- 1.Acquire fresh specimen.<br>
- 2.Put the specimen on operating table.<br>
- 3.Apply scalpel to the chest, preparing for experimental dissection.<br>
- 4.Apply scalpel to specimen's torso.<br>
- 5.Clamp bleeders on specimen's torso with a hemostat.<br>
- 6.Retract skin of specimen's torso with a retractor.<br>
- 7.Saw through the specimen's torso with a saw.<br>
- 8.Apply retractor again to specimen's torso.<br>
- 9.Search through the specimen's torso with your hands to remove any superfluous organs.<br>
- 10.Insert replacement gland (Retrieve one from gland storage).<br>
- 11.Apply bone gel to mend the ribcage.<br>
- 12.Use the bone setter to finish mending the ribcage.<br>
- 13.Apply bone gel to mend the ribcage once more.<br>
- 14.Cauterize the patient's torso with a cautery.<br>
- 15.Consider dressing the specimen back to not disturb the habitat.<br>
- 16.Put the specimen in the experiment machinery.<br>
- 17.Choose one of the machine options. The target will be analyzed and teleported to the selected drop-off point.<br>
- 18.You will receive one supply credit, and the subject will be counted towards your quota.<br>
+ 1.Заполучите свежий образец.<br>
+ 2.Положите образец на операционный стол.<br>
+ 3.Приложите скальпель к грудной клетке, готовясь к экспериментальному вскрытию.<br>
+ 4.Сделайте надрез на грудной клетке образца.<br>
+ 5.Остановите кровотечение в грудной клетке образца.<br>
+ 6.Оттяните кожу на грудной клетке образца с помощью ретрактора.<br>
+ 7.Распилите грудную клетку образца пилой.<br>
+ 8.Снова используйте ретрактор на грудной клетке образца.<br>
+ 9.Обыщите грудную клетку образца руками, чтобы удалить все лишние органы.<br>
+ 10.Вставьте новую железу (извлеките её из хранилища желез).<br>
+ 11.Нанесите костный гель, чтобы восстановить грудную клетку.<br>
+ 12.Используйте костоправ, чтобы закончить сращивание грудной клетки.<br>
+ 13.Нанесите костный гель, чтобы еще раз срастить грудную клетку.<br>
+ 14.Прижгите туловище образца прижигающим средством.<br>
+ 15.Подумайте о том, куда вернуть образца, чтобы не нарушать естественную среду обитания.<br>
+ 16.Поместите образец в экспериментальное оборудование.<br>
+ 17.Выберите один из вариантов машины. Цель будет проанализирована и телепортирована в выбранную точку высадки.<br>
+ 18.Вы получите один кредит на поставку, и этот субъект будет засчитан в вашу квоту.<br>
 <br>
-Congratulations! You are now trained for invasive xenobiology research!"}
+Поздравляю! Теперь вы подготовлены к инвазивным ксенобиологическим исследованиям!"}
 
 /obj/item/paper/abductor/update_icon_state()
 	return

@@ -85,100 +85,100 @@
 
 /obj/item/paper/terrorspiders1
 	name = "paper - 'Sealed Facility'"
-	info = {"<b>SEALED FACILITY</b><br>
+	info = {"<b>ОПЕЧАТАННЫЙ ОБЪЕКТ</b><br>
 	<br>
-	This facility is sealed shut by order of Commander Marquez. Do not enter.<br>
-	Terror spiders live here. We believe they are a weapon developed by the syndicate.<br>
-	Any surviving personnel are to evacuate immediately via the gateway.<br>
-	Any arriving response team is advised to use the ID Upgrade Machine to obtain local access.<br>
+	В соответствии с распоряжением командующего Маркеса, доступ в это помещение запрещён.<br>
+	В этом месте обитают Пауки Ужаса. Мы полагаем, что они были созданы в качестве оружия синдикатом.<br>
+	Весь оставшийся в живых персонал должен немедленно эвакуироваться через Врата.<br>
+	Любой прибывающей группе реагирования рекомендуется использовать устройство для обновления идентификатора для получения локального доступа.<br>
 	"}
 
 /obj/item/paper/terrorspiders2
 	name = "paper - 'The Trio of Terror'"
-	info = {"<b>Status Report on the 'Terrors'</b><br>
+	info = {"<b>Отчет о состоянии дел с "Пауками Ужаса"</b><br>
 	<br>
-	All the spiders are deadly. We know this much already. Within an hour of their appearance, they have killed several staff.<br>
-	Two, however, bear particular mention, as they appear to be leading the spider hivemind.<br>
+	Все пауки представляют смертельную угрозу. Мы уже осведомлены об этом. В течение часа после своего появления они стали причиной гибели нескольких сотрудников.<br>
+	Но два из них особенно выделяются, так как, по всей видимости, они являются лидерами в коллективном разуме пауков.<br>
 	<br>
-	The Prince is held in containment. He appears very aggressive, incredibly fast, strong, and durable. Extreme force and agility would be required to neutralize him.<br>
-	It is likely the appearance of the prince was related to our initial aggression against the Queen. These things can THINK.<br>
+	Принц находится в заточении. Он производит впечатление крайне опасного противника: он быстр, силён и неутомим. Чтобы справиться с ним, потребуется недюжинная сила и сноровка.<br>
+	Возможно, появление принца было обусловлено нашей изначальной враждебностью по отношению к королеве. Есть о чём поразмыслить.<br>
 	<br>
-	The Queen cannot be contained. She lives in the old bar, south of mining. She continues to breed dangerous spiders at an alarming rate.<br>
-	Many of her offspring are already roaming the compound, traveling through the vents. Contact with the team sent to subdue her has been lost.<br>
+	Королеву невозможно сдержать. Она живет в старом баре, к югу от шахты. Она продолжает размножать опасных пауков с угрожающей скоростью.<br>
+	Многие из ее отпрысков уже бродят по территории, используя вентиляционные отверстия. Связь с командой, посланной для ее усмирения, потеряна.<br>
 	<br>
 	<br>
-	Based on the situation, Commander, I advise immediate evacuation through the gateway.<br>
-	-Research Director Simons<br>
+	Исходя из ситуации, командир, я советую немедленно эвакуироваться через шлюз.<br>
+	– Директор Исследований Саймонс<br>
 	"}
 
 
 /obj/item/paper/terrorspiders3
 	name = "paper - 'Final Report'"
-	info = {"FROM: Field Agent 0738<br>
-	TO: Syndicate #873589<br>
-	SUBJECT: Mission Success<br>
+	info = {"ОТ КОГО: Полевой агент 0738<br>
+	КОМУ: Синдикат №873589<br>
+	ТЕМА: Успех миссии<br>
 	<br>
-	I have seeded the Terror Queen egg in a dingy looking bar that bored engineers constructed near the mining tunnels.<br>
-	No doubt she will grow soon.<br>
+	Я посадил яйцо Королевы Ужаса в невзрачном баре, который скучающие инженеры построили рядом с шахтерскими туннелями.<br>
+	Без сомнения, она скоро вырастет.<br>
 	<br>
-	I have also placed the Prince egg nearby, injected with sedative. Hopefully the dimwitted NT scientists bring them back for study.<br>
-	With any luck, the Queen will sense them telepathically, think NT is holding her prince hostage, and attack.<br>
+	Я также поместил яйцеклетку Принца неподалеку, введя ей успокоительное. Надеюсь, недалекие ученые NT привезут их обратно для изучения.<br>
+	Если повезет, королева почувствует их телепатически, подумает, что NT держит ее принца в заложниках, и нападет.<br>
 	<br>
-	I am going to extract out of the gateway before this all goes down.<br>
-	I don't imagine the staff have very long to live once the Queen declares war on this place.<br>
+	Я собираюсь выбраться из Врат до того, как все это закончится.<br>
+	Я не думаю, что персонал проживет долго, когда королева объявит этому месту войну.<br>
 	"}
 
 /obj/item/paper/terrorspiders4
 	name = "paper - 'Prescription for Jones, David'"
-	info = {"PRESCRIPTION FOR: David Jones<br>
-	RANK: Miner<br>
-	FOR: Charcoal<br>
-	REASON FOR TREATMENT: Toxins in bloodstream<br>
-	CAUSE: Bitten by a black terror spider.<br>
-	TREATMENT PLAN: Take hourly. See Dr. Phloxi if symptoms persist more than three hours.<br>
+	info = {"РЕЦЕПТ ДЛЯ: Дэвид Джонс<br>
+	ДОЛЖНОСТЬ: Шахтёр<br>
+	ДЛЯ: Активированный уголь<br>
+	ПРИЧИНА ОБРАЩЕНИЯ: Токсины в крови<br>
+	ПРИЧИНА: Укушен черным пауком ужаса.<br>
+	ПЛАН ЛЕЧЕНИЯ: Принимайте каждый час. Если симптомы сохраняются более трех часов, обратитесь к доктору Флокси.<br>
 	"}
 
 /obj/item/paper/terrorspiders5
 	name = "paper - 'A Study in Terror'"
-	info = {"<b>Findings Overview</b><br>
+	info = {"<b>Анализ исследований</b><br>
 	<br>
-	<p>Gray Spiders<br>Stealthy predators that ambush prey from vents. Otherwise weak.</p>
-	<p>Red Spiders<br>Can kill anyone in melee, but slow.</p>
-	<p>Green<br>Will lay eggs on dead bodies, breeding more spiders.</p>
-	<p>Black<br>Even a single bite is enough to kill a humanoid, given time.</p>
-	<p>White<br>Injects a parasitic agent. Deemed to pose too great an infection risk to study.</p>
-	<p>Purple<br>Seen guarding key areas and important spiders. Appear to be territorial, and very dangerous.</p>
-	<p>Prince<br>Held in containment. Appears to be a sort of super-warrior. Fast, strong, and thickly armored.</p>
-	<p>Queen<br>Unable to contain. Present south of Cargo before contact was lost. Presumed ruler of the local hive.</p>
+	<p>Серые пауки<br>Скрытные хищники, подстерегающие добычу в вентиляционных отверстиях. В остальном они слабы.</p>
+	<p>Красные пауки<br>В ближнем бою способен нанести смертельный удар, но достаточно медлителен.</p>
+	<p>Зелёные<br>Откладывают яйца в трупы, что приведёт к увеличению популяции пауков.</p>
+	<p>Чёрные<br>Даже одного укуса достаточно, чтобы убить гуманоида, со временем.</p>
+	<p>Белые<br>Вводит паразитарное вещество. Считается слишком опасным для исследовательских целей.</p>
+	<p>Фиолетовые<br>Замечены особи, охраняющие ключевые территории и пауков. Создаётся впечатление, что они ведут территориальный образ жизни и представляют серьёзную угрозу.</p>
+	<p>Принц<br>Содержится в изоляции. Выглядит как своего рода супер-воин. Быстрый, сильный и в толстой броне.</p>
+	<p>Королева<br>Не поддается сдерживанию. Находилась к югу от отдела снабжения, прежде чем связь была потеряна. Предположительно, правитель местного улья.</p>
 	"}
 
 /obj/item/paper/terrorspiders6
 	name = "paper - 'A Study in Venom'"
-	info = {"<b>Initial Report - Black Widow Venom</b><br>
+	info = {"<b>Первоначальный отчет - Яд Черной вдовы</b><br>
 	<br>
-	Even a single bite kills within a few minutes. Immediate charcoal is necessary for the victim to survive.<br>
-	The fascinating thing is that multiple bites actually cause rapid symptom onset. The victim quickly loses the ability to walk.<br>
-	One test monkey went from perfect health to death in under 60 seconds - from 3 bites.<br>
-	I am so very glad I'm not responsible for keeping these things contained."}
+	Даже от одного укуса жертва умирает в течение нескольких минут. Чтобы выжить, жертве необходимо немедленно употребить активированный уголь.<br>
+	Самое интересное, что множественные укусы вызывают быстрое появление симптомов. Пострадавший быстро теряет способность ходить.<br>
+	Одна из подопытных обезьян скончалась менее чем 60 секунд после получения трёх укусов.<br>
+	Я так рада, что мне не нужно отвечать за хранение этих вещей."}
 
 /obj/item/paper/terrorspiders7
 	name = "paper - 'Security Orders'"
-	info = {"<b>Directives for Officer James</b><br>
+	info = {"<b>Указания для офицера Джеймса</b><br>
 	<br>
-	1. Find a way to lift the bridge lockdown.<br>
-	2. Kill any spiders you encounter.<br>
-	3. Once on the bridge, open a path to the Queen in the south, and find a way to kill her, ending the infestation. <br>
-	Good luck, Officer.<br>
+	1. Найди способ снять карантин с моста.<br>
+	2. Убивайте всех пауков, с которыми столкнетесь.<br>
+	3. Оказавшись на мосту, откройте путь к королеве на юге и найдите способ убить ее, положив конец заражению.<br>
+	Удачи, офицер.<br>
 	"}
 
 /obj/item/paper/terrorspiders8
 	name = "paper - 'Last Words'"
-	info = {"<b>The Last Words of Nurse Barnes</b><br>
+	info = {"<b>TПоследние слова сестры Барнс</b><br>
 	<br>
-	It is too much. First Phil, then those damn spiders bite Mary too. Heaven help us. <br>
-	I'll be evacuating as soon as I've grabbed my supplies. I had to pay for those myself. Stupid budget cuts. <br>
-	The new world they've found for us isn't that hospitable, but at least there are no deadly spid---<br>
-	(the writing trails off, as if the writer was interrupted)<br>
+	Это уже слишком. Сначала Фил, потом эти чертовы пауки укусили и Мэри. Да помогут нам Небеса.<br>
+	Я отправлюсь в эвакуацию, как только заберу свои припасы. Мне пришлось заплатить за них самой. Дурацкие сокращения бюджета.<br>
+	Новый мир, который они нашли для нас, не так уж гостеприимен, но, по крайней мере, здесь нет смертоносных пау---<br>
+	(в этот момент запись прерывается, словно автор был вынужден остановиться.)<br>
 	"}
 
 /obj/item/gun/energy/laser/awaymission_aeg

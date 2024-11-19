@@ -234,11 +234,11 @@ GLOBAL_LIST_EMPTY(doppler_arrays)
 
 /obj/item/paper/explosive_log
 	name = "explosive log"
-	info = "<h3>Explosive Log Report</h3>\
+	info = "<h3>Отчёт об взрывах</h3>\
 	<table style='width:380px;text-align:left;'>\
 	<tr>\
-	<th>Time logged</th>\
-	<th>Epicenter</th>\
-	<th>Actual</th>\
-	<th>Theoretical</th>\
+	<th>Время</th>\
+	<th>Эпицентр</th>\
+	<th>Фактический</th>\
+	<th>Теоретический</th>\
 	</tr>" //NB: the <table> tag is left open, it is closed later on, when the doppler array adds its data

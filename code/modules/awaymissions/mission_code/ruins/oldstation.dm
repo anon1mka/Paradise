@@ -105,32 +105,23 @@
 /obj/item/paper/fluff/ruins/oldstation
 	name = "Cryo Awakening Alert"
 	language = LANGUAGE_SOL_COMMON
-	info = "<B>**WARNING**</B><BR><BR>Catastrophic damage sustained to station. Powernet exhausted to reawaken crew.<BR><BR>Immediate Objectives<br><br>1: Activate emergency power generator<br>2: Lift station lockdown on the bridge<br><br>Please locate the 'Damage Report' on the bridge for a detailed situation report."
+	info = "<B>**ПРЕДУПРЕЖДЕНИЕ**</B><BR><BR>Станции были нанесёны катастрофические повреждения. Энергосеть исчерпала себя, чтобы разбудить экипаж.<BR><BR>Ближайшие цели<br><br>1: Включить аварийный генератор энергии<br>2: Снять карантин станции на мостике<br><br>Пожалуйста, найдите 'Отчет о повреждениях' на мостике, чтобы получить подробный отчет о ситуации."
 
 /obj/item/paper/fluff/ruins/oldstation/damagereport
 	name = "Damage Report"
-	info = "<b>Damage Report</b><br><br><b>Omega Station</b> - Destroyed<br><br><b>Alpha Station</b> - Destroyed<br><br><b>Beta Station</b> - Catastrophic Damage. Medical, partially destroyed. Atmospherics, partially destroyed. Engine Core, destroyed.<br><br><b>Charlie Station</b> - Intact. Loss of oxygen to eastern side of main corridor.<br><br><b>Theta Station</b> - Intact. <b>WARNING</b>: Unknown force occupying Theta Station. Intent unknown. Species unknown. Numbers unknown.<br><br>Recommendation - Reestablish station powernet via solar array. Reestablish station atmospherics system to restore air."
+	info = "<b>Отчет о повреждениях</b><br><br><b>Станция 'Омега'</b> – Уничтожена<br><br><b>Станция 'Альфа'</b> – Уничтожена<br><br><b>Станция 'Бега'</b> – Катастрофические повреждения. Медицинское оборудование частично разрушено. Атмосферное оборудование частично разрушено. Ядро двигателя разрушено.<br><br><b>Станция 'Чарли'</b> – Нетронута. Потеря кислорода в восточной части главного коридора.<br><br><b>Станция 'Тета'</b> – Нетронута. <b>ПРЕДУПРЕЖДЕНИЕ</b>: Неизвестная сила захватила станцию Тэта. Намерения: неизвестны. Вид: неизвестен. Численность: неизвестна.<br><br>Рекомендация – Восстановите подачу энергии на станцию с помощью солнечной батареи. Восстановите атмосферную систему станции для восстановления циркуляции воздуха."
 
 /obj/item/paper/fluff/ruins/oldstation/protosuit
 	name = "B01-RIG Hardsuit Report"
-	info = "<b>Prototype Hardsuit</b><br><br>The B01-RIG Hardsuit is a prototype powered exoskeleton. Based off of a recovered pre-void war era united Earth government powered military \
-	exosuit, the RIG Hardsuit is a breakthrough in Hardsuit technology, and is the first post-void war era Hardsuit that can be safely used by an operator.<br><br>The B01 however suffers \
-	a myriad of constraints. It is slow and bulky to move around, it lacks any significant armor plating against direct attacks and its internal heads up display is unfinished,  \
-	resulting in the user being unable to see long distances.<br><br>The B01 is unlikely to see any form of mass production, but will serve as a base for future Hardsuit developments."
+	info = "<b>Прототип РИГа</b><br><br>B01-РИГ прототип силового экзоскелета. Созданный на основе восстановленного военного экзоскелета объединенного правительства Земли времен довоенной эпохи. РИГ экзоскелета является прорывом в технологии, и первым защитным костюмом эпохи после войны в космосе, который может безопасно использоваться оператором.<br><br>Однако у B01 есть множество недостатков. Он медленный и громоздкий в передвижении, у него отсутствует какая-либо существенная защита от прямых атак, а его внутренний дисплей не доработан, в результате чего пользователь не может видеть на большом расстоянии.<br><br>Модель B01 вряд ли попадет в массовое производство, но послужит основой для будущих разработок экзоскелетов."
 
 /obj/item/paper/fluff/ruins/oldstation/protohealth
 	name = "Health Analyser Report"
-	info = "<b>Health Analyser</b><br><br>The portable Health Analyser is essentially a handheld variant of a health analyser. Years of research have concluded with this device which is \
-	capable of diagnosing even the most critical, obscure or technical injuries any humanoid entity is suffering in an easy to understand format that even a non-trained health professional \
-	can understand.<br><br>The health analyser is expected to go into full production as standard issue medical kit."
+	info = "<b>Анализатор состояния здоровья</b><br><br>Портативный анализатор состояния здоровья – это, по сути, переносной вариант анализатора здоровья. Результатом многолетних исследований стало создание этого устройства, которое способно диагностировать даже самые серьезные, малоизвестные или технические повреждения, от которых страдает любое гуманоидное существо, в легком для понимания формате, доступном даже неподготовленному медицинскому работнику.<br><br>Ожидается, что анализатор состояния здоровья поступит в серийное производство в качестве стандартного медицинского комплекта."
 
 /obj/item/paper/fluff/ruins/oldstation/protogun
 	name = "K14 Energy Gun Report"
-	info = "<b>K14-Multiphase Energy Gun</b><br><br>The K14 Prototype Energy Gun is the first Energy Rifle that has been successfully been able to not only hold a larger ammo charge \
-	than other gun models, but is capable of swapping between different energy projectile types on command with no incidents.<br><br>The weapon still suffers several drawbacks, its alternative, \
-	non laser fire mode, can only fire one round before exhausting the energy cell, the weapon also remains prohibitively expensive, nonetheless NT Market Research fully believe this weapon \
-	will form the backbone of our Energy weapon catalogue.<br><br>The K14 is expected to undergo revision to fix the ammo issues, the K15 is expected to replace the 'stun' setting with a \
-	'disable' setting in an attempt to bypass the ammo issues."
+	info = "<b>K14-Мультифазная энергетическая пушка</b><br><br>Прототип энергетического пистолета K14 – первая энергетическая винтовка, которая не только выдерживает больший заряд боеприпасов, чем другие модели оружия, но и способна переключаться между различными типами энергетических снарядов по команде без каких-либо инцидентов.Оружие по-прежнему имеет ряд недостатков, его альтернативный, не лазерный режим стрельбы, позволяет произвести только один выстрел, прежде чем разрядится энергетический элемент, оружие также остается непомерно дорогим, тем не менее, компания NT Market Research полностью уверена, что это оружие станет основой нашего каталога энергетического оружия.Ожидается, что K14 подвергнется доработке, чтобы устранить проблемы с боеприпасами, а в K15, как ожидается, будет заменена настройка "оглушать" на "отключать" в попытке обойти проблемы с боеприпасами."
 
 /obj/item/paper/fluff/ruins/oldstation/protosing
 	name = "Singularity Generator"
@@ -163,33 +154,33 @@
 	name = "Tesla Generator Report"
 	info = "<b>Tesla Generator</b><br><br>New prototype of engine made in purpose to product energy has been created in walls of Theta Research and Development department!  \
 	After horrible accident that happened on Alpha the new RnD command got fax from CC about perspective energy production researches of the next generation. As result,  \
-	from the data aquired from CC and relentless work, our brave RnD staff managed to represent a new hope for every station, for an old dream - to curb the lightnings! \
+	from the data aquired from CC and relentless work, our brave RnD staff managed to represent a new hope for every station, for an old dream – to curb the lightnings! \
 	By our prognoses, this 'engine' have great potential for powering up small, meduim or even large stations. Its quite flexible in setting up, and also can become the \
 	cheapest engine in maintenance on nova days."
 
 /obj/item/paper/ruins/oldstation/singwarn // the engine is bugged, at least on ss220, so ic warning may prevent people to use it, at least untill it will be fixed, then this note will gone
 	name = "Old note"
-	info = "<b>I warned you!</b><br /><br /><b>In memory of Alfred</b><br /><br />DON'T USE IT!!! I - won't EVER AGAIN engage the station power on that cursed thing!  \
+	info = "<b>I warned you!</b><br /><br /><b>In memory of Alfred</b><br /><br />DON'T USE IT!!! I – won't EVER AGAIN engage the station power on that cursed thing!  \
 	I see the same nightmare every month, if not every week right now... The darkness, the silence, blood.. DOOM! Our brave RnD created a hell engine.  \
 	On its born in CZ, I swear, I heard our names whispered from the void! This thing WAS THE VOID, THE BLACK HOLE ITSELF!  \
-	First - a 10 cm lead container appears in Alpha Engineering Foyer, next - executive man and head of our department Chief Engineer Jakob T. -  \
+	First – a 10 cm lead container appears in Alpha Engineering Foyer, next – executive man and head of our department Chief Engineer Jakob T. –  \
 	asking Captain about soon retirement! Then this RnD with their secret engine project come with shtamped papers and told us to force works on building containment zone as soon as possible  \
 	for their precious reports to CC about successful success in the field of energy production. We didn't know yet what was inside that container, and I HAD TO BE more clever that days...  \
-	<p>We built everything as it was on plans. Every wire, every rod - everything were in the place, it has to be safe! Actually, I decided to not risk with possible malfunctions and requested more equipment from RnD,  \
+	<p>We built everything as it was on plans. Every wire, every rod – everything were in the place, it has to be safe! Actually, I decided to not risk with possible malfunctions and requested more equipment from RnD,  \
 	and they sent everything I asked without a question! Like they were not sure themself about safety of this monster. We doubled emitters, made another SMES, even P.A.C.M.A.N.'s if shits went wrong.  \
-	And at the end even this wasn't enough.<p>At the very start - all our consoles and sensors on Alpha blackedout. Radio silenced. The fields went down. I heard as something rattle and rumble inside Alpha..  \
+	And at the end even this wasn't enough.<p>At the very start – all our consoles and sensors on Alpha blackedout. Radio silenced. The fields went down. I heard as something rattle and rumble inside Alpha..  \
 	Or it was everywhere? Ten seconds later Alpha got hit via something big. As I will know later it was arriving Cargo supply shuttle from CC requested 2 weeks ago. Half of Cargo department was crushed down,  \
 	couple staff members died in a seconds, in space and under the drifting shuttle, seven more were hardly injured. Screams and darkness.. The Singularity were stay in place quiet and peacefully,  \
 	we managed turn off accelerator before it let Singulo grew up and let it swallow all of us and the station. Barely didn't crapped myself when I saw pulsations of the Void myself,  \
 	I thought we are gone.. And Im not sure, I heard something..  laughing?.. and.. names.. it was our names.. from everywhere and nowhere at the same time.  \
 	I decided it was an effect from high radiation splash of Singulo born and went to check SMES, my good bud Alfred.. he could become good or even excelent CE after all Im sure!  \
 	Poor guy.. went outside to check why the fields and emitters turned off. The others went fix Alpha breaches and power it back. We work for a hour and half.  \
-	I just came back to the consoles as one of engineers covered in blood and burned suit and face, siezed and shout at me about Alfred - he were flying toward this..  \
+	I just came back to the consoles as one of engineers covered in blood and burned suit and face, siezed and shout at me about Alfred – he were flying toward this..  \
 	thing.. openwide his arms. Radio came back, he giggles and mumbles. I ran outside screaming into channel to stop. In the last seconds hes finally heard me...  \
-	His blood sprayed across whole area, covering fields, walls, windows, airlocks.. my whole RIG - I heard his twitched scream and it stunned me to deaf.  \
+	His blood sprayed across whole area, covering fields, walls, windows, airlocks.. my whole RIG – I heard his twitched scream and it stunned me to deaf.  \
 	The Void consumed its prey, grew up and moved...<p>I don't remember how I survived all what happened after. Almost whole Alpha gone in embrace of the Singulo.  \
 	I don't know how we get rid off it eather. CC sent us Engineering ERT to fix station, more than a half of the station crew asked about evac,  \
-	I decided to stay and repair station with CCs guys. I'll never forget that. Now seven month later after the incident, Engineering accepted fax from new Research Director -  \
+	I decided to stay and repair station with CCs guys. I'll never forget that. Now seven month later after the incident, Engineering accepted fax from new Research Director –  \
 	they created 'ANOTHER VOID ENGINE. MORE STABLE THAN BEFORE'! It was the last straw of me, I left my job and wrote the note. Never setup this engine.  \
 	If from the first look you didn't feel afraid of anything in that doom-device, I hope my story will ensure you that you SHOULD. I warned you."
 
@@ -204,7 +195,7 @@
 	Researche continues.<br /><br />Note 1: One of our scientists noted that core starts hit him with static electricity and fluctuate after he accidently touched it with his skin when he weared off his latex glowes.  \
 	He used regular distilled water on core to see if its connected somehow with special liquids. The result wasn't much remarkable but still, the core just fluctuated and the effect were less intensive than it was before...  \
 	<br /><br />Most inserted chemicals did no reactions. The only reagent was water, the core mixed water with inner liquid and changed the color. Chemical compounds we extracted back in closer look simulates one of pharmacological drugs in Medicine called Epinephrine.  \
-	At least the good news. Report sent<br /><br />Our management requested new chemicals and one of them very expensive - Plasma, solid and gas. I personaly sure it will give us what we waiting from the cores.  \
+	At least the good news. Report sent<br /><br />Our management requested new chemicals and one of them very expensive – Plasma, solid and gas. I personaly sure it will give us what we waiting from the cores.  \
 	Chemical analysis shows that reagents close to Plasma parameters are most effective rise electrical activity inside. It should be the answer."
 
 

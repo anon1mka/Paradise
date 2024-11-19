@@ -409,15 +409,15 @@ effective or pretty fucking useless.
 /obj/item/paper/teleporter
 	name = "Teleporter Guide"
 	icon_state = "paper"
-	info = {"<b>Instructions on your new prototype syndicate teleporter</b><br>
+	info = {"<b>Инструкции к вашему новому прототипу телепорта синдиката</b><br>
 	<br>
-	This teleporter will teleport the user 4-8 meters in the direction they are facing. Unlike the cult veil shifter, you can not drag people with you.<br>
+	Этот телепортер перенесет пользователя на 4-8 метров в том направлении, в котором он находится. В отличие от сдвигателя вуали культа, вы не можете тащить людей за собой.<br>
 	<br>
-	It has 4 charges, and will recharge uses over time. No, sticking the teleporter into the tesla, an APC, a microwave, or an electrified door, will not make it charge faster.<br>
+	Имеет 4 заряда и со временем будет перезаряжаться. Нет, если подключить телепортатор к тесле, ЛКП, микроволновой печи или электрифицированной двери, это не ускорит его зарядку.<br>
 	<br>
-	<b>Warning:</b> Teleporting into walls will activate a failsafe teleport parallel up to 3 meters, but the user will be ripped apart and gibbed in a wall if it fails.<br>
+	<b>Предупреждение:</b> При телепортации в стенку, телепорт активирует защитные системы, и попытается телепортировать вас параллельно по направлению телепортации. При активации защитных систем, телепортирует вас случайно влево или вправо, от 1 до 3 тайтлов. Если аварийная телепортация не удалась, вы разорветесь на мелкие кусочки и мгновенно умрете, устроив разгерметизацию на месте смерти.<br>
 	<br>
-	Do not expose the teleporter to electromagnetic pulses or attempt to use with a bag of holding, unwanted malfunctions may occur.
+	Не подвергайте телепорт воздействию электромагнитных импульсов и не пытайтесь использовать его с bluespace вещами, это может привести к нежелательным сбоям в работе.
 "}
 
 

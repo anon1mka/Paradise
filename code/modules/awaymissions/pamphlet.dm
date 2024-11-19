@@ -1,37 +1,38 @@
 /obj/item/paper/pamphlet
 	name = "pamphlet"
 	icon_state = "pamphlet"
-	info = "<b>Welcome to the Nanotrasen Gateway project...</b><br>\
-			Congratulations! If you're reading this, you and your superiors have decided that you're \
-			ready to commit to a life spent colonising the rolling hills of far away worlds. You \
-			must be ready for a lifetime of adventure, a little bit of hard work, and an award \
-			winning dental plan- but that's not all the Nanotrasen Gateway project has to offer.<br>\
-			<br>Because we care about you, we feel it is only fair to make sure you know the risks \
-			before you commit to joining the Nanotrasen Gateway project. All away destinations have \
-			been fully scanned by a Nanotrasen expeditionary team, and are certified to be 100% safe. \
-			We've even left a case of space beer along with the basic materials you'll need to expand \
-			Nanotrasen's operational area and start your new life.<br><br>\
-			<b>Gateway Operation Basics</b><br>\
-			All Nanotrasen approved Gateways operate on the same basic principals. They operate off \
-			area equipment power as you would expect, but they also require a backup wire with at least \
-			128, 000 Watts of power running through it. Without this supply, it cannot safely function \
-			and will reject all attempts at operation.<br><br>\
-			Once it is correctly setup, and once it has enough power to operate, the Gateway will begin \
-			searching for an output location. The amount of time this takes is variable, but the Gateway \
-			interface will give you an estimate accurate to the minute. Power loss will not interrupt the \
-			searching process. Influenza will not interrupt the searching process. Temporal anomalies \
-			may cause the estimate to be inaccurate, but will not interrupt the searching process.<br><br> \
-			<b>Life On The Other Side</b><br>\
-			Once you have traversed the Gateway, you may experience some disorientation. Do not panic. \
-			This is a normal side effect of travelling vast distances in a short period of time. You should \
-			survey the immediate area, and attempt to locate your complimentary case of space beer. Our \
-			expeditionary teams have ensured the complete safety of all away locations, but in a small \
-			number of cases, the Gateway they have established may not be immediately obvious. \
-			Do not panic if you cannot locate the return Gateway. Begin colonisation of the destination. \
-			<br><br><b>A New World</b><br>\
-			As a participant in the Nanotrasen Gateway Project, you will be on the frontiers of space. \
-			Though complete safety is assured, participants are advised to prepare for inhospitable \
-			environs."
+	info = "<b>Добро пожаловать в проект Nanotrasen Gateway...</b><br>\
+			Поздравляю! Если Вы читаете это, то вы и ваши начальники решили, что вы \
+			готовы посвятить свою жизнь колонизации холмов далеких миров. \
+			Вы должны быть готовы к приключениям на всю жизнь, к усердной работе и \
+			стоматологическому плану, отмеченному наградами. \
+			Но это еще не все, что может предложить проект Nanotrasen Gateway!<br>\
+			<br>Поскольку мы заботимся о вас, мы считаем справедливым сообщить вам об этом: Оцените риски \
+			прежде чем вы примете решение присоединиться к проекту Nanotrasen Gateway. \
+			Все пункты назначения были полностью проверены экспедиционной группой Nanotrasen и сертифицированы как безопасные на 100%. \
+			Мы даже оставили ящик космического пива и основные материалы, которые понадобятся вам, \
+			чтобы расширить область применения Nanotrasen и начать новую жизнь.<br><br>\
+			<b>Основы работы Врат</b><br>\
+			Все Врата, одобренные Nanotrasen, работают по одним и тем же основным принципам. Они работают \
+			от автономного оборудования, как и следовало ожидать, но им также требуется резервный провод мощностью \
+			не менее 128 000 Вт. Без этого источника питания он не сможет безопасно функционировать \
+			и будет отклонять все попытки включения.<br><br>\
+			Как только он будет правильно настроен и получит достаточную мощность для работы, \
+			Врата начнут поиск местоположения выхода. Время, затрачиваемое на это, может варьироваться, \
+			но интерфейс Врат даст вам оценку с точностью до минуты. Потеря питания не приведет \
+			к прерыванию процесса поиска. Временные аномалии могут привести к неточности оценки, \
+			но не прервут процесс поиска.<br><br> \
+			<b>Жизнь по ту сторону</b><br>\
+			Как только вы пройдете через Врата, вы можете почувствовать некоторую дезориентацию. Не паникуйте. \
+			Это нормальный побочный эффект путешествия на огромные расстояния за короткий промежуток времени. \
+			Вам следует осмотреть окрестности и попытаться найти свой бесплатный ящик Космопива. \
+			Наши экспедиционные группы обеспечили полную безопасность во всех удаленных местах, \
+			но в небольшом числе случаев установленные ими шлюзы могут быть не сразу заметны. \
+			Не паникуйте, если не сможете найти обратный шлюз. Начните колонизацию пункта назначения. \
+			<br><br><b>Новый Мир</b><br>\
+			Став участником проекта Врата Nanotrasen, вы окажетесь на передовых рубежах космоса. \
+			Несмотря на то, что участникам гарантируется полная безопасность, \
+			рекомендуется подготовиться к неблагоприятным условиям."
 
 //we don't want the silly text overlay!
 /obj/item/paper/pamphlet/update_icon_state()

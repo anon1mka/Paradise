@@ -476,7 +476,7 @@ GLOBAL_LIST_EMPTY(safes)
 /obj/item/paper/safe_code
 	name = "safe codes"
 	var/owner
-	info = "<div style='text-align:center;'><img src = ntlogo.png><center><h3>Safe Codes</h3></center>"
+	info = "<div style='text-align:center;'><img src = ntlogo.png><center><h3>Код от сейфа</h3></center>"
 
 /obj/item/paper/safe_code/Initialize(mapload)
 	..()
@@ -487,7 +487,7 @@ GLOBAL_LIST_EMPTY(safes)
 	for(var/safe in GLOB.safes)
 		var/obj/structure/safe/S = safe
 		if(owner in S.known_by)
-			info += "<br> The combination for the safe located in the [get_area(S)] is: [S.get_combination()]<br>"
+			info += "<br> Комбинация для сейфа, расположенного в [get_area(S)]: [S.get_combination()]<br>"
 			info_links = info
 			update_icon()
 

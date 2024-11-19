@@ -5,15 +5,15 @@
 
 
 /datum/station_goal/bluespace_tap/get_report()
-	return {"<b>Bluespace Harvester Experiment</b><br>
-	Another research station has developed a device called a Bluespace Harvester.
-	It reaches through bluespace into other dimensions to shift through them for interesting objects.<br>
-	Due to unforseen circumstances the large-scale test of the prototype could not be completed on the original research station. It will instead be carried out on your station.
-	Acquire the circuit board, construct the device over a wire knot and feed it enough power to generate [goal] mining points by shift end.
+	return {"<b>"Экспериментальный Bluespace сборщик"</b><br>
+	Другая исследовательская станция разработала устройство под названием Bluespace сборщик.
+	Он проникает через синее пространство в другие измерения, чтобы перемещаться по ним в поисках интересных объектов.<br>
+	Из-за непредвиденных обстоятельств масштабное испытание прототипа не удалось провести на первоначальной исследовательской станции. Вместо этого оно будет проведено на вашей станции.
+	Приобретите печатную плату, сконструируйте устройство на проволочном узле и подайте на него достаточно энергии, чтобы к концу смены сгенерировать [goal] очков добычи.
 	<br><br>
-	Be advised that the device is experimental and might act in slightly unforseen ways if sufficiently powered.
+	Имейте в виду, что устройство является экспериментальным и при достаточном питании может вести себя несколько непредсказуемым образом.
 	<br>
-	Nanotrasen Science Directorate"}
+	– Научный Директорат Nanotrasen"}
 
 
 /datum/station_goal/bluespace_tap/on_report()
@@ -458,22 +458,22 @@
 	return ..()
 
 /obj/item/paper/bluespace_tap
-	name = "paper- 'The Experimental NT Bluespace Harvester - Mining other universes for science and profit!'"
-	info = "<h1>Important Instructions!</h1>Please follow all setup instructions to ensure proper operation. <br>\
-	1. Create a wire node with ample access to spare power. The device operates independently of APCs. <br>\
-	2. Create a machine frame as normal on the wire node, taking into account the device's dimensions (3 by 3 meters). <br>\
-	3. Insert wiring, circuit board and required components and finish construction according to NT engineering standards. <br>\
-	4. Ensure the device is connected to the proper power network and the network contains sufficient power. <br>\
-	5. Set machine to desired level. Check periodically on machine progress. <br>\
-	6. Optionally, spend earned points on fun and exciting rewards. <br><hr>\
-	<h2>Operational Principles</h2> \
-	<p>The Bluespace Harvester is capable of accepting a nearly limitless amount of power to search other universes for valuables to recover. The speed of this search is controlled via the 'level' control of the device. \
-	While it can be run on a low level by almost any power generation system, higher levels require work by a dedicated engineering team to power. \
-	As we are interested in testing how the device performs under stress, we wish to encourage you to stress-test it and see how much power you can provide it. \
-	For this reason, total shift point production will be calculated and announced at shift end. High totals may result in bonus payments to members of the Engineering department. <p>\
-	<p>NT Science Directorate, Extradimensional Exploitation Research Group</p> \
-	<p><small>Device highly experimental. Not for sale. Do not operate near small children or vital NT assets. Do not tamper with machine. In case of existential dread, stop machine immediately. \
-	Please document any and all extradimensional incursions. In case of imminent death, please leave said documentation in plain sight for clean-up teams to recover.</small></p>"
+	name = "paper- 'Экспериментальный NT Bluespace сборщик - Пронзающий другие вселенные для науки и получения прибыли!'"
+	info = "<h1>Важные инструкции!</h1>Пожалуйста, следуйте всем инструкциям по настройке, чтобы обеспечить правильную работу. <br>\
+	1. Создайте узел подключения с доступом к резервному источнику питания. Устройство работает независимо от ЛКП. <br>\
+	2. Создайте каркас машины, как обычно, на проволочном узле, учитывая размеры устройства (3 на 3 метра). <br>\
+	3. Установите проводку, печатную плату и необходимые компоненты и завершите конструкцию в соответствии с инженерными стандартами NanoTrasen. <br>\
+	4. Убедитесь, что устройство подключено к сети электропитания, и что в сети имеется достаточно энергии для питания сборщика. <br>\
+	5. Установите сборщик на желаемый уровень. Периодически проверяйте работу сборщика. <br>\
+	6. При желании, можно потратить заработанные очки на веселые и захватывающие награды. <br><hr>\
+	<h2>Операционные принципы</h2> \
+	<p>Bluespace сборщик способен использовать практически неограниченное количество энергии для поиска ценностей в других вселенных. Скорость этого поиска регулируется с помощью регулятора уровня устройства. \
+	В то время как практически любая система выработки электроэнергии может работать на низком уровне, для обеспечения более высокого уровня требуется дополнительная работа инженерного состава. \
+	Поскольку мы заинтересованы в тестировании работы устройства в условиях повышенной нагрузки, мы хотели бы предложить вам провести стресс-тест и посмотреть, какую мощность вы сможете ему обеспечить. \
+	По этой причине в конце смены будет подсчитан и объявлен общий объем выработки за смену. Высокие показатели могут привести к выплате бонусов сотрудникам инженерного отдела. <p>\
+	<p>Научный директорат NT, Исследовательская группа по экстрапространственной эксплуатации</p> \
+	<p><small>Устройство является экспериментальным. Не продается. Не включайте вблизи маленьких детей или жизненно важных объектов. Не трогайте устройство. В случае возникновения опасений немедленно остановите устройство. \
+	Пожалуйста, документируйте все случаи вторжения в другие измерения. В случае неминуемой смерти, пожалуйста, оставьте указанную документацию на виду, чтобы команды по очистке могли ее восстановить.</small></p>"
 
 #undef kW
 #undef MW

@@ -449,7 +449,7 @@ GLOBAL_LIST_EMPTY(tcomms_machines)
 /obj/item/paper/tcommskey/LateInitialize(mapload)
 	for(var/obj/machinery/tcomms/core/C in GLOB.tcomms_machines)
 		if(C.network_id == "STATION-CORE")
-			info = "<center><h2>Telecommunications Key</h2></center>\n\t<br>The station core linkage password is '[C.link_password]'.<br>Should this paper be misplaced or destroyed, fear not, as the password is visible under the core linkage section. Should you wish to modify this password, it can be modified from the core."
+			info = "<center><h2>Ключ телекоммуникаций</h2></center>\n\t<br>Пароль для подключения к телекоммуникациям станции: '[C.link_password]'.<br>Если этот документ будет потерян или уничтожен, не беспокойтесь, так как пароль доступен в разделе подключенных устройств телекомунникаций. Если вы захотите изменить этот пароль – это можно сделать там же."
 			info_links = info
 			update_icon(UPDATE_ICON_STATE)
 			// Save time, even though there should only be one STATION-CORE in the world

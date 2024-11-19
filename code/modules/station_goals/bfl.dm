@@ -4,14 +4,14 @@
 	name = "BFL Mining laser"
 
 /datum/station_goal/bfl/get_report()
-	return {"<b>Mining laser construcion</b><br>
-	Our surveillance drone detected an enormous deposit, oozing with plasma. We need you to construct a BFL system to collect plasma and send it to the Central Command via cargo shuttle.
+	return {"<b>Сооружение добывающего лазера</b><br>
+	Наш дрон-разведчик обнаружил огромное скопление плазмы. Нам нужно, чтобы вы сконструировали систему BFL для сбора плазмы и отправки ее Центральному Командованию через шаттл отдела снабжения.
 	<br>
-	Its base parts should be available for shipping by your cargo shuttle.
+	Вы можете заказать доставку базовых частей BFL через шаттл отдела снабжения.
 	<br>
-	In order to complete the mission, you must to order a special pack in cargo called BFL Mission goal, and enjoy your reward.
+	Чтобы завершить цель, вы должны заказать специальный пакет с грузом под названием BFL Mission goal и наслаждаться своей наградой.
 	<br><br>
-	-Nanotrasen Naval Command"}
+	– Командование Флота Nanotrasen"}
 
 
 /datum/station_goal/bfl/on_report()

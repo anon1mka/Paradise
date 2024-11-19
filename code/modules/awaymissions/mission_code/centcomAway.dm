@@ -38,26 +38,24 @@
 
 /obj/item/paper/pamphlet/ccaInfo
 	name = "Visitor Info Pamphlet"
-	info = "<b> XCC-P5831 Visitor Information </b><br>\
-	Greetings, visitor, to  XCC-P5831! As you may know, this outpost was once \
-	used as Nanotrasen's CENTRAL COMMAND STATION, organizing and coordinating company \
-	projects across the vastness of space. <br>\
-	Since the completion of the much more efficient CC-A5831 on March 8, 2553, XCC-P5831 no longer \
-	acts as NT's base of operations but still plays a very important role its corporate affairs; \
-	serving as a supply and repair depot, as well as being host to its most important legal proceedings\
-	and the thrilling pay-per-view broadcasts of <i>PLASTEEL CHEF</i> and <i>THUNDERDOME LIVE</i>.<br> \
-	We hope you enjoy your stay!"
+	info = "<b> Информация для посетителей XCC-P5831 </b><br>\
+	Приветствую вас, посетитель, на XCC-P5831! Как вы, возможно, знаете, \
+	этот аванпост когда-то использовался в качестве Центрального Командного пункта Nanotrasen \
+	который организовывал и координировал проекты корпорации на просторах космоса.<br>\
+	После завершения разработки гораздо более эффективного CC-A5831 8 марта 2553 года, \
+	XCC-P5831 больше не является операционной базой NT, но по-прежнему играет очень важную роль \
+	в ее корпоративных делах; он служит складом снабжения и ремонта, а также местом проведения \
+	самых важных судебных разбирательств и захватывающих трансляций с оплатой за просмотр программ PLASTEEL CHEF и THUNDERDOME LIVE.\
+	Мы надеемся, что вам понравится у нас!"
 
 /obj/item/paper/ccaMemo
 	name = "Memo to XCC-P5831 QM"
-	info = "<b>From: XCC-P5831 Management Office</b><br>\
-	<b>To: Rolf Ingram, XCC-P5831 Quartermaster</b><br>\
-	Hey, Rolf, once you pack that gateway into the ferry hangar, <i>make absolutely sure</i> \
-	to deactivate it! As you may know, SS13 has recently got its network up and running, \
-	which means that until we get this gate shipped off to the next colonization staging \
-	area, they'll be able to hop straight in here if its hooked up on our end.<br>\
-	Obviously, that's something I'd very much rather avoid. Our forensics and medical \
-	teams never did figure out what happened that last time... and I can't wrap my head \
-	around it myself. Why would a shuttle full of evacuees all snap and beat each other \
-	to death the moment they reached safety?<br>\
-	- D. Cereza"
+	info = "<b>От: Офис управления XCC-P5831</b><br>\
+	<b>Кому: Рольфу Ингрэму, квартирмейстеру XCC-P5831</b><br>\
+	Эй, Рольф, как только ты установишь этот шлюз в ангаре парома, обязательно отключи его! \
+	Как ты, наверное, знаешь, SS13 недавно запустила свою сеть, а это значит, что до тех пор, \
+	пока мы не отправим эти врата в следующую промежуточную зону колонизации, они смогут подключиться прямо сюда, \
+	если они будут подключены с нашей стороны. Очевидно, что я бы предпочел избежать этого. Наши криминалисты и \
+	медицинские бригады так и не смогли выяснить, что произошло в прошлый раз... и я сам не могу разобраться в этом. \
+	С чего бы это шаттлу, полному эвакуированных, срываться и избивать друг друга до смерти, как только они оказались в безопасности?<br> \
+	- Д. Цереза"

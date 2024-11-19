@@ -231,4 +231,4 @@
 
 /obj/item/paper/recycler
 	name = "paper - 'garbage duty instructions'"
-	info = "<h2>New Assignment</h2> You have been assigned to collect garbage from trash bins, located around the station. The crewmembers will put their trash into it and you will collect the said trash.<br><br>There is a recycling machine near your closet, inside maintenance; use it to recycle the trash for a small chance to get useful minerals. Then deliver these minerals to cargo or engineering. You are our last hope for a clean station, do not screw this up!"
+	info = "<h2>Новое поручение</h2> Вам было поручено собрать мусор из мусорных баков, расположенных вокруг станции. Члены экипажа будут складывать в него свой мусор, а вы будете собирать его.<br><br> Рядом с вашим шкафом, в помещении для технического обслуживания, есть утилизатор; используйте его для переработки мусора, чтобы получить небольшой шанс получить полезные материалы. Затем доставьте эти материалы в инженерный отдел, или отдел снабжения. Вы - наша последняя надежда на чистую станцию, не облажайтесь!"
