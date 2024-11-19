@@ -1,12 +1,12 @@
 /obj/machinery/computer/arcade
 	name = "random arcade"
 	ru_names = list(
-		NOMINATIVE = "случайная аркада",
-		GENITIVE = "случайной аркады",
-		DATIVE = "случайной аркаде",
-		ACCUSATIVE = "случайную аркаду",
-		INSTRUMENTAL = "случайной аркадой",
-		PREPOSITIONAL = "случайной аркаде"
+		NOMINATIVE = "игровой автомат",
+		GENITIVE = "игрового автомата",
+		DATIVE = "игровому автомату",
+		ACCUSATIVE = "игровой автомат",
+		INSTRUMENTAL = "игровым автоматом",
+		PREPOSITIONAL = "игровом автомате"
 	)
 	desc = "Случайный аркадный автомат."
 	icon = 'icons/obj/machines/computer.dmi'
@@ -57,14 +57,6 @@
 
 /obj/machinery/computer/arcade/battle
 	name = "arcade machine"
-	ru_names = list(
-		NOMINATIVE = "игровой автомат",
-		GENITIVE = "игрового автомата",
-		DATIVE = "игровому автомату",
-		ACCUSATIVE = "игровой автомат",
-		INSTRUMENTAL = "игровым автоматом",
-		PREPOSITIONAL = "игровом автомате"
-	)
 	desc = "Не поддерживает пинбол."
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "arcade"
