@@ -83,7 +83,6 @@
 
 	enemy_name = replacetext((name_part1 + name_part2), "the ", "")
 	name = (name_action + name_part1 + name_part2)
-
 	ru_names = list(
 		NOMINATIVE = "игровой автомат [name]",
 		GENITIVE = "игрового автомата [name]",
@@ -346,7 +345,7 @@
 		"Tau Ceti Beta стала отправной точкой для колонистов, направляющихся к Ориону. Поблизости находится множество кораблей и временных станций.",
 		"Датчики показывают, что гравитационное поле черной дыры влияет на область пространства, через которую мы направляемся. Мы могли бы придерживаться курса, но есть риск, что нас одолеет ее гравитация, или же мы могли бы изменить курс и обогнуть ее, что займет больше времени.",
 		"Вы оказались в поле зрения первого рукотворного сооружения в этом регионе космоса. Оно было построено не путешественниками с Солнечной Системы, а колонистами с Ориона. Оно стоит как памятник успеху колонистов.",
-		"Вы добрались до Ориона! Поздравляю! Ваша команда - одна из немногих, кто создал новую точку опоры для человечества!"
+		"Вы добрались до Ориона! Поздравляю! Ваша команда – одна из немногих, кто создал новую точку опоры для человечества!"
 		)
 
 /obj/machinery/computer/arcade/orion_trail/proc/newgame()
@@ -407,6 +406,14 @@
 			emagged = 0 //removes the emagged status after you lose
 			playing = 0 //also a new game
 			name = "The Orion Trail"
+			ru_names = list(
+				NOMINATIVE = "игровой автомат The Orion Trail",
+				GENITIVE = "игрового автомата The Orion Trail",
+				DATIVE = "игровому автомату The Orion Trail",
+				ACCUSATIVE = "игровой автомат The Orion Trail",
+				INSTRUMENTAL = "игровым автоматом The Orion Trail",
+				PREPOSITIONAL = "игровом автомате The Orion Trail"
+			)
 			desc = "Узнайте, как наши предки добрались до Ориона, и повеселитесь в процессе!"
 
 	else if(event)
@@ -431,7 +438,7 @@
 		dat += "<br><center><h3>Испытайте себя в роли первопроходца!</h3></center><br><br>"
 		dat += "<center><b><a href='byond://?src=[UID()];newgame=1'>Новая Игра</a></b></center>"
 		dat += "<P ALIGN=Right><a href='byond://?src=[UID()];close=1'>Закрыть</a></P>"
-	var/datum/browser/popup = new(user, "arcade", "The Orion Trail", 420, 420, src)
+	var/datum/browser/popup = new(user, "arcade", "The Orion Trail", 520, 420, src)
 	popup.set_content(dat)
 	popup.open()
 	return
@@ -516,7 +523,7 @@
 							for(T in orange(1, src))
 								T.ChangeTurf(/turf/simulated/floor/plating)
 					else
-						atom_say("Что-то врезается в пол рядом с [declent_ru(INSTRUMENTAL)] - к счастью, оно не пробило его насквозь!")
+						atom_say("Что-то врезается в пол рядом с [declent_ru(INSTRUMENTAL)] – к счастью, оно не пробило его насквозь!")
 						playsound(loc, 'sound/effects/bang.ogg', 20, TRUE)
 				if(ORION_TRAIL_MALFUNCTION)
 					playsound(loc, 'sound/effects/empulse.ogg', 20, TRUE)
@@ -577,14 +584,14 @@
 			event()
 			if(emagged) //has to be here because otherwise it doesn't work
 				playsound(loc, 'sound/effects/supermatter.ogg', 100, TRUE)
-				atom_say("Перед [declent_ru(INSTRUMENTAL)] внезапно появляется миниатюрная черная дыра, пожирающая [usr] заживо!")
+				atom_say("Перед [declent_ru(INSTRUMENTAL)] [src] внезапно появляется миниатюрная черная дыра, пожирающая [usr] заживо!")
 				if(isliving(usr))
 					var/mob/living/L = usr
 					L.Stun(20 SECONDS) //you can't run :^)
 				var/S = new /obj/singularity/academy(usr.loc)
 				emagged = 0 //immediately removes emagged status so people can't kill themselves by sprinting up and interacting
 				sleep(50)
-				atom_say("[S] исчезает так же внезапно, как и появилось.")
+				atom_say("Черная дыра исчезает так же внезапно, как и появилась.")
 				qdel(S)
 		else
 			event = null
@@ -806,7 +813,7 @@
 				if(lings_aboard >= 2)
 					ling2 = remove_crewmember()
 
-				eventdat += "О нет, некоторые из вашей команды - Генокрады!"
+				eventdat += "О нет, некоторые из вашей команды – Генокрады!"
 				if(ling2)
 					eventdat += "<br>Руки [ling1] и [ling2] изгибаются, превращаясь в гротескные клинки!"
 				else
@@ -1072,14 +1079,6 @@
 
 /obj/machinery/computer/arcade/orion_trail/pc_frame
 	name = "special purpose computer"
-	ru_names = list(
-		NOMINATIVE = "компьютер специального назначения",
-		GENITIVE = "компьютера специального назначения",
-		DATIVE = "компьютеру специального назначения",
-		ACCUSATIVE = "компьютер специального назначения",
-		INSTRUMENTAL = "компьютером специального назначения",
-		PREPOSITIONAL = "компьютере специального назначения"
-	)
 	desc = "Выполнять вычисления на этом компьютере будет сложно..."
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "aimainframe"
@@ -1091,14 +1090,6 @@
 
 /obj/machinery/computer/arcade/battle/pc_frame
 	name = "special purpose computer"
-	ru_names = list(
-		NOMINATIVE = "компьютер специального назначения",
-		GENITIVE = "компьютера специального назначения",
-		DATIVE = "компьютеру специального назначения",
-		ACCUSATIVE = "компьютер специального назначения",
-		INSTRUMENTAL = "компьютером специального назначения",
-		PREPOSITIONAL = "компьютере специального назначения"
-	)
 	desc = "Выполнять вычисления на этом компьютере будет сложно..."
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "aimainframe"
