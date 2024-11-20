@@ -10,19 +10,19 @@
 	//Server linked to.
 	var/obj/machinery/message_server/linkedServer = null
 	//Messages - Saves me time if I want to change something.
-	var/noserver = span_alert("ALERT: No server detected.")
-	var/incorrectkey = span_warning("ALERT: Incorrect decryption key!")
-	var/defaultmsg = span_notice("Welcome. Please select an option.")
-	var/rebootmsg = span_warning("%$&(�: Critical %$$@ Error // !RestArting! <lOadiNg backUp iNput ouTput> - ?pLeaSe wAit!")
+	var/noserver = span_alert("ВНИМАНИЕ: Сервер не обнаружен")
+	var/incorrectkey = span_warning("ВНИМАНИЕ: Неверный ключ шифрования!")
+	var/defaultmsg = span_notice("Добро пожаловать. Пожалуйста, выберите нужный вариант.")
+	var/rebootmsg = span_warning("%$&(�: Критическая %$$@ Ошибка // !ПерЕЗагрузКА! <ЗагРУЗка РЕЗеРвнОГо вВОДа вЫВОда> - ?пожАЛУЙстА ожИДайТе!")
 	//Computer properties
 	var/screen = 0 		// 0 = Main menu, 1 = Message Logs, 2 = Hacked screen, 3 = Custom Message
 	var/hacking = 0		// Is it being hacked into by the AI/Cyborg
 	var/emag = 0		// When it is emagged.
-	var/message = span_notice("System bootup complete. Please select an option.")	// The message that shows on the main menu.
+	var/message = span_notice("Загрузка системы завершена. Пожалуйста, выберите нужный вариант.")	// The message that shows on the main menu.
 	var/auth = 0 // Are they authenticated?
 	var/optioncount = 8
 	// Custom Message Properties
-	var/customsender = "System Administrator"
+	var/customsender = "Системный Администратор"
 	var/obj/item/pda/customrecepient = null
 	var/customjob		= "Admin"
 	var/custommessage 	= "This is a test, please ignore."
@@ -63,7 +63,7 @@
 				update_icon()
 			message = rebootmsg
 		else if(user)
-			to_chat(user, span_notice("A no server error appears on the screen."))
+			to_chat(user, span_notice("На экране появляется ошибка отсутствия сервера."))
 
 
 /obj/machinery/computer/message_monitor/update_icon_state()

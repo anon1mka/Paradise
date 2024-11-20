@@ -772,11 +772,11 @@
 
 /obj/item/paper/russiannuclearoperativeobj
 	name = "paper- 'Objectives of a Nuclear Operative'"
-	info = "<b>Objective #1</b>: Destroy the station with a nuclear device."
+	info = "<b>Цель #1</b>: Уничтожьте станцию с помощью ядерного устройства."
 
 /obj/item/paper/clownship
 	name = "paper- 'Note'"
-	info = "The call has gone out! Our ancestral home has been rediscovered! Not a small patch of land, but a true clown nation, a true Clown Planet! We're on our way home at last!"
+	info = "Звонок был прерван! Родина наших предков была открыта заново! Это не маленький клочок земли, а настоящая клоунская нация, настоящая клоунская планета! Наконец-то мы на пути домой!"
 
 /obj/item/paper/syndicate
 	name = "paper"

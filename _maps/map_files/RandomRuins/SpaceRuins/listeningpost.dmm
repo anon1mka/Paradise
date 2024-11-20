@@ -202,15 +202,15 @@
 "J" = (
 /obj/structure/filingcabinet,
 /obj/item/paper{
-	info = "A good start to the operation: intercepted Nanotrasen military communications. A convoy is scheduled to transfer nuclear warheads to a new military base. This is as good a chance as any to get our hands on some heavy weaponry, I suggest we take it.";
+	info = "Хорошее начало операции: перехвачены военные сообщения Nanotrasen. Запланирована отправка конвоя с ядерными боеголовками на новую военную базу. Это такой же хороший шанс заполучить в свои руки тяжелое вооружение, я предлагаю им воспользоваться.";
 	name = "april report"
 	},
 /obj/item/paper{
-	info = "Nothing of real interest to report this month. I have intercepted faint transmissions from what appears to be some sort of pirate radio station. They do not appear to be relevant to my assignment.";
+	info = "В этом месяце не было ничего интересного, о чем можно было бы сообщить. Я перехватил слабые передачи, судя по всему, с какой-то пиратской радиостанции. Похоже, они не имеют отношения к моему заданию.";
 	name = "may report"
 	},
 /obj/item/paper{
-	info = "Nanotrasen communications have been noticably less frequent recently.  The pirate radio station I found last month has been transmitting pro-Nanotrasen propaganda. I will continue to monitor it.";
+	info = "В последнее время сообщения Nanotrasen стали появляться заметно реже. Пиратская радиостанция, на которую я наткнулся в прошлом месяце, транслировала пропаганду в поддержку Nanotrasen. Я продолжу следить за этим.";
 	name = "june report"
 	},
 /obj/item/paper{
@@ -230,7 +230,7 @@
 	name = "october report"
 	},
 /obj/item/paper{
-	info = "1 x Stechtkin pistol - $600<br>1 x silencer - $200<br>shipping charge - $4360<br>total - $5160";
+	info = "1 x Пистолет стечкина - $600<br>1 x Глушитель - $200<br>Стоимость доставки - $4360<br>Итого - $5160";
 	name = "receipt"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -239,7 +239,7 @@
 "K" = (
 /obj/structure/table,
 /obj/item/paper{
-	info = "<b>Mission Details</b>: You have been assigned to a newly constructed listening post constructed within an asteroid in Nanotrasen space to monitor their plasma mining operations. Accurate intel is crucial to the success of our operatives onboard, do not fail us.";
+	info = "<b>Детали миссии</b>: Вы были назначены на недавно построенный пост прослушивания, расположенный на астероиде в пространстве Nanotrasen, для наблюдения за их операциями по добыче плазмы. Точная информация имеет решающее значение для успеха наших оперативников на борту, не подведите нас.";
 	name = "mission briefing"
 	},
 /obj/structure/disposalpipe/segment{
