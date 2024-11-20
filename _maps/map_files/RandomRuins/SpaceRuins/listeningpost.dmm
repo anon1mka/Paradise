@@ -102,7 +102,7 @@
 "r" = (
 /obj/structure/table,
 /obj/item/paper{
-	info = "Ничего интересного, о чем можно было бы сообщить..";
+	info = "Ничего интересного, о чем можно было бы сообщить.";
 	name = "november report"
 	},
 /obj/item/pen,
