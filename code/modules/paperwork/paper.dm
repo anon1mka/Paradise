@@ -591,11 +591,34 @@
  */
 /obj/item/paper/Court
 	name = "Judgement"
-	info = "For crimes against the station, the offender is sentenced to:<BR>\n<BR>\n"
+	info = "За преступления против станции преступник приговаривается к:<BR>\n<BR>\n"
 
 /obj/item/paper/Toxin
 	name = "Chemical Information"
-	info = "Known Onboard Toxins:<BR>\n\tGrade A Semi-Liquid Plasma:<BR>\n\t\tHighly poisonous. You cannot sustain concentrations above 15 units.<BR>\n\t\tA gas mask fails to filter plasma after 50 units.<BR>\n\t\tWill attempt to diffuse like a gas.<BR>\n\t\tFiltered by scrubbers.<BR>\n\t\tThere is a bottled version which is very different<BR>\n\t\t\tfrom the version found in canisters!<BR>\n<BR>\n\t\tWARNING: Highly Flammable. Keep away from heat sources<BR>\n\t\texcept in a enclosed fire area!<BR>\n\t\tWARNING: It is a crime to use this without authorization.<BR>\nKnown Onboard Anti-Toxin:<BR>\n\tAnti-Toxin Type 01P: Works against Grade A Plasma.<BR>\n\t\tBest if injected directly into bloodstream.<BR>\n\t\tA full injection is in every regular Med-Kit.<BR>\n\t\tSpecial toxin Kits hold around 7.<BR>\n<BR>\nKnown Onboard Chemicals (other):<BR>\n\tRejuvenation T#001:<BR>\n\t\tEven 1 unit injected directly into the bloodstream<BR>\n\t\t\twill cure paralysis and sleep plasma.<BR>\n\t\tIf administered to a dying patient it will prevent<BR>\n\t\t\tfurther damage for about units*3 seconds.<BR>\n\t\t\tit will not cure them or allow them to be cured.<BR>\n\t\tIt can be administeredd to a non-dying patient<BR>\n\t\t\tbut the chemicals disappear just as fast.<BR>\n\tSoporific T#054:<BR>\n\t\t5 units wilkl induce precisely 1 minute of sleep.<BR>\n\t\t\tThe effect are cumulative.<BR>\n\t\tWARNING: It is a crime to use this without authorization"
+	info = "<b>Известный бортовой токсин:</b><br> \
+	<b>Полужидкая плазма класса А:</b><br> \
+	Очень токсична. Вы не можете выдерживать концентрацию выше 15 единиц.<br> \
+	Противогаз перестает фильтровать плазму после 50 циклов использования.<br> \
+	Будет пытаться рассеяться, как газ.<br> \
+	Фильтруется с помощью скрубберов.<br> \
+	Есть версия в бутылках, которая сильно отличается от версии в канистрах<br><br> \
+	<b>ПРЕДУПРЕЖДЕНИЕ:</b> Легко воспламеняется. Храните вдали от источников тепла, за исключением огороженных пожароопасных зон! \
+	<b>ПРЕДУПРЕЖДЕНИЕ:</b> Использовать это без разрешения - преступление.<br> \
+	<b>Известный бортовой антитоксин:</b><br> \
+	<b>Антитоксин типа 01P:</b> Действует против плазмы класса А.<br> \
+	Лучше всего вводить непосредственно в кровоток.<br> \
+	Полная инъекция есть в каждой обычной аптечке.<br> \
+	Специальные наборы с токсинами вмещают около 7 штук.<br><br> \
+	Известные бортовые химикаты (прочие):<br> \
+	<b>Омоложение T#001:</b><br> \
+	Даже 1 единица, введенная непосредственно в кровоток, избавит от паралича паралич и выведет плазму.<br> \
+	При введении умирающему пациенту это предотвратит дальнейшее повреждение примерно на юнит*3 секунды.<br> \
+	Это не вылечит их и не позволит вылечиться самим.<br> \
+	Его можно вводить даже не умирающему пациенту, но химические вещества исчезают так же быстро.<br> \
+	<b>Снотворное Т#054:</b><br> \
+	5 юнитов вещества вызывают сон ровно 1 минуту.<br> \
+	Эффект является кумулятивным.<br> \
+	<b>ПРЕДУПРЕЖДЕНИЕ:</b> Использовать это без разрешения - преступление."
 
 /obj/item/paper/courtroom
 	name = "A Crash Course in Legal SOP on SS13"
@@ -648,7 +671,7 @@
 	. = ..()
 	var/fortunemessage = pick(GLOB.fortune_cookie_messages)
 	info = "<p style='text-align:center;font-family:[deffont];font-size:120%;font-weight:bold;'>[fortunemessage]</p>"
-	info += "<p style='text-align:center;'><strong>Lucky numbers</strong>: [rand(1,49)], [rand(1,49)], [rand(1,49)], [rand(1,49)], [rand(1,49)]</p>"
+	info += "<p style='text-align:center;'><strong>Счастливые числа</strong>: [rand(1,49)], [rand(1,49)], [rand(1,49)], [rand(1,49)], [rand(1,49)]</p>"
 
 
 /obj/item/paper/fortune/update_icon_state()
@@ -659,7 +682,7 @@
  */
 /obj/item/paper/Court
 	name = "Judgement"
-	info = "For crimes against the station, the offender is sentenced to:<BR>\n<BR>\n"
+	info = "За преступления против станции преступник приговаривается к:<BR>\n<BR>\n"
 
 /obj/item/paper/Toxin
 	name = "Chemical Information"
@@ -675,7 +698,19 @@
 
 /obj/item/paper/chef
 	name = "Cooking advice from Morgan Ramslay"
-	info = "Right, so you're wanting to learn how to feed the teeming masses of the station yeah?<BR>\n<BR>\nWell I was asked to write these tips to help you not burn all of your meals and prevent food poisonings.<BR>\n<BR>\nOkay first things first, making a humble ball of dough.<BR>\n<BR>\nCheck the lockers for a bag or two of flour and then find a glass cup or a beaker, something that can hold liquids. Next pour 15 units of flour into the container and then pour 10 units of water in as well. Hey presto! You've made a ball of dough, which can lead to many possibilities.<BR>\n<BR>\nAlso, before I forget, KEEP YOUR FOOD OFF THE DAMN FLOOR! Space ants love getting onto any food not on a table or kept away in a closed locker. You wouldn't believe how many injuries have resulted from space ants...<BR>\n<BR>\nOkay back on topic, let's make some cheese, just follow along with me here.<BR>\n<BR>\nLook in the lockers again for some milk cartons and grab another glass to mix with. Next look around for a bottle named 'Universal Enzyme' unless they changed the look of it, it should be a green bottle with a red label. Now pour 5 units of enzyme into a glass and 40 units of milk into the glass as well. In a matter of moments you'll have a whole wheel of cheese at your disposal.<BR>\n<BR>\nOkay now that you've got the ingredients, let's make a classic crewman food, cheese bread.<BR>\n<BR>\nMake another ball of dough, and cut up your cheese wheel with a knife or something else sharp such as a pair of wire cutters. Okay now look around for an oven in the kitchen and put 2 balls of dough and 2 cheese wedges into the oven and turn it on. After a few seconds a fresh and hot loaf of cheese bread will pop out. Lastly cut it into slices with a knife and serve.<BR>\n<BR>\nCongratulations on making it this far. If you haven't created a burnt mess of slop after following these directions you might just be on your way to becoming a master chef someday.<BR>\n<BR>\nBe sure to look up other recipes and bug the Head of Personnel if Botany isn't providing you with crops, wheat is your friend and lifeblood.<BR>\n<BR>\nGood luck in the kitchen, and try not to burn down the place.<BR>\n<BR>\n-Morgan Ramslay"
+	info = "<b>Хорошо, значит, ты хочешь узнать, как накормить многолюдную толпу на станции, да?</b><br><br>\
+	Итак, меня попросили написать эти советы, чтобы помочь вам не подгорать при приготовлении блюд и предотвратить пищевые отравления.<br><br> \
+	Значит, перво-наперво, делаем скромный шарик из теста.<br><br> \
+	Проверьте, нет ли в шкафчиках одного-двух пакетов с мукой, а затем найдите стеклянный стаканчик или мензурку, в которых можно хранить жидкость. Затем насыпьте в контейнер 15 юнитов муки, а затем влейте туда же 10 юнитов воды. Вуаля! Вы слепили шарик из теста, что может привести к множеству возможностей.<br><br> \
+	И еще, пока я не забыл, <b>ДЕРЖИТЕ СВОЮ ЕДУ ПОДАЛЬШЕ ОТ ЭТОГО ПРОКЛЯТОГО ПОЛА!</b> Космические муравьи обожают подбираться к любой еде, которая не стоит на столе или не хранится в закрытом шкафчике. Вы не поверите, сколько вреда было получено от космических муравьев.<br><br> \
+	Ладно, вернемся к теме, давай приготовим сыр, просто следуй моим указаниям.<br><br> \
+	Еще раз поищите в шкафчиках пакеты с молоком и возьмите еще один стакан для смешивания. Затем поищите бутылочку с названием 'Универсальный фермент', если только они не изменили ее внешний вид, это должна быть зеленая бутылка с красной этикеткой. Теперь налейте в стакан 5 юнитов фермента и 40 юнитов молока. Через несколько мгновений в вашем распоряжении будет целый сырный круг.<br><br> \
+	Итак, теперь, когда у вас есть ингредиенты, давайте приготовим классическое блюдо для членов экипажа - сырный хлеб.<br><br> \
+	Скатайте из теста еще один шарик и нарежьте сырное кольцо ножом или чем-нибудь еще острым, например кусачками. Хорошо, теперь поищите на кухне духовку, положите в нее 2 шарика теста и 2 сырных дольки и включите духовку. Через несколько секунд на поверхности появится свежая и горячая буханка сырного хлеба. Затем нарежьте ее ножом на ломтики и подавайте.<br><br> \
+	Поздравляем вас с тем, что вы так далеко продвинулись. Если, следуя этим рекомендациям, у вас не получилась подгоревшая каша из помоев, возможно, вы когда-нибудь станете шеф-поваром.<br><br> \
+	Обязательно ознакомьтесь с другими рецептами и сообщите руководителю отдела кадров, если ботаника не дает вам урожая, пшеница - ваш друг и источник жизненной силы.<br><br> \
+	Удачи вам на кухне и постарайтесь не спалить все дотла.<br><br> \
+	- Морган Рамсли"
 
 /obj/item/paper/djstation
 	name = "DJ Listening Outpost"
@@ -683,7 +718,7 @@
 
 /obj/item/paper/monolithren
 	name = "For stalkers"
-	info = "Sorry Mario, your wishgranter in another castle. Your Friendly God"
+	info = "Прости, Марио, но исполнитель желаний в другом замке. Твой дружелюбный Бог."
 
 /obj/item/paper/flag
 	icon_state = "flag_neutral"
@@ -705,11 +740,11 @@
 
 /obj/item/paper/blueshield
 	name = "paper- 'Blueshield Mission Briefing'"
-	info = "<b>Blueshield Mission Briefing</b><br>You are charged with the defence of any persons of importance within the station. This includes, but is not limited to, The Captain, The Heads of Staff and Central Command staff. You answer directly to the Nanotrasen Representative who will assist you in achieving your mission.<br>When required to achieve your primary responsibility, you should liaise with security and share resources; however, the day to day security operations of the station are outside of your jurisdiction.<br>Monitor the health and safety of your principals, identify any potential risks and threats, then alert the proper departments to resolve the situation. You are authorized to act as bodyguard to any of the station heads that you determine are most in need of protection; however, additional access to their departments shall be granted solely at their discretion.<br>Observe the station alert system and carry your armaments only as required by the situation, or when authorized by the Head of Security or Captain in exceptional cases.<br>Remember, as an agent of Nanotrasen it is your responsibility to conduct yourself appropriately and you will be held to the highest standard. You will be held accountable for your actions. Security is authorized to search, interrogate or detain you as required by their own procedures. Internal affairs will also monitor and observe your conduct, and their mandate applies equally to security and Blueshield operations."
+	info = "<b>Брифинг миссии Синего Щита</b><br>На вас возложена защита любых важных персон на станции. Это касается, в частности: Капитана, Главы Персонала, Директора Исследований, Квартирмейстера, Главного Врача, Главного Инженера и Главу Службы Безопасности. Вы подчиняетесь непосредственно представителю Nanotrasen, который поможет вам в выполнении вашей миссии.<br>Когда это необходимо для выполнения ваших основных обязанностей, вы должны поддерживать связь со службой безопасности и делиться информацией; однако повседневные операции по обеспечению безопасности станции находятся за пределами вашей юрисдикции.<br>Следите за здоровьем и безопасностью глав станции, выявляйте любые потенциальные риски и угрозы, а затем оповещайте соответствующие отделы для разрешения ситуации. Вы уполномочены выступать в качестве телохранителя любого из руководителей отделений, которые, по вашему мнению, больше всего нуждаются в защите; однако дополнительный доступ в их отделы предоставляется исключительно по их усмотрению.<br>Соблюдайте СРП уровня угроз на станции и носите оружие только в соответствии с требованиями ситуации или с разрешения Главы Службы Безопасности или Капитана в исключительных случаях.<br>Помните, что вы, как агент Nanotrasen, несете ответственность за надлежащее поведение, и к вам будут предъявляться самые высокие требования. Вы будете нести ответственность за свои действия. Служба Безопасности уполномочена обыскивать, допрашивать или задерживать вас в соответствии с их собственными процедурами. Отдел внутренних дел также будет следить за вашим поведением, и их мандат в равной степени распространяется на операции по обеспечению безопасности и Синего Щита."
 
 /obj/item/paper/ntrep
 	name = "paper- 'Nanotrasen Representative Mission Briefing'"
-	info = "<b>Nanotrasen Representative Mission Briefing</b><br><br>Nanotrasen Central Command has dispatched you to this station in order to liaise with command staff on their behalf. As experienced field officers, the staff on the station are experts in handling their own fields. It is your job, however, to consider the bigger picture and to direct the staff towards Nanotrasen's corporate interests.<br>As a civilian, you should consider yourself an advisor, diplomat and intermediary. The command staff do not answer to you directly and are not required to follow your orders, nor do you have disciplinary authority over personnel. In all station internal matters you answer to the Head of Personnel who will direct you in your conduct within the station. However, you also answer to Central Command who may, as required, direct you in acting on company interests.<br>Central Command may dispatch orders to the staff through you which you are responsible to communicate; however, enforcement of these orders is not your mandate and will be handled directly by Central Command or authorized Nanotrasen personnel. When not specifically directed by Central Command, assist the Head of Personnel in evaluation of the station and receiving departmental reports.<br>Your office has been provided with a direct link to Central Command, through which you can issue any urgent reports or requests for Nanotrasen intervention. Remember that any direct intervention is a costly exercise and should be used only when the situation justifies the request. You will be held accountable for any unnecessary usage of Nanotrasen resources.<br>"
+	info = "<b>Брифинг миссии представителя Nanotrasen</b><br><br>Центральное командование Nanotrasen направило вас на эту станцию, чтобы вы поддерживали связь с командным составом от их имени. Как опытные полевые офицеры, сотрудники станции являются экспертами в своей области. Однако ваша задача - видеть картину в целом и направлять сотрудников в русло корпоративных интересов Nanotrasen.<br>Как гражданское лицо, вы должны считать себя советником, дипломатом и посредником. Командный состав не подчиняется вам напрямую и не обязан выполнять ваши приказы, а вы не имеете дисциплинарной власти над личным составом. По всем внутренним вопросам станции вы подчиняетесь Главе Персонала, который будет руководить вашими действиями на станции. Однако вы также подчиняетесь Центральному Командованию, которое может, при необходимости, направлять вас в соответствии с интересами компании.<br>Центральное Командование может рассылать через вас приказы персоналу, за передачу которых вы несете ответственность; однако выполнение этих приказов не входит в ваши полномочия и будет осуществляться непосредственно Центральным Командованием или уполномоченным персоналом Nanotrasen. Если Центральное Командование специально не направляет вас, помогайте Главе Персонала в оценке работы станции и получении ведомственных отчетов.<br>Вашему офису предоставлена прямая связь с Центральным Командованием, с помощью которой вы можете отправлять любые срочные сообщения или запросы о вмешательстве Nanotrasen. Помните, что любое прямое вмешательство является дорогостоящим мероприятием и должно использоваться только тогда, когда ситуация оправдывает запрос. Вы будете нести ответственность за любое неоправданное использование ресурсов Nanotrasen.<br>"
 
 /obj/item/paper/armory
 	name = "paper- 'Armory Inventory'"
@@ -721,19 +756,19 @@
 
 /obj/item/paper/holodeck
 	name = "paper- 'Holodeck Disclaimer'"
-	info = "Bruises sustained in the holodeck can be healed simply by sleeping."
+	info = "Ушибы, полученные на голодеке, можно вылечить простым сном."
 
 /obj/item/paper/syndimemo
 	name = "paper- 'Memo'"
-	info = "GET DAT FUKKEN DISK"
+	info = "ДОСТАНЬ ЭТОТ ЁБАННЫЙ ДИСК"
 
 /obj/item/paper/synditele
 	name = "Teleporter Instructions"
-	info = "<h3>Teleporter Instruction</h3><hr><ol><li>Install circuit board, glass and wiring to complete Teleporter Control Console</li><li>Use a screwdriver, wirecutter and screwdriver again on the Teleporter Station to connect it</li><li>Set destination with Teleporter Control Computer</li><li>Activate Teleporter Hub with Teleporter Station</li></ol>"
+	info = "<h3>Инструкция по использованию телепорта</h3><hr><ol><li>Установите печатную плату, стекло и проводку для сборки пульта управления телепортом</li><li>Используйте отвертку, кусачки и еще раз отвертку на станции телепортации, чтобы подключить ее</li><li>Установите пункт назначения с помощью компьютера управления телепортом</li><li>Активируйте центр телепортации с помощью телепортационной станции</li></ol>"
 
 /obj/item/paper/russiantraitorobj
 	name = "paper- 'Mission Objectives'"
-	info = "The Syndicate have cunningly disguised a Syndicate Uplink as your PDA. Simply enter the code \"678 Bravo\" into the ringtone select to unlock its hidden features. <br><br><b>Objective #1</b>. Kill the God damn AI in a fire blast that it rocks the station. <b>Success!</b>  <br><b>Objective #2</b>. Escape alive. <b>Failed.</b>"
+	info = "Синдикат хитро замаскировал восходящий канал связи Синдиката под ваш КПК. Просто введите код \"678 Bravo\" в меню выбора мелодию звонка, чтобы разблокировать его скрытые функции. <br><br><b>Цель #1</b>. Убейте проклятый искусственный интеллект огненным взрывом, от которого станция содрогнется. <b style='color:green'>Выполнено!</b>  <br><b>Цель #2</b>. Выберитесь живым. <b style='color:red'>Провалено.</b>"
 
 /obj/item/paper/russiannuclearoperativeobj
 	name = "paper- 'Objectives of a Nuclear Operative'"
@@ -972,7 +1007,7 @@
 
 /obj/item/paper/researchnotes
 	name = "paper - 'Research Notes'"
-	info = "<b>The notes appear gibberish to you. Perhaps a destructive analyzer in R&D could make sense of them.</b>"
+	info = "<b>Эти заметки покажутся вам бессмыслицей. Возможно, специалист по деструктивному анализу в отделе исследований и разработок смог бы разобраться в них.</b>"
 	origin_tech = "combat=4;materials=4;engineering=4;biotech=4"
 
 /obj/item/paper/researchnotes/Initialize(mapload)

@@ -109,7 +109,7 @@
 
 /obj/item/paper/fluff/ruins/oldstation/damagereport
 	name = "Damage Report"
-	info = "<b>Отчет о повреждениях</b><br><br><b>Станция 'Омега'</b> – Уничтожена<br><br><b>Станция 'Альфа'</b> – Уничтожена<br><br><b>Станция 'Бега'</b> – Катастрофические повреждения. Медицинское оборудование частично разрушено. Атмосферное оборудование частично разрушено. Ядро двигателя разрушено.<br><br><b>Станция 'Чарли'</b> – Нетронута. Потеря кислорода в восточной части главного коридора.<br><br><b>Станция 'Тета'</b> – Нетронута. <b>ПРЕДУПРЕЖДЕНИЕ</b>: Неизвестная сила захватила станцию Тэта. Намерения: неизвестны. Вид: неизвестен. Численность: неизвестна.<br><br>Рекомендация – Восстановите подачу энергии на станцию с помощью солнечной батареи. Восстановите атмосферную систему станции для восстановления циркуляции воздуха."
+	info = "<b>Отчет о повреждениях</b><br><br><b>Станция 'Омега'</b> – Уничтожена<br><br><b>Станция 'Альфа'</b> – Уничтожена<br><br><b>Станция 'Бега'</b> – Катастрофические повреждения. Медицинское оборудование частично разрушено. Атмосферное оборудование частично разрушено. Ядро двигателя разрушено.<br><br><b>Станция 'Чарли'</b> – Не тронута. Потеря кислорода в восточной части главного коридора.<br><br><b>Станция 'Тета'</b> – Не тронута. <b>ПРЕДУПРЕЖДЕНИЕ</b>: Неизвестная сила захватила станцию Тэта. Намерения: неизвестны. Вид: неизвестен. Численность: неизвестна.<br><br>Рекомендация – Восстановите подачу энергии на станцию с помощью солнечной батареи. Восстановите атмосферную систему станции для восстановления циркуляции воздуха."
 
 /obj/item/paper/fluff/ruins/oldstation/protosuit
 	name = "B01-RIG Hardsuit Report"
@@ -121,82 +121,66 @@
 
 /obj/item/paper/fluff/ruins/oldstation/protogun
 	name = "K14 Energy Gun Report"
-	info = "<b>K14-Мультифазная энергетическая пушка</b><br><br>Прототип энергетического пистолета K14 – первая энергетическая винтовка, которая не только выдерживает больший заряд боеприпасов, чем другие модели оружия, но и способна переключаться между различными типами энергетических снарядов по команде без каких-либо инцидентов.Оружие по-прежнему имеет ряд недостатков, его альтернативный, не лазерный режим стрельбы, позволяет произвести только один выстрел, прежде чем разрядится энергетический элемент, оружие также остается непомерно дорогим, тем не менее, компания NT Market Research полностью уверена, что это оружие станет основой нашего каталога энергетического оружия.Ожидается, что K14 подвергнется доработке, чтобы устранить проблемы с боеприпасами, а в K15, как ожидается, будет заменена настройка "оглушать" на "отключать" в попытке обойти проблемы с боеприпасами."
+	info = "<b>K14-Мультифазная энергетическая пушка</b><br><br>Прототип энергетического пистолета K14 – первая энергетическая винтовка, которая не только содержит больший больший объем батареи, чем другие модели оружия, но и способна переключаться между различными типами энергетических снарядов по команде без каких-либо инцидентов.<br><br>Оружие по-прежнему имеет ряд недостатков, его альтернативный, не лазерный режим стрельбы, позволяет произвести только один выстрел, прежде чем разрядится энергетический элемент, оружие также остается непомерно дорогим, тем не менее, компания NT Market Research полностью уверена, что это оружие станет основой нашего каталога энергетического оружия.<br><br>Ожидается, что K14 подвергнется доработке, чтобы устранить проблемы с боеприпасами, а в K15, будет изменена настройка 'тазера' на 'дизейблер' в попытке обойти проблемы с боеприпасами."
 
 /obj/item/paper/fluff/ruins/oldstation/protosing
 	name = "Singularity Generator"
-	info = "<b>Singularity Generator</b><br><br>Modern power generation typically comes in two forms, a Fusion Generator or a Fission Generator. Fusion provides the best space to power \
-	ratio, and is typically seen on military or high security ships and stations, however Fission reactors require the usage of expensive, and rare, materials in its construction.. Fission generators are massive and bulky, and require a large reserve of uranium to power, however they are extremely cheap to operate and oft need little maintenance once \
-	operational.<br><br>The Singularity aims to alter this, a functional Singularity is essentially a controlled Black Hole, a Black Hole that generates far more power than Fusion or Fission \
-	generators can ever hope to produce."
+	info = "<b>Генератор Сингулярности</b><br><br>Современная энергетика, как правило, представлена в двух вариантах: термоядерный генератор или генератор на основе ядерного деления. Термоядерный реактор обеспечивает наилучшее соотношение площади и мощности и обычно используется на военных кораблях и станциях повышенной безопасности, однако для изготовления реакторов на ядерном делении требуются дорогостоящие и редкие материалы.. Ядерные генераторы массивны и громоздки, и для их работы требуется большой запас урана, однако они чрезвычайно дешевы в эксплуатации и часто не требуют особого обслуживания после ввода в эксплуатацию. Сингулярность призвана изменить это, функциональная сингулярность - это, по сути, управляемая Черная дыра, которая генерирует гораздо больше энергии, чем могут когда-либо получить термоядерные генераторы."
 
 /obj/item/paper/fluff/ruins/oldstation/report
 	name = "Crew Reawakening Report"
-	info = "Artificial Program's report to surviving crewmembers.<br><br>Crew were placed into cryostasis on March 10th, 2445.<br><br>Crew were awoken from cryostasis around June, 2557.<br><br> \
-	<b>SIGNIFICANT EVENTS OF NOTE</b><br>1: The primary radiation detectors were taken offline after 112 years due to power failure, secondary radiation detectors showed no residual \
-	radiation on station. Deduction, primarily detector was malfunctioning and was producing a radiation signal when there was none.<br><br>2: A data burst from a nearby Nanotrasen Space \
-	Station was received, this data burst contained research data that has been uploaded to our RnD labs.<br><br>3: Unknown invasion force has occupied Theta station."
+	info = "Отчет искусственной программы выжившим членам экипажа.<br><br>Экипаж был помещен в криостаз 10 марта 2445 года.<br><br>Экипаж был выведен из криостаза примерно в июне 2557 года.<br><br> \
+	<b>ВАЖНЫЕ СОБЫТИЯ, ЗАСЛУЖИВАЮЩИЕ ВНИМАНИЯ</b><br>1: Первичные детекторы излучения были отключены через 112 лет из-за перебоев в подаче электроэнергии, вторичные детекторы излучения не выявили остаточного излучения на станции. Вывод: первичный детектор был неисправен и подавал сигнал излучения, когда его не было.<br><br>2: Получен пакет данных с близлежащей космической станции Nanotrasen, содержащий исследовательские данные, которые были загружены в наши лаборатории RnD.<br><br>3: Неизвестные силы вторжения захватили станцию 'Тета'."
 
 /obj/item/paper/fluff/ruins/oldstation/generator_manual
 	name = "S.U.P.E.R.P.A.C.M.A.N.-type portable generator manual"
-	info = "You can barely make out a faded sentence... <br><br> Wrench down the generator on top of a wire node connected to either a SMES input terminal or the power grid. \
-	*eep th* *e**l of **m..<br><br> The last words completly faded." // yep, the temperature overheat, some players set power to 5 and make the gen to blow up, rip oldstation.
+	info = "Вы едва можете разобрать выцветшее предложение... <br><br> Закрепите генератор гаечным ключом поверх узла проводов, подключенного либо к входному терминалу SMES, либо к электросети. \
+	Не *вь мо* *ы**е **и..<br><br> Последние слова полностью выцвели." // yep, the temperature overheat, some players set power to 5 and make the gen to blow up, rip oldstation.
 
 /obj/item/paper/ruins/oldstation
 	language = LANGUAGE_SOL_COMMON
 
 /obj/item/paper/ruins/oldstation/protoinventory
 	name = "Theta RnD Prototype Inventory Secure Storage"
-	info = "<b>Inventory</b><br><br>(1) Prototype Hardsuit<br><br>(1)Health Analyser<br><br>(1)Prototype Energy Rifle<br><br>(1)Tesla Generation Rod<br><br><b>DO NOT REMOVE WITHOUT \
-	THE CAPTAIN AND RESEARCH DIRECTOR'S AUTHORISATION</b>"
+	info = "<b>Инвентарь</b><br><br>(1) Прототип экзоскелета<br><br>(1)Анализатор здоровья<br><br>(1)Прототип энерговинтовки<br><br>(1)Стержень генерации Теслы<br><br><b>НЕ ПРИСТУПАЙТЕ К РАБОТЕ БЕЗ РАЗРЕШЕНИЯ КАПИТАНА И ДИРЕКТОРА ИССЛЕДОВАНИЙ.</b>"
 
 /obj/item/paper/ruins/oldstation/prototesla // eh, im bad in eng anyway but i tried. mb somebody will fix it later
 	name = "Tesla Generator Report"
-	info = "<b>Tesla Generator</b><br><br>New prototype of engine made in purpose to product energy has been created in walls of Theta Research and Development department!  \
-	After horrible accident that happened on Alpha the new RnD command got fax from CC about perspective energy production researches of the next generation. As result,  \
-	from the data aquired from CC and relentless work, our brave RnD staff managed to represent a new hope for every station, for an old dream – to curb the lightnings! \
-	By our prognoses, this 'engine' have great potential for powering up small, meduim or even large stations. Its quite flexible in setting up, and also can become the \
-	cheapest engine in maintenance on nova days."
+	info = "<b>Тесла генератор</b><br><br>В стенах отдела исследований и разработок Тета создан новый прототип двигателя, предназначенного для выработки энергии!<br><br>После ужасной аварии, произошедшей на Альфа, новая команда НИО получила факс от Центрального Командования, о перспективных исследованиях в области производства энергии следующего поколения. В результате, благодаря данным, полученным от Центрального Командования, и неустанной работе, нашим отважным сотрудникам НИМ удалось воплотить в жизнь новую надежду для каждой станции, давнюю мечту – обуздать молнии!<br><br> По нашим прогнозам, этот 'двигатель' обладает большим потенциалом для обеспечения энергией небольших, средних и даже крупных станций. Он довольно гибок в настройке, а также может стать самым дешевым двигателем в обслуживании в наши дни."
 
 /obj/item/paper/ruins/oldstation/singwarn // the engine is bugged, at least on ss220, so ic warning may prevent people to use it, at least untill it will be fixed, then this note will gone
 	name = "Old note"
-	info = "<b>I warned you!</b><br /><br /><b>In memory of Alfred</b><br /><br />DON'T USE IT!!! I – won't EVER AGAIN engage the station power on that cursed thing!  \
-	I see the same nightmare every month, if not every week right now... The darkness, the silence, blood.. DOOM! Our brave RnD created a hell engine.  \
-	On its born in CZ, I swear, I heard our names whispered from the void! This thing WAS THE VOID, THE BLACK HOLE ITSELF!  \
-	First – a 10 cm lead container appears in Alpha Engineering Foyer, next – executive man and head of our department Chief Engineer Jakob T. –  \
-	asking Captain about soon retirement! Then this RnD with their secret engine project come with shtamped papers and told us to force works on building containment zone as soon as possible  \
-	for their precious reports to CC about successful success in the field of energy production. We didn't know yet what was inside that container, and I HAD TO BE more clever that days...  \
-	<p>We built everything as it was on plans. Every wire, every rod – everything were in the place, it has to be safe! Actually, I decided to not risk with possible malfunctions and requested more equipment from RnD,  \
-	and they sent everything I asked without a question! Like they were not sure themself about safety of this monster. We doubled emitters, made another SMES, even P.A.C.M.A.N.'s if shits went wrong.  \
-	And at the end even this wasn't enough.<p>At the very start – all our consoles and sensors on Alpha blackedout. Radio silenced. The fields went down. I heard as something rattle and rumble inside Alpha..  \
-	Or it was everywhere? Ten seconds later Alpha got hit via something big. As I will know later it was arriving Cargo supply shuttle from CC requested 2 weeks ago. Half of Cargo department was crushed down,  \
-	couple staff members died in a seconds, in space and under the drifting shuttle, seven more were hardly injured. Screams and darkness.. The Singularity were stay in place quiet and peacefully,  \
-	we managed turn off accelerator before it let Singulo grew up and let it swallow all of us and the station. Barely didn't crapped myself when I saw pulsations of the Void myself,  \
-	I thought we are gone.. And Im not sure, I heard something..  laughing?.. and.. names.. it was our names.. from everywhere and nowhere at the same time.  \
-	I decided it was an effect from high radiation splash of Singulo born and went to check SMES, my good bud Alfred.. he could become good or even excelent CE after all Im sure!  \
-	Poor guy.. went outside to check why the fields and emitters turned off. The others went fix Alpha breaches and power it back. We work for a hour and half.  \
-	I just came back to the consoles as one of engineers covered in blood and burned suit and face, siezed and shout at me about Alfred – he were flying toward this..  \
-	thing.. openwide his arms. Radio came back, he giggles and mumbles. I ran outside screaming into channel to stop. In the last seconds hes finally heard me...  \
-	His blood sprayed across whole area, covering fields, walls, windows, airlocks.. my whole RIG – I heard his twitched scream and it stunned me to deaf.  \
-	The Void consumed its prey, grew up and moved...<p>I don't remember how I survived all what happened after. Almost whole Alpha gone in embrace of the Singulo.  \
-	I don't know how we get rid off it eather. CC sent us Engineering ERT to fix station, more than a half of the station crew asked about evac,  \
-	I decided to stay and repair station with CCs guys. I'll never forget that. Now seven month later after the incident, Engineering accepted fax from new Research Director –  \
-	they created 'ANOTHER VOID ENGINE. MORE STABLE THAN BEFORE'! It was the last straw of me, I left my job and wrote the note. Never setup this engine.  \
-	If from the first look you didn't feel afraid of anything in that doom-device, I hope my story will ensure you that you SHOULD. I warned you."
+	info = "<b>В память об Альфреде</b><br><br><b>Я предупреждаю тебя!</b><br><br> \
+	<b>НИКОГДА не используйте этот двигатель!</b> Клянусь, я больше никогда не подам питание на эту проклятую штуковину! Мне до сих пор снятся кошмары — темнота, тишина, кровь... \ Каждый месяц, а то и каждую неделю я снова вижу эту ужасную картину. Всё началось с НИО и их адской машины. <br><br> \
+	Дальше — хуже. В фойе инженерии Альфа появился свинцовый контейнер и наш главный инженер, Якоб Т., вдруг заговорил о пенсии. \
+	НИО, вооруженные заверенными бумагами и рассказами о 'секретном проекте двигателя', потребовали срочно построить защитную зону для отчетности в ЦК об 'успешных достижениях в области производства энергии'. \
+	Мы, как идиоты, поверили… Если бы я только знал тогда, что скрывается в этом контейнере!<br><br>\
+	Строили все по инструкциям НИО: каждый провод, каждый стержень. Перестраховался, запросил дополнительное оборудование — излучатели, SMES, даже P.A.C.M.A.N. на всякий случай. \
+	НИО, кстати, без вопросов всё прислали. Словно сами сомневались в безопасности своей штуковины.<br><br> \
+	И вот настал момент Х. На Альфе отключились все системы: консоли, датчики, радио, силовые поля. Внутри отсека раздался грохот, будто рушился мир. \
+	Череp десять секунд в Альфу врезалось что-то крупное. Как я узнаю позже, это был прибывший грузовой шаттл снабжения с ЦК, заказанный 2 недели назад. \
+	Половина грузового отдела была разгромлена, пара сотрудников погибли в считанные секунды в космосе и под дрейфующим шаттлом, еще семеро получили легкие ранения. Крики и тьма... \
+	Сама сингулярность, к счастью, оставалась стабильной. Мы успели отключить ускоритель, предотвратив полную катастрофу. Но зрелище пульсирующей пустоты меня до сих пор преследует. \
+	Клянусь, я слышал смех... и наши имена, доносящиеся отовсюду и одновременно ниоткуда. Подумал тогда, что это радиация действует…<br><br> \
+	Послал Альфреда (уверен, что он мог бы стать хорошим или даже выдающимся специалистом) проверить излучатели. Остальные кинулись восстанавливать системы Альфы. \
+	Полтора часа мучений! Возвращаюсь к пультам, и тут на меня налетает один из инженеров, весь в крови, обожженный, кричит про Альфреда… \
+	Тот, оказывается, полетел прямо к сингулярности, раскинув руки…<br><br>\
+	В этот момент включилось радио. Мы услышали смех Альфреда и какой-то невнятный бред. Я бросился наружу, кричал ему в канал… В последний момент он вроде очнулся… но было поздно.\
+	Его кровь разлетелась по всему отсеку. Помню только его крик, а потом - тишина. Пустота поглотилаего. И начала расти…<br><br> \
+	Дальше – как в тумане. Почти вся Альфа исчезла. Как мы выжили - не знаю. ЦК прислало ремонтную бригаду. Половина экипажа эвакуировалась. Я остался восстанавливать станцию…<br><br> \
+	Семь месяцев спустя приходит факс от нового директора НИО: они разработали 'НОВЫЙ, БОЛЕЕ СТАБИЛЬНЫЙ ДВИГАТЕЛЬ СИНГУЛЯРНОСТИ'! Это была последняя капля. Я написал заявление и уволился.<br><br> \
+	Не повторяйте моих ошибок. НИКОГДА не устанавливайте этот двигатель. Если мой рассказ вас не убедил, то я не знаю, что ещё может. Вы предупреждены."
 
 /obj/item/paper/ruins/oldstation/slimesexperiments //many people asked about slimes xeno, i tried to make it possible with the special report note
 	name = "Xeno Core Research Report"
-	info = "<b>Observation records of biological xeno core</b><br /><br />Data: The biological sample of unknown xeno form acquired from extraction of dead adult xeno specimen  \
-	our miners found in one of asteroids of local clusters during mining regular expeditions. We assume it still can be useful for researches since after the specimen death which happen  \
-	20-25 years ago perfectly saved its internal organs under the half transperent elastic skin, like if its death happened couple minutes ago. Inside we traced low electrical activity in  \
-	body and the center of it was this core. The Research Director searched any data about the xeno form in all available xeno databases he requested from CC Science Data Centers.  \
-	He got fax from CC later which in they asked to continue researches manually since we have enough samples of these xeno by using all spectrum of chemicals we can afford to spend on them.  \
-	<br /><br /><br />Chemical reaction records and notes<br /><br />All chemicals used without syringe insertion outside the core, be it gas or liquid of powder during highing or lowering temperature did no results at all.  \
-	Researche continues.<br /><br />Note 1: One of our scientists noted that core starts hit him with static electricity and fluctuate after he accidently touched it with his skin when he weared off his latex glowes.  \
-	He used regular distilled water on core to see if its connected somehow with special liquids. The result wasn't much remarkable but still, the core just fluctuated and the effect were less intensive than it was before...  \
-	<br /><br />Most inserted chemicals did no reactions. The only reagent was water, the core mixed water with inner liquid and changed the color. Chemical compounds we extracted back in closer look simulates one of pharmacological drugs in Medicine called Epinephrine.  \
-	At least the good news. Report sent<br /><br />Our management requested new chemicals and one of them very expensive – Plasma, solid and gas. I personaly sure it will give us what we waiting from the cores.  \
-	Chemical analysis shows that reagents close to Plasma parameters are most effective rise electrical activity inside. It should be the answer."
+	info = "<b>Записи наблюдений за биологическим ядром ксеносов</b><br /><br />Данные: Биологический образец неизвестной формы ксеносов, полученный в результате извлечения из мертвого взрослого экземпляра ксеносов, найденного нашими шахтерами на одном из астероидов местного скопления во время регулярных экспедиций по добыче полезных ископаемых.<br><br> \
+	Мы предполагаем, что это все еще может быть полезно для исследований, поскольку после гибели экземпляра, произошедшей 20-25 лет назад, его внутренние органы были полностью сохранены под полупрозрачной эластичной кожей, как если бы смерть наступила пару минут назад. Внутри мы проследили низкую электрическую активность в теле, и центром ее было это ядро.<br><br> \
+	Директор Исследований провел поиск любой информации о ксено-форме во всех доступных базах данных, которые он запросил у Центрального Командования. Позже он получил факс от ЦК, в котором они просили продолжить исследования вручную, поскольку у нас достаточно образцов этих ксеносов, используя весь спектр химических веществ, которые мы можем позволить себе потратить на них.<br><br> \
+	<b>Записи и примечания по химическим реакциям</b><br><br> \
+	Все химические вещества, используемые без введения шприца за пределы ядра, будь то газ или жидкость в виде порошка при повышении или понижении температуры, не давали никаких результатов. Исследование продолжается.<br><br>\
+	Примечание 1: Один из наших ученых заметил, что ядро поражает его статическим электричеством и колеблется после того, как он случайно коснулся их своей кожей, когда снимал свои латексные перчатки. Он обработал ядро обычной дистиллированной водой, чтобы посмотреть, не связано ли это каким-то образом со специальными жидкостями. Результат был не слишком впечатляющим, но, тем не менее, ядро просто колебалось, и эффект был менее интенсивным, чем раньше...<br><br> \
+	Большинство введенных химикатов не вызывали никаких реакций. Единственным реагентом была вода, ядро смешивало воду с внутренней жидкостью и меняло цвет. Химические соединения, которые мы извлекли при ближайшем рассмотрении, имитируют один из фармакологических препаратов в медицине под названием адреналин. По крайней мере, это хорошая новость. Отчет отправлен.<br><br> \
+	Наше руководство запросило новые химические вещества, и одно из них очень дорогое – плазму, твердое вещество и газ. Лично я уверен, что это даст нам то, чего мы ждем от ядер. Химический анализ показывает, что реагенты, близкие к параметрам плазмы, наиболее эффективно повышают электрическую активность внутри. Это и должно быть ответом."
 
 
 	//Old Prototype Hardsuit

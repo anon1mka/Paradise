@@ -2,7 +2,7 @@
 
 /obj/item/paper/fluff/ruins/wizardcrash
 	name = "Mission Briefing"
-	info = "To the Magnificent Z.A.P.<BR>A small mining base has been created within our territory by wandless scum. Send them a message from the wizard federation they will not forget. I know your kind is rather fragile, but a group of lightly armed miners should not pose any threat to you at all. Just be warned they have a security cyborg for self defence, you might want to tune your spells to that threat. I look forward to hearing of your success.<BR>Grand Magus Abra the Wonderous"
+	info = "<b>За великолепного З.А.П.</br><br><br>Беспалочковые отбросы создали на нашей территории небольшую шахтерскую базу. Отправьте им сообщение от федерации магов, которое они не забудут!<br><br>Я знаю, что ваш вид довольно хрупкий, но группа легковооруженных шахтеров не должна представлять для вас никакой угрозы.<br><br>Просто имейте в виду, что у них есть киборг-охранник для самообороны, возможно, вы захотите настроить свои заклинания на эту угрозу.<br><br>Я с нетерпением жду новостей о вашем успехе!<br><br><i>Великий маг Абра Чудесная</i>"
 
 /obj/item/spellbook/oneuse/emp
 	spell = /obj/effect/proc_holder/spell/emplosion/disable_tech

@@ -508,7 +508,7 @@
 			break
 
 /obj/item/paper/rnd_logs_key
-	name = "Ключ расшифровки журналов НИО"
+	name = "Ключи шифрования журналов НИО"
 
 /obj/item/paper/rnd_logs_key/Initialize(mapload)
 	. = ..()
@@ -519,7 +519,7 @@
 	if(!located_server)
 		return
 	var/decryption_key = located_server.logs_decryption_key
-	info = "<center><h2>Ключ расшифровки журналов НИО</h2></center>\n\t<br>Новый ключ расшифровки журналов НИО: \"[decryption_key]\"."
+	info = "<center><h2>Ключи шифрования журналов НИО</h2></center>\n\t<br>Новый ключ шифрованияжурналов НИО: \"[decryption_key]\"."
 	info_links = info
 	update_icon()
 

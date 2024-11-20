@@ -102,7 +102,7 @@
 "r" = (
 /obj/structure/table,
 /obj/item/paper{
-	info = "Nothing of interest to report.";
+	info = "Ничего интересного, о чем можно было бы сообщить..";
 	name = "november report"
 	},
 /obj/item/pen,
@@ -214,19 +214,19 @@
 	name = "june report"
 	},
 /obj/item/paper{
-	info = "Nothing of interest to report.";
+	info = "Ничего интересного, о чем можно было бы сообщить.";
 	name = "july report"
 	},
 /obj/item/paper{
-	info = "Nothing of interest to report.";
+	info = "Ничего интересного, о чем можно было бы сообщить.";
 	name = "august report"
 	},
 /obj/item/paper{
-	info = "Nothing of interest to report.";
+	info = "Ничего интересного, о чем можно было бы сообщить.";
 	name = "september report"
 	},
 /obj/item/paper{
-	info = "Nothing of interest to report.";
+	info = "Ничего интересного, о чем можно было бы сообщить.";
 	name = "october report"
 	},
 /obj/item/paper{

@@ -1,6 +1,6 @@
 /obj/item/paper/fluff/henderson_report
 	name = "Important Notice - Mrs. Henderson"
-	info = "Nothing of interest to report."
+	info = "Ничего интересного, о чем можно было бы сообщить."
 
 /obj/effect/mob_spawn/human/doctor/alive/lavaland
 	name = "broken rejuvenation pod"

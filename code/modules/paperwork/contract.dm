@@ -119,7 +119,7 @@
 		..()
 
 /obj/item/paper/contract/infernal/update_text()
-	info = "This shouldn't be seen.  Error DEVIL:6"
+	info = "Этого не должно быть видно. ERROR DEVIL: 6"
 
 /obj/item/paper/contract/infernal/power/update_text(var/signature = "____________", blood = 0)
 	info = "<center><B>Contract for infernal power</B></center><BR><BR><BR>I, [target] of sound mind, do hereby willingly offer my soul to the infernal hells by way of the infernal agent [owner.devilinfo.truename], in exchange for power and physical strength.  I understand that upon my demise, my soul shall fall into the infernal hells, and my body may not be resurrected, cloned, or otherwise brought back to life.  I also understand that this will prevent my brain from being used in an MMI.<BR><BR><BR>Signed, "

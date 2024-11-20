@@ -475,16 +475,13 @@ GLOBAL_LIST_EMPTY(gravity_generators) // We will keep track of this by adding ne
 
 /obj/item/paper/gravity_gen
 	name = "paper- 'Generate your own gravity!'"
-	info = {"<h1>Gravity Generator Instructions For Dummies</h1>
-	<p>Surprisingly, gravity isn't that hard to make! All you have to do is inject deadly radioactive minerals into a ball of
-	energy and you have yourself gravity! You can turn the machine on or off when required but you must remember that the generator
-	will EMIT RADIATION when charging or discharging, you can tell it is charging or discharging by the noise it makes, so please WEAR PROTECTIVE CLOTHING.</p>
+	info = {"<h1>Инструкция к генератору гравитации для чайников</h1>
+	<p>Удивительно, но создать гравитацию не так уж и сложно! Все, что вам нужно сделать, это поместить смертоносные радиоактивные минералы в энергетический шар, и вы получите гравитацию! Вы можете включать или выключать аппарат по мере необходимости, но вы должны помнить, что генератор будет излучать ИЗЛУЧЕНИЕ при зарядке или разрядке, о том, что он заряжается или разряжается, можно судить по издаваемому им шуму, поэтому, пожалуйста, НАДЕНЬТЕ ЗАЩИТНУЮ ОДЕЖДУ.</p>
 	<br>
-	<h3>It blew up!</h3>
-	<p>Don't panic! The gravity generator was designed to be easily repaired. If, somehow, the sturdy framework did not survive then
-	please proceed to panic; otherwise follow these steps.</p><ol>
-	<li>Secure the screws of the framework with a screwdriver.</li>
-	<li>Mend the damaged framework with a welding tool.</li>
-	<li>Add additional plasteel plating.</li>
-	<li>Secure the additional plating with a wrench.</li></ol>"}
+	<h3>Он взорвался!</h3>
+	<p>Не паникуйте! Гравитационный генератор был спроектирован таким образом, чтобы его можно было легко отремонтировать. Если по какой-то причине прочная конструкция не выдержала, пожалуйста, начинайте паниковать; в противном случае выполните следующие действия.</p><ol>
+	<li>Закрепите винты каркаса с помощью отвертки.</li>
+	<li>Почините поврежденный каркас с помощью сварочного инструмента.</li>
+	<li>Добавьте дополнительное покрытие из пласстали.</li>
+	<li>Закрепите дополнительную обшивку с помощью гаечного ключа.</li></ol>"}
 
