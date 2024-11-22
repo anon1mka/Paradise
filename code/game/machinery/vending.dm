@@ -479,10 +479,10 @@
 	if(istype(I, /obj/item/coin))
 		add_fingerprint(user)
 		if(!length(premium))
-			balloon_alert(user, "слот для монет отсутствует!")
+			balloon_alert(user, "слот отсутствует!")
 			return ATTACK_CHAIN_PROCEED
 		if(coin)
-			balloon_alert(user, "слот для монет занят!")
+			balloon_alert(user, "слот занят!")
 			return ATTACK_CHAIN_PROCEED
 		if(!user.drop_transfer_item_to_loc(I, src))
 			return ..()
@@ -2124,7 +2124,8 @@
 		"Техника безопасности нам не писана, да?",
 		"1 из 10 попаданий... А ты хорош!",
 		"Инструктор – это твой папочка!",
-		"Эй, ты куда целишься?!")
+		"Эй, ты куда целишься?!"
+	)
 
 	icon_state = "sectraining_off"
 	panel_overlay = "sec_panel"
