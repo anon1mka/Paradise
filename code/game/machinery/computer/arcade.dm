@@ -1011,7 +1011,7 @@
 			INSTRUMENTAL = "игровым автоматом The Orion Trail: Realism Edition",
 			PREPOSITIONAL = "игровом автомате The Orion Trail: Realism Edition"
 		)
-		desc = "Узнайте, как наши предки попали на Орион, и постарайтесь не сдохнуть в процессе!"
+		desc = "Узнайте, как наши предки добрались до Ориона, и постарайтесь не сдохнуть в процессе!"
 		newgame()
 		emagged = 1
 
