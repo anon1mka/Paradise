@@ -855,7 +855,7 @@
 			if(!coin)
 				balloon_alert(usr, "в автомате нет монет!")
 				return
-			if(istype(usr))
+			if(issilicon(usr))
 				balloon_alert(usr, "у вас нет рук!")
 				return
 			to_chat(usr, span_notice("Вы достали [coin] из [declent_ru(GENITIVE)]."))
